@@ -1,0 +1,467 @@
+// MARK: - Navigation & Common
+"mainTitle" = "Лаборатория аналоговых процессов";
+"back" = "← Назад";
+"close" = "Закрыть";
+"edit" = "Редактировать";
+"delete" = "Удалить";
+"save" = "Сохранить";
+"cancel" = "Отменить";
+"apply" = "Применить";
+"continue" = "Продолжить";
+"skip" = "Пропустить";
+"done" = "Готово!";
+"timeUp" = "Время вышло!";
+
+// MARK: - Timer Controls
+"start" = "Старт";
+"startProcess" = "Начать процесс";
+"startProcessSubtitle" = "Следуйте пошаговому руководству для проявки плёнки.";
+"pause" = "Пауза";
+"reset" = "Сброс";
+"timer" = "Таймер";
+"time" = "Время";
+"tools" = "Инструменты";
+"toolsSubtitle" = "Доступ к отдельным калькуляторам и таймерам.";
+"minutes" = "Минуты";
+"seconds" = "Секунды";
+"min" = "мин.";
+"sec" = "сек.";
+"minute" = "Минута %@";
+"minuteLabel" = "Минута %@";
+
+// MARK: - Calculator
+"calculate" = "Рассчитать";
+"calculator" = "Калькулятор";
+"calculatorTitle" = "Калькулятор времени";
+"calculateButton" = "Расчитать";
+"results" = "Результаты:";
+"resultsProcess" = "Результаты %@-процесса:";
+"coefficient" = "Коэффициент:";
+"standardRatio" = "(стандартно 1.33)";
+"processType" = "Тип процесса:";
+"pushSteps" = "Количество пуш-ступеней:";
+"numberOfSteps" = "Количество ступеней:";
+"from1to5" = "(от 1 до 5)";
+
+// MARK: - Development Parameters
+"developmentSetup" = "Настройка проявки";
+"developmentSetupDescription" = "Выберите параметры для расчёта времени проявки";
+"developmentTime" = "Время проявки";
+"developmentComplete" = "Проявка завершена!";
+"developmentCompleted" = "Проявка завершена!";
+"developmentCompleteForProcess" = "Проявка завершена для процесса: %@";
+"selectDevelopmentParameters" = "Выберите параметры проявки для запуска таймера";
+"startTimer" = "Запустить таймер";
+"saveToJournal" = "Сохранить в журнал";
+
+// MARK: - Film & Developer
+"film" = "Плёнка:";
+"developer" = "Проявитель:";
+"dilution" = "Разведение:";
+"iso" = "ISO/EI:";
+"temperature" = "Температура (°C):";
+"customTime" = "Пользовательское время:";
+"baseTime" = "Базовое время:";
+"basicTime" = "Базовое время:";
+"basicTimeLabel" = "Базовое время:";
+"manualInput" = "Ручной ввод";
+"fromDatabase" = "Из базы данных:";
+"defaultTime" = "Время по умолчанию (данные отсутствуют)";
+"ratio" = "Коэффициент:";
+"process" = "Процесс:";
+"push" = "Пуш";
+"pull" = "Пулл";
+"steps" = "Ступени:";
+"current" = "Текущее:";
+"data" = "Данные:";
+"available" = "✓ Доступны";
+"noData" = "✗ Нет данных";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C (Стандарт)";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+"StandardC" = "°C (Стандарт)";
+
+// MARK: - Dilution Options
+"stock" = "Сток";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
+"groupOther" = "Другие";
+"groupCustom" = "Пользовательская";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
+"groupDevelopersOther" = "Другие";
+"groupDevelopersCustom" = "Пользовательская";
+"custom" = "Пользовательский";
+
+// MARK: - Steps
+"step1" = "+1 ступень";
+"step2" = "+2 ступени";
+"step3" = "+3 ступени";
+"step4" = "+4 ступени";
+"step5" = "+5 ступеней";
+"pullStep1" = "-1 ступень";
+"pullStep2" = "-2 ступени";
+"pullStep3" = "-3 ступени";
+"pullStep4" = "-4 ступени";
+"pullStep5" = "-5 ступеней";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "Управление пресетами";
+"films" = "Плёнки";
+"developers" = "Проявители";
+"developmentTimes" = "Время проявки";
+"addFilm" = "Добавить плёнку";
+"addDeveloper" = "Добавить проявитель";
+"addTime" = "Добавить время";
+"filmPresets" = "Пресеты плёнок";
+"developerPresets" = "Пресеты проявителей";
+"timePresets" = "Пресеты времени проявки";
+"presets" = "Пресеты";
+
+// MARK: - Fixing Timer
+"goToFixing" = "Перейти к фиксированию";
+"fixingTimer" = "Таймер фиксирования";
+"fixingTimerSetup" = "Настройка таймера фиксирования";
+"fixingTimerDescription" = "Установите время для фиксирования плёнки после проявки";
+"fixingTime" = "Время фиксирования";
+"startFixing" = "Начать фиксирование";
+
+// MARK: - Fixer Selection
+"fixer" = "Фиксаж";
+"selectFixer" = "Выбрать фиксаж";
+"fixerSelection" = "Выбор фиксажа";
+"rapidFixer" = "Быстрый фиксаж";
+"acidFixer" = "Кислый фиксаж";
+"neutralFixer" = "Нейтральный фиксаж";
+
+// MARK: - Agitation
+"agitationSelection" = "Выберите режим ажитации";
+"agitationDescription" = "Ажитация - это процесс перемешивания проявителя для равномерного проявления плёнки";
+"noAgitation" = "Без ажитации";
+"noAgitationDescription" = "Таймер будет работать без напоминаний";
+"customAgitation" = "Пользовательский режим";
+"customAgitationDescription" = "Создать свой режим ажитации";
+"customAgitationSetup" = "Настройка режима";
+"customAgitationSetupDescription" = "Описапние режима ажитации";
+"customAgitationTitle" = "Пользовательская ажитация";
+"agitationTime" = "Время ажитации";
+"agitationTimeRemaining" = "(%@с)";
+"restTime" = "Время покоя";
+"preview" = "Превью:";
+"cycle" = "Цикл: %@ ажитация → %@ покой";
+"totalCycleDuration" = "Общая длительность: %@";
+"agitation" = "АЖИТАЦИЯ";
+"rest" = "ПОКОЙ";
+"phaseDescription" = "%@";
+"continuousAgitation" = "Непрерывная ажитация";
+"cycleAgitationFormat" = "%@с ажитации / %@с покоя";
+"periodicAgitationFormat" = "Каждые %@с";
+"agitationContinuous" = "Непрерывная ажитация";
+"agitationStill" = "Без ажитации";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "Для длительных проявок";
+"agitationFixerDescription" = "Режим фиксирования";
+"agitationCustomFormat" = "Кастомный (%@с/%@с)";
+"agitationContinuousName" = "Постоянная";
+"agitationStillName" = "Штиль";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "Fixer";
+"agitationRaePhase2Rotations" = "2 оборота";
+"agitationRaePhase1RotationPerMinute" = "1 оборот каждую минуту";
+"agitationRaePhase1Rotation7thMinute" = "1 оборот на 7-ю минуту";
+"agitationRaePhase1Rotation10thMinute" = "1 оборот на 10-ю минуту";
+"agitationRaePhase1RotationEvery5Minutes" = "1 оборот каждые 5 минут";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "Создать пользовательский режим";
+"createCustomAgitationDescription" = "Создайте свой собственный паттерн ажитации";
+"savedCustomAgitationModes" = "Сохранённые пользовательские режимы";
+"savedCustomAgitationDescription" = "Просмотрите и выберите из ваших сохранённых режимов";
+"customAgitationCreateTitle" = "Создать пользовательский режим ажитации";
+"customAgitationEditTitle" = "Редактировать пользовательский режим ажитации";
+"customAgitationName" = "Название режима";
+"customAgitationNamePlaceholder" = "Введите название режима";
+"customAgitationFirstMinute" = "Первая минута";
+"customAgitationFirstMinuteDescription" = "Паттерн ажитации для первой минуты";
+"customAgitationIntermediate" = "Промежуточные минуты";
+"customAgitationIntermediateDescription" = "Паттерн ажитации для минут от 2 до N-1";
+"customAgitationEnableLastMinute" = "Пользовательская последняя минута";
+"customAgitationLastMinute" = "Последняя минута";
+"customAgitationLastMinuteDescription" = "Паттерн ажитации для последней минуты";
+"customAgitationPreview" = "Предварительный просмотр";
+"customAgitationPreviewUnavailable" = "Завершите настройку для просмотра";
+"customAgitationCreateButton" = "Создать режим";
+"customAgitationUpdateButton" = "Обновить режим";
+"customAgitationReset" = "Сбросить форму";
+"agitationType" = "Тип ажитации";
+"agitationCycle" = "Цикл";
+"agitationPeriodic" = "Периодическая";
+"agitationCustom" = "Пользовательские инструкции";
+"cycleTimingSettings" = "Настройки времени цикла";
+"agitationSeconds" = "Ажитация";
+"restSeconds" = "Покой";
+"periodicInterval" = "Интервал";
+"customAgitationInstructions" = "Инструкции";
+"customAgitationInstructionsPlaceholder" = "Введите пользовательские инструкции по ажитации...";
+"agitationPeriodicFormat" = "Каждые %@с";
+"noCustomAgitationModes" = "Нет пользовательских режимов";
+"noCustomAgitationModesDescription" = "Создайте свой первый пользовательский режим ажитации для начала работы";
+"createFirstCustomMode" = "Создать первый режим";
+"selectThisMode" = "Выбрать этот режим";
+"deleteConfirmation" = "Удалить режим";
+"deleteCustomModeMessage" = "Вы уверены, что хотите удалить \"%@\"? Это действие невозможно отменить.";
+"createNew" = "Создать новый";
+"validationError" = "Ошибка валидации";
+"saveError" = "Ошибка сохранения";
+"ok" = "OK";
+"customAgitationErrorEmptyName" = "Название режима не может быть пустым";
+"customAgitationErrorEmptyCustomDescription" = "Требуются пользовательские инструкции для %@";
+"customAgitationErrorInvalidTiming" = "Неверная конфигурация времени для %@";
+"customAgitationErrorInvalidInterval" = "Неверный интервал для %@";
+"customAgitationErrorNoLastMinuteConfig" = "Отсутствует конфигурация последней минуты";
+"customAgitationErrorCycleSum" = "Ошибка времени цикла в %1$@: Сумма агитации и отдыха не должна превышать 60 секунд.";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "Нажмите чтобы перейти к калькулятору";
+"calculatedTime" = "Вычисленное время";
+"noDilutionsAvailable" = "Нет доступных разведений";
+"noDilutionsDescription" = "Нет данных для данной комбинации проявителя и плёнки";
+"noISOOptionsAvailable" = "Нет доступных ISO";
+"noISOOptionsDescription" = "Сначала выберите плёнку, проявитель и разведение, чтобы увидеть доступные ISO.";
+"noOptionsAvailable" = "Нет доступных опций";
+"noOptionsDescription" = "В данный момент нет доступных опций для выбора.";
+
+// MARK: - Journal
+"journalEmpty" = "Журнал пуст";
+"journalEmptyDescription" = "Сохраните свой первый расчёт, чтобы увидеть его здесь";
+"saveCalculation" = "Сохранить расчёт";
+"journal" = "Журнал";
+"journalCreateRecord" = "Создать запись";
+"journalRecordBasicInfo" = "Основная информация";
+"journalRecordName" = "Название (необязательно)";
+"journalRecordFilm" = "Плёнка";
+"journalRecordDeveloper" = "Проявитель";
+"journalRecordParameters" = "Параметры проявки";
+"journalRecordDilution" = "Разведение";
+"journalRecordTemperature" = "Температура";
+"journalRecordTime" = "Время";
+"journalRecordComment" = "Комментарий";
+"journalRecordCommentPlaceholder" = "Добавьте заметки о проявке...";
+"journalRecordDate" = "Дата и время";
+"journalRecordProcess" = "Процесс";
+"editRecord" = "Редактировать";
+"deleteRecord" = "Удалить запись";
+"deleteRecordConfirmation" = "Вы уверены, что хотите удалить эту запись?";
+"noRecords" = "Нет записей";
+"noRecordsDescription" = "Сохраните первую запись, чтобы увидеть её здесь";
+"saveRecord" = "Сохранить запись";
+"saveRecordDescription" = "Введите название для сохранения записи";
+"recordDetails" = "Детали записи";
+
+// MARK: - Selection
+"selectFilm" = "Выберите плёнку";
+"selectDeveloper" = "Выберите проявитель";
+"selectDilution" = "Выберите разведение";
+"selectDeveloperFirst" = "Сначала выберите проявитель";
+"selectISO" = "Выберите ISO";
+"selectTemperature" = "Выберите температуру";
+"selectScreenForTesting" = "Выберете экран для тестирования:";
+"recordName" = "Введите имя";
+"searchFilms" = "Поиск плёнок...";
+"searchJournal" = "Поиск в журнале...";
+"noResultsFound" = "Результатов не найдено";
+"trySearchingDifferentKeywords" = "Попробуйте другие ключевые слова";
+"searchDevelopers" = "Поиск проявителей...";
+
+// MARK: - Home
+"home" = "Главная";
+"staging" = "Стадии";
+"homeStagingSubtitle" = "Настройка последовательных стадий для всего процесса";
+"homeDescription" = "Полный набор инструментов для проявки плёнки: калькулятор, таймер и журнал";
+"homePresetsSubtitle" = "Параметры проявки";
+"homeCalculatorSubtitle" = "Расчет времени";
+"homeTimerSubtitle" = "Таймер проявки";
+"homeJournalSubtitle" = "Сохраненные записи";
+"homeManualsSubtitle" = "Статьи и руководства";
+
+// MARK: - Staging
+"stagingIntro" = "Добавьте стадии обработки плёнки в нужном порядке";
+"totalTime" = "Общее время:";
+"stagesInProcess" = "Стадий в процессе:";
+"chooseStage" = "Выберите стадию";
+"duplicate" = "Дублировать";
+"stagingPrebathName" = "Предварительная ванна";
+"stagingPrebathDescription" = "Предварительная ванна для стабилизации температуры";
+"stagingDevelopName" = "Проявка";
+"stagingDevelopDescription" = "Проявление плёнки";
+"stagingStopBathName" = "Стоп-ванна";
+"stagingStopBathDescription" = "Остановка проявления";
+"stagingBleachName" = "Отбелка";
+"stagingBleachDescription" = "Процесс отбелки";
+"stagingFixerName" = "Фиксаж";
+"stagingFixerDescription" = "Фиксирование изображения";
+"stagingWashName" = "Промывка";
+"stagingWashDescription" = "Промывка плёнки";
+"stagingStabilizeName" = "Стабилизация";
+"stagingStabilizeDescription" = "Стабилизация для долгосрочного хранения";
+
+// MARK: - Stage Editor
+"stageTime" = "ВРЕМЯ СТАДИИ";
+"duration" = "Длительность";
+"agitationMode" = "Режим ажитации";
+"agitationModeNotSelected" = "Не выбрано";
+"setTimeFirstToSelectAgitation" = "Сначала установите время для выбора ажитации";
+"selectAgitationModeToStartTimer" = "Выберите режим ажитации для запуска таймера";
+"setAgitationModeFirstToStartTimer" = "Сначала выберите режим ажитации для запуска таймера";
+"advancedSetup" = "РАСШИРЕННЫЕ НАСТРОЙКИ";
+"openDevelopmentSetup" = "Открыть настройки проявки";
+"openFixerSetup" = "Открыть настройки фиксажа";
+"setupTimeByPreset" = "Настроить время по пресету";
+"resetStages" = "Сбросить стадии";
+
+// MARK: - Settings
+"settings" = "Настройки";
+"settingsTheme" = "Тема";
+"settingsThemeMode" = "Режим темы";
+"settingsThemeSystem" = "Системная";
+"settingsThemeLight" = "Светлая";
+"settingsThemeDark" = "Тёмная";
+"settingsData" = "Данные";
+"settingsSyncData" = "Синхронизация данных";
+"settingsLastSync" = "Последняя синхронизация:";
+"settingsSyncNow" = "Синхронизировать сейчас";
+"settingsSyncResult" = "Результат синхронизации";
+"settingsSyncSuccess" = "Данные успешно синхронизированы!";
+"settingsSyncError" = "Ошибка синхронизации";
+"settingsAutoSyncReady" = "Автосинхронизация готова";
+"settingsAutoSyncChecking" = "Проверка подключения...";
+"settingsAutoSyncInProgress" = "Автосинхронизация...";
+"settingsAutoSyncCompleted" = "Автосинхронизация завершена";
+"settingsAutoSyncFailed" = "Ошибка автосинхронизации: %@";
+"settingsAutoSyncNoInternet" = "Нет подключения к интернету";
+"settingsAutoSyncTooSoon" = "Синхронизация недавно выполнена";
+"settingsLastAutoSync" = "Последняя автосинхронизация:";
+"settingsAutoSyncEnabled" = "Автосинхронизация при запуске";
+"settingsAutoSyncDescription" = "Автоматически синхронизировать данные при запуске приложения при наличии интернета";
+"settingsAutoSyncDisabled" = "Автосинхронизация отключена";
+"stagingStartSequential" = "Начать последовательные стадии";
+"stagingStageComplete" = "Стадия завершена!";
+"stagingGoToNextStage" = "Перейти к следующей стадии";
+"stagingAllStagesComplete" = "Все стадии завершены!";
+"stagingFinish" = "Завершить";
+"stagingSequentialStages" = "Последовательные стадии";
+"stagingStageXofY" = "Стадия %@ из %@";
+"stagingResetConfirmation" = "Вы действительно хотите сбросить все стадии?";
+"tapToSetTime" = "Нажмите для установки времени";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "Установить время вручную";
+"tapToChangeTime" = "Нажмите для изменения времени";
+"setTimeToStartTimer" = "Установите время для запуска таймера";
+"manualTimer" = "Ручной таймер";
+
+// MARK: - Create Mode
+"createMode" = "Создать режим";
+
+// MARK: - Development
+"development" = "Проявка";
+"processModesDeveloping" = "Проявка";
+"processModeFixer" = "Фиксаж";
+"noAlternativeOptions" = "Доступен только один вариант";
+
+// MARK: - Manuals
+"manuals" = "Руководства";
+
+// MARK: - Version
+"version" = "Версия";
+
+// MARK: - Formatting
+"unknownFilm" = "Плёнка";
+"unknownDeveloper" = "Проявитель";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "Цикл: %@с ажитация → %@с покой";
+"totalCycleDuration" = "Общая длительность цикла: %@с";
+
+// MARK: - Testing
+"parameterRow" = "Строка параметров";
+"recordRow" = "Строка записи";
+"calculatorComponents" = "Компоненты калькулятора";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud готов к синхронизации";
+"iCloudSyncStatusIdleUnavailable" = "iCloud недоступен";
+"iCloudSyncStatusSyncing" = "Синхронизация...";
+"iCloudSyncStatusCompleted" = "Синхронизация завершена";
+"iCloudSyncCtatusFailed" = "Ошибка: %@";
+
+// MARK: - Support
+"support" = "Поддержка";
+"contactDeveloper" = "Связаться с разработчиком";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "Это заменит ваши текущие стадии. Это действие нельзя отменить.";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "%@ не может быть пустым.";
+"validationErrorInvalidInteger" = "%@ должно быть целым числом.";
+"validationErrorInvalidDouble" = "%@ должно быть числом.";
+"validationErrorValueOutOfRange" = "%@ должно быть между %d и %d.";
+"validationErrorDoubleOutOfRange" = "%@ должно быть между %.1f и %.1f.";
+"validationErrorMustBePositive" = "%@ должно быть больше 0.";

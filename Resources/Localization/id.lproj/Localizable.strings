@@ -1,0 +1,393 @@
+// MARK: - Navigation & Common
+"mainTitle" = "Lab Proses Analog";
+"back" = "← Kembali";
+"close" = "Tutup";
+"edit" = "Edit";
+"delete" = "Hapus";
+"save" = "Simpan";
+"cancel" = "Batal";
+"apply" = "Terapkan";
+"continue" = "Lanjutkan";
+"skip" = "Lewati";
+"done" = "Selesai!";
+"timeUp" = "Waktu habis!";
+
+// MARK: - Timer Controls
+"start" = "Mulai";
+"pause" = "Jeda";
+"reset" = "Reset";
+"timer" = "Timer";
+"time" = "Waktu";
+"minutes" = "Menit";
+"seconds" = "Detik";
+"min" = "mnt";
+"sec" = "dtk";
+"minute" = "Menit ke-%@";
+"minuteLabel" = "Menit ke-%@";
+
+// MARK: - Calculator
+"calculate" = "Hitung";
+"calculator" = "Kalkulator";
+"calculatorTitle" = "Kalkulator Waktu";
+"calculateButton" = "Hitung";
+"results" = "Hasil:";
+"resultsProcess" = "Hasil proses %@:";
+"coefficient" = "Koefisien:";
+"standardRatio" = "(standar 1.33)";
+"processType" = "Jenis proses:";
+"pushSteps" = "Jumlah step PUSH:";
+"numberOfSteps" = "Jumlah step:";
+"from1to5" = "(dari 1 sampai 5)";
+
+// MARK: - Development Parameters
+"developmentSetup" = "Pengaturan Cuci Film";
+"developmentSetupDescription" = "Pilih parameter untuk perhitungan waktu cuci film";
+"developmentTime" = "Waktu cuci film";
+"developmentComplete" = "Cuci film selesai!";
+"developmentCompleted" = "Cuci film selesai!";
+"developmentCompleteForProcess" = "Proses selesai: %@";
+"selectDevelopmentParameters" = "Pilih parameter cuci film untuk memulai timer";
+"startTimer" = "Mulai Timer";
+"agitationModeNotSelected" = "Belum dipilih";
+"setTimeFirstToSelectAgitation" = "Silakan atur waktu terlebih dahulu untuk memilih mode agitasi";
+"selectAgitationModeToStartTimer" = "Silakan pilih mode agitasi untuk memulai timer";
+"setAgitationModeFirstToStartTimer" = "Silakan pilih mode agitasi terlebih dahulu untuk memulai timer";
+"saveToJournal" = "Simpan ke Jurnal";
+
+// MARK: - Film & Developer
+"film" = "Film:";
+"developer" = "Developer:";
+"dilution" = "Pengenceran:";
+"iso" = "ISO/EI:";
+"temperature" = "Suhu (°C):";
+"customTime" = "Waktu kustom:";
+"baseTime" = "Waktu dasar:";
+"basicTime" = "Waktu dasar:";
+"basicTimeLabel" = "Waktu dasar:";
+"manualInput" = "Input manual";
+"fromDatabase" = "Dari database:";
+"defaultTime" = "Waktu default (tidak ada data)";
+"ratio" = "Rasio:";
+"process" = "Proses:";
+"push" = "Push";
+"pull" = "Pull";
+"steps" = "Step:";
+"current" = "Saat ini:";
+"data" = "Data:";
+"available" = "✓ Tersedia";
+"noData" = "✗ Tidak ada data";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C (Standar)";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+"StandardC" = "°C (Standar)";
+
+// MARK: - Dilution Options
+"stock" = "Stok";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
+"groupOther" = "Lainnya";
+"groupCustom" = "Kustom";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
+"groupDevelopersOther" = "Lainnya";
+"groupDevelopersCustom" = "Kustom";
+"custom" = "Kustom";
+
+// MARK: - Steps
+"step1" = "+1 step";
+"step2" = "+2 step";
+"step3" = "+3 step";
+"step4" = "+4 step";
+"step5" = "+5 step";
+"pullStep1" = "-1 step";
+"pullStep2" = "-2 step";
+"pullStep3" = "-3 step";
+"pullStep4" = "-4 step";
+"pullStep5" = "-5 step";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "Manajemen Preset";
+"films" = "Film";
+"developers" = "Developer";
+"developmentTimes" = "Waktu Cuci Film";
+"addFilm" = "Tambah Film";
+"addDeveloper" = "Tambah Developer";
+"addTime" = "Tambah Waktu";
+"filmPresets" = "Preset Film";
+"developerPresets" = "Preset Developer";
+"timePresets" = "Preset Waktu Cuci";
+"presets" = "Preset";
+
+// MARK: - Fixing Timer
+"goToFixing" = "Ke Fixing";
+"fixingTimer" = "Timer Fixing";
+"fixingTimerSetup" = "Pengaturan Timer Fixing";
+"fixingTimerDescription" = "Atur waktu untuk fixing film setelah cuci";
+"fixingTime" = "Waktu fixing";
+"startFixing" = "Mulai fixing";
+
+// MARK: - Fixer Selection
+"fixer" = "Fixer";
+"selectFixer" = "Pilih fixer";
+"fixerSelection" = "Pemilihan Fixer";
+"rapidFixer" = "Rapid Fixer";
+"acidFixer" = "Acid Fixer";
+"neutralFixer" = "Neutral Fixer";
+
+// MARK: - Agitation
+"agitationSelection" = "Pilih Mode Agitasi";
+"agitationDescription" = "Agitasi adalah proses mengaduk developer untuk cuci film yang merata";
+"noAgitation" = "Tanpa agitasi";
+"noAgitationDescription" = "Timer akan bekerja tanpa pengingat";
+"customAgitation" = "Mode kustom";
+"customAgitationDescription" = "Buat mode agitasi sendiri";
+"customAgitationSetup" = "Pengaturan mode kustom";
+"customAgitationSetupDescription" = "Buat mode agitasi sendiri";
+"customAgitationTitle" = "Agitasi Kustom";
+"agitationTime" = "Waktu agitasi";
+"agitationTimeRemaining" = "(%@dtk)";
+"restTime" = "Waktu istirahat";
+"preview" = "Preview:";
+"cycle" = "Siklus: agitasi %@dtk → istirahat %@dtk";
+"totalCycleDuration" = "Durasi siklus total: %@dtk";
+"agitation" = "AGITASI";
+"rest" = "ISTIRAHAT";
+"phaseDescription" = "%@";
+"continuousAgitation" = "Agitasi berkelanjutan";
+"cycleAgitationFormat" = "agitasi %@dtk / istirahat %@dtk";
+"periodicAgitationFormat" = "Setiap %@dtk";
+"agitationContinuous" = "Agitasi berkelanjutan";
+"agitationStill" = "Tanpa agitasi";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "Untuk cuci film lama";
+"agitationFixerDescription" = "Mode fixer";
+"agitationCustomFormat" = "Kustom (%@dtk/%@dtk)";
+"agitationContinuousName" = "Berkelanjutan";
+"agitationStillName" = "Diam";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "Fixer";
+"agitationRaePhase2Rotations" = "2 rotasi";
+"agitationRaePhase1RotationPerMinute" = "1 rotasi per menit";
+"agitationRaePhase1Rotation7thMinute" = "1 rotasi pada menit ke-7";
+"agitationRaePhase1Rotation10thMinute" = "1 rotasi pada menit ke-10";
+"agitationRaePhase1RotationEvery5Minutes" = "1 rotasi setiap 5 menit";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "Ketuk untuk ke kalkulator";
+"calculatedTime" = "Waktu Terhitung";
+"noDilutionsAvailable" = "Tidak ada pengenceran tersedia";
+"noDilutionsDescription" = "Tidak ada data cuci film untuk kombinasi film dan developer yang dipilih";
+"noISOOptionsAvailable" = "Tidak ada opsi ISO tersedia";
+"noISOOptionsDescription" = "Silakan pilih film, developer, dan pengenceran dulu untuk melihat opsi ISO yang tersedia.";
+"noOptionsAvailable" = "Tidak ada opsi tersedia";
+"noOptionsDescription" = "Saat ini tidak ada opsi yang tersedia untuk dipilih.";
+
+// MARK: - Journal
+"journalEmpty" = "Jurnal kosong";
+"journalEmptyDescription" = "Simpan perhitungan pertama Anda untuk melihatnya di sini";
+"saveCalculation" = "Simpan perhitungan";
+"journal" = "Jurnal";
+"journalCreateRecord" = "Buat Record";
+"journalRecordBasicInfo" = "Informasi Dasar";
+"journalRecordName" = "Nama (opsional)";
+"journalRecordFilm" = "Film";
+"journalRecordDeveloper" = "Developer";
+"journalRecordParameters" = "Parameter Cuci Film";
+"journalRecordDilution" = "Pengenceran";
+"journalRecordTemperature" = "Suhu";
+"journalRecordTime" = "Waktu";
+"journalRecordComment" = "Komentar";
+"journalRecordCommentPlaceholder" = "Tambahkan catatan tentang cuci film ini...";
+"journalRecordDate" = "Tanggal & Waktu";
+"journalRecordProcess" = "Proses";
+"editRecord" = "Edit";
+"deleteRecord" = "Hapus Record";
+"deleteRecordConfirmation" = "Apakah Anda yakin ingin menghapus record ini?";
+"noRecords" = "Tidak Ada Record";
+"noRecordsDescription" = "Simpan record pertama Anda untuk melihatnya di sini";
+"saveRecord" = "Simpan Record";
+"saveRecordDescription" = "Masukkan nama untuk menyimpan record ini";
+"recordDetails" = "Detail Record";
+
+// MARK: - Selection
+"selectFilm" = "Pilih film";
+"selectDeveloper" = "Pilih developer";
+"selectDilution" = "Pilih pengenceran";
+"selectDeveloperFirst" = "Pilih developer dulu";
+"selectISO" = "Pilih ISO";
+"selectTemperature" = "Pilih Suhu";
+"selectScreenForTesting" = "Pilih layar untuk testing:";
+"recordName" = "Masukkan nama";
+"searchFilms" = "Cari film...";
+"searchDevelopers" = "Cari developer...";
+
+// MARK: - Home
+"home" = "Beranda";
+"homeDescription" = "Toolkit lengkap untuk cuci film: kalkulator, timer, jurnal, dan panduan";
+"homePresetsSubtitle" = "Parameter cuci film";
+"homeCalculatorSubtitle" = "Perhitungan waktu";
+"homeTimerSubtitle" = "Timer cuci film";
+"homeJournalSubtitle" = "Record tersimpan";
+"homeManualsSubtitle" = "Artikel dan panduan";
+
+// MARK: - Staging
+"staging" = "Tahapan";
+"stagingIntro" = "Tambahkan tahapan proses film sesuai urutan yang diinginkan";
+"totalTime" = "Total waktu:";
+"stagesInProcess" = "Tahapan dalam proses:";
+"chooseStage" = "Pilih tahapan";
+"duplicate" = "Duplikasi";
+"homeStagingSubtitle" = "Tahapan proses";
+"stagingPrebathName" = "Prebath";
+"stagingPrebathDescription" = "Pre-soak untuk stabilisasi suhu";
+"stagingDevelopName" = "Cuci";
+"stagingDevelopDescription" = "Cuci film";
+"stagingStopBathName" = "Stop Bath";
+"stagingStopBathDescription" = "Hentikan proses cuci";
+"stagingBleachName" = "Bleach";
+"stagingBleachDescription" = "Bleaching";
+"stagingFixerName" = "Fixer";
+"stagingFixerDescription" = "Fixing gambar";
+"stagingWashName" = "Cuci";
+"stagingWashDescription" = "Bilas film";
+"stagingStabilizeName" = "Stabilisasi";
+"stagingStabilizeDescription" = "Stabilisasi untuk penyimpanan jangka panjang";
+
+// MARK: - Stage Editor
+"stageTime" = "WAKTU TAHAPAN";
+"duration" = "Durasi";
+"agitationMode" = "Mode Agitasi";
+"advancedSetup" = "PENGATURAN LANJUTAN";
+"openDevelopmentSetup" = "Buka Pengaturan Cuci Film";
+"openFixerSetup" = "Buka Pengaturan Fixer";
+
+// MARK: - Settings
+"settings" = "Pengaturan";
+"settingsTheme" = "Tema";
+"settingsThemeMode" = "Mode tema";
+"settingsThemeSystem" = "Sistem";
+"settingsThemeLight" = "Terang";
+"settingsThemeDark" = "Gelap";
+"settingsData" = "Data";
+"settingsSyncData" = "Sinkronisasi Data";
+"settingsLastSync" = "Sinkronisasi terakhir:";
+"settingsSyncNow" = "Sinkronisasi Sekarang";
+"settingsSyncResult" = "Hasil Sinkronisasi";
+"settingsSyncSuccess" = "Data berhasil disinkronisasi!";
+"settingsSyncError" = "Sinkronisasi gagal";
+"settingsAutoSyncReady" = "Auto-sync siap";
+"settingsAutoSyncChecking" = "Mengecek koneksi...";
+"settingsAutoSyncInProgress" = "Auto-sync sedang berlangsung...";
+"settingsAutoSyncCompleted" = "Auto-sync selesai";
+"settingsAutoSyncFailed" = "Auto-sync gagal: %@";
+"settingsAutoSyncNoInternet" = "Tidak ada koneksi internet";
+"settingsAutoSyncTooSoon" = "Sinkronisasi dilakukan baru-baru ini";
+"settingsLastAutoSync" = "Auto-sync terakhir:";
+"settingsAutoSyncEnabled" = "Auto-sync saat app dibuka";
+"settingsAutoSyncDescription" = "Otomatis sinkronisasi data saat app dimulai jika ada internet";
+"settingsAutoSyncDisabled" = "Auto-sync dinonaktifkan";
+"stagingStartSequential" = "Mulai Tahapan Berurutan";
+"stagingStageComplete" = "Tahapan Selesai!";
+"stagingGoToNextStage" = "Ke Tahapan Berikutnya";
+"stagingAllStagesComplete" = "Semua Tahapan Selesai!";
+"stagingFinish" = "Selesai";
+"stagingSequentialStages" = "Tahapan Berurutan";
+"stagingStageXofY" = "Tahapan %@ dari %@";
+"stagingResetConfirmation" = "Apakah Anda benar-benar ingin mereset semua tahap?";
+"tapToSetTime" = "Ketuk untuk mengatur waktu";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "Atur Waktu Manual";
+"tapToChangeTime" = "Ketuk untuk mengubah waktu";
+"setTimeToStartTimer" = "Atur waktu untuk memulai timer";
+
+// MARK: - Create Mode
+"createMode" = "Mode Buat";
+
+// MARK: - Development
+"development" = "Cuci Film";
+"processModesDeveloping" = "Pengembangan";
+"processModeFixer" = "Perbaiki";
+"noAlternativeOptions" = "Hanya ada satu opsi tersedia";
+
+// MARK: - Manuals
+"manuals" = "Manual";
+
+// MARK: - Version
+"version" = "Versi";
+
+// MARK: - Formatting
+"unknownFilm" = "Film";
+"unknownDeveloper" = "Developer";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "Siklus: agitasi %@dtk → istirahat %@dtk";
+"totalCycleDuration" = "Durasi siklus total: %@dtk";
+
+// MARK: - Testing
+"parameterRow" = "Baris Parameter";
+"recordRow" = "Baris Record";
+"calculatorComponents" = "Komponen Kalkulator";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud siap untuk sinkronisasi";
+"iCloudSyncStatusIdleUnavailable" = "iCloud tidak tersedia";
+"iCloudSyncStatusSyncing" = "Sinkronisasi...";
+"iCloudSyncStatusCompleted" = "Sinkronisasi selesai";
+"iCloudSyncCtatusFailed" = "Error: %@";

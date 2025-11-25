@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+build/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# Secrets & Credentials
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.secret
+*-secret.json
+service-account*.json
+
+# Certificates & Keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+
+# Sensitive Config
+*.xcconfig
+!Config.example.xcconfig
+Config.plist
+GoogleService-Info.plist
+
+# IDEs
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+*.gcda
+*.gcno

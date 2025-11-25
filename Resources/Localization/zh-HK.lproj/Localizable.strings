@@ -1,0 +1,447 @@
+// MARK: - Navigation & Common
+"mainTitle" = "類比工藝實驗室";
+"back" = "← 返回";
+"close" = "關閉";
+"edit" = "編輯";
+"delete" = "刪除";
+"save" = "儲存";
+"cancel" = "取消";
+"apply" = "套用";
+"continue" = "繼續";
+"skip" = "跳過";
+"done" = "完成！";
+"timeUp" = "時間到！";
+
+// MARK: - Timer Controls
+"start" = "開始";
+"pause" = "暫停";
+"reset" = "重設";
+"timer" = "計時器";
+"time" = "時間";
+"minutes" = "分鐘";
+"seconds" = "秒";
+"min" = "分鐘";
+"sec" = "秒";
+"minute" = "第%@分鐘";
+"minuteLabel" = "第%@分鐘";
+
+// MARK: - Calculator
+"calculate" = "計算";
+"calculator" = "計算器";
+"calculatorTitle" = "時間計算器";
+"calculateButton" = "計算";
+"results" = "結果：";
+"resultsProcess" = "結果 %@ 流程：";
+"coefficient" = "係數：";
+"standardRatio" = "（標準 1.33）";
+"processType" = "流程類型：";
+"pushSteps" = "推進檔數：";
+"numberOfSteps" = "檔數：";
+"from1to5" = "（1到5檔）";
+
+// MARK: - Development Parameters
+"developmentSetup" = "沖印設定";
+"developmentSetupDescription" = "選擇沖印時間計算參數";
+"developmentTime" = "沖印時間";
+"developmentComplete" = "沖印完成！";
+"developmentCompleted" = "沖印完成！";
+"developmentCompleteForProcess" = "流程完成：%@";
+"selectDevelopmentParameters" = "選擇沖印參數以啟動計時器";
+"startTimer" = "啟動計時器";
+"saveToJournal" = "儲存至日誌";
+
+// MARK: - Film & Developer
+"film" = "菲林：";
+"developer" = "沖印液：";
+"dilution" = "稀釋比：";
+"iso" = "ISO/EI：";
+"temperature" = "溫度（°C）：";
+"customTime" = "自訂時間：";
+"baseTime" = "基準時間：";
+"basicTime" = "基本時間：";
+"basicTimeLabel" = "基本時間：";
+"manualInput" = "手動輸入";
+"fromDatabase" = "來自資料庫：";
+"defaultTime" = "預設時間（無資料）";
+"ratio" = "比例：";
+"process" = "流程：";
+"push" = "推進";
+"pull" = "拉回";
+"steps" = "檔數：";
+"current" = "目前：";
+"data" = "資料：";
+"available" = "✓ 可用";
+"noData" = "✗ 無資料";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C （標準）";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+
+// MARK: - Dilution Options
+"stock" = "原液";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "伊爾福";
+"groupKodak" = "柯達";
+"groupFoma" = "福馬";
+"groupKentmere" = "肯特米爾";
+"groupOther" = "其他";
+"groupCustom" = "自訂";
+"groupDevelopersIlford" = "伊爾福";
+"groupDevelopersKodak" = "柯達";
+"groupDevelopersOther" = "其他";
+"groupDevelopersCustom" = "自訂";
+"custom" = "自訂";
+
+// MARK: - Steps
+"step1" = "+1檔";
+"step2" = "+2檔";
+"step3" = "+3檔";
+"step4" = "+4檔";
+"step5" = "+5檔";
+"pullStep1" = "-1檔";
+"pullStep2" = "-2檔";
+"pullStep3" = "-3檔";
+"pullStep4" = "-4檔";
+"pullStep5" = "-5檔";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "預設管理";
+"films" = "菲林";
+"developers" = "沖印液";
+"developmentTimes" = "沖印時間";
+"addFilm" = "新增菲林";
+"addDeveloper" = "新增沖印液";
+"addTime" = "新增時間";
+"filmPresets" = "菲林預設";
+"developerPresets" = "沖印液預設";
+"timePresets" = "沖印時間預設";
+"presets" = "預設";
+
+// MARK: - Fixing Timer
+"goToFixing" = "進入定影";
+"fixingTimer" = "定影計時器";
+"fixingTimerSetup" = "定影計時器設定";
+"fixingTimerDescription" = "設定沖印後菲林定影時間";
+"fixingTime" = "定影時間";
+"startFixing" = "開始定影";
+
+// MARK: - Fixer Selection
+"fixer" = "定影液";
+"selectFixer" = "選擇定影液";
+"fixerSelection" = "定影液選擇";
+"rapidFixer" = "快速定影液";
+"acidFixer" = "酸性定影液";
+"neutralFixer" = "中性定影液";
+
+// MARK: - Agitation
+"agitationSelection" = "選擇攪拌模式";
+"agitationDescription" = "攪拌是攪動沖印液以實現菲林均勻沖印的過程";
+"noAgitation" = "無攪拌";
+"noAgitationDescription" = "計時器將在沒有提示的情況下運作";
+"customAgitation" = "自訂模式";
+"customAgitationDescription" = "建立您自己的攪拌模式";
+"customAgitationSetup" = "自訂模式設定";
+"customAgitationSetupDescription" = "建立您自己的攪拌模式";
+"customAgitationTitle" = "自訂攪拌";
+"agitationTime" = "攪拌時間";
+"agitationTimeRemaining" = "（%@秒）";
+"restTime" = "靜置時間";
+"preview" = "預覽：";
+"cycle" = "循環：%@攪拌 → %@靜置";
+"totalCycleDuration" = "總循環時間：%@";
+"agitation" = "攪拌";
+"rest" = "靜置";
+"phaseDescription" = "%@";
+"continuousAgitation" = "持續攪拌";
+"cycleAgitationFormat" = "%@秒攪拌 / %@秒靜置";
+"periodicAgitationFormat" = "每%@秒";
+"agitationContinuous" = "持續攪拌";
+"agitationStill" = "無攪拌";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "用於長時間沖印";
+"agitationFixerDescription" = "定影液模式";
+"agitationCustomFormat" = "自訂（%@秒/%@秒）";
+"agitationContinuousName" = "持續";
+"agitationStillName" = "靜止";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "定影液";
+"agitationRaePhase2Rotations" = "2次轉動";
+"agitationRaePhase1RotationPerMinute" = "每分鐘1次轉動";
+"agitationRaePhase1Rotation7thMinute" = "第7分鐘1次轉動";
+"agitationRaePhase1Rotation10thMinute" = "第10分鐘1次轉動";
+"agitationRaePhase1RotationEvery5Minutes" = "每5分鐘1次轉動";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "輕觸進入計算器";
+"calculatedTime" = "計算時間";
+"noDilutionsAvailable" = "無可用稀釋比";
+"noDilutionsDescription" = "所選菲林和沖印液組合無沖印資料";
+"noISOOptionsAvailable" = "無可用ISO選項";
+"noISOOptionsDescription" = "請先選擇菲林、沖印液和稀釋比以檢視可用的ISO選項。";
+"noOptionsAvailable" = "無可用選項";
+"noOptionsDescription" = "目前沒有可選擇的選項。";
+
+// MARK: - Journal
+"journalEmpty" = "日誌為空";
+"journalEmptyDescription" = "儲存您的第一次計算以在此檢視";
+"saveCalculation" = "儲存計算";
+"journal" = "日誌";
+"journalCreateRecord" = "建立記錄";
+"journalRecordBasicInfo" = "基本資訊";
+"journalRecordName" = "名稱（可選）";
+"journalRecordFilm" = "菲林";
+"journalRecordDeveloper" = "沖印液";
+"journalRecordParameters" = "沖印參數";
+"journalRecordDilution" = "稀釋比";
+"journalRecordTemperature" = "溫度";
+"journalRecordTime" = "時間";
+"journalRecordComment" = "備註";
+"journalRecordCommentPlaceholder" = "新增關於此次沖印的筆記...";
+"journalRecordDate" = "日期及時間";
+"journalRecordProcess" = "流程";
+"editRecord" = "編輯";
+"deleteRecord" = "刪除記錄";
+"deleteRecordConfirmation" = "您確定要刪除此記錄嗎？";
+"noRecords" = "無記錄";
+"noRecordsDescription" = "儲存您的第一條記錄以在此檢視";
+"saveRecord" = "儲存記錄";
+"saveRecordDescription" = "輸入名稱以儲存此記錄";
+"recordDetails" = "記錄詳情";
+
+// MARK: - Selection
+"selectFilm" = "選擇菲林";
+"selectDeveloper" = "選擇沖印液";
+"selectDilution" = "選擇稀釋比";
+"selectDeveloperFirst" = "請先選擇沖印液";
+"selectISO" = "選擇ISO";
+"selectTemperature" = "選擇溫度";
+"selectScreenForTesting" = "選擇測試畫面：";
+"recordName" = "輸入名稱";
+"searchFilms" = "搜尋菲林...";
+"searchDevelopers" = "搜尋沖印液...";
+"searchJournal" = "搜尋日誌...";
+"noResultsFound" = "未找到結果";
+"trySearchingDifferentKeywords" = "請嘗試使用不同的關鍵字";
+
+// MARK: - Home
+"home" = "主頁";
+"homeDescription" = "菲林沖印完整工具包：計算器、計時器、日誌和指南";
+"homePresetsSubtitle" = "沖印參數";
+"homeCalculatorSubtitle" = "時間計算";
+"homeTimerSubtitle" = "沖印計時器";
+"homeJournalSubtitle" = "已儲存記錄";
+"homeManualsSubtitle" = "文章和指南";
+
+// MARK: - Staging
+"staging" = "階段";
+"stagingIntro" = "按所需順序新增菲林處理階段";
+"totalTime" = "總時間：";
+"stagesInProcess" = "處理中的階段：";
+"chooseStage" = "選擇階段";
+"duplicate" = "複製";
+"homeStagingSubtitle" = "為整個流程設定順序階段";
+"stagingPrebathName" = "預浴";
+"stagingPrebathDescription" = "穩定溫度的預浸";
+"stagingDevelopName" = "沖印";
+"stagingDevelopDescription" = "菲林沖印";
+"stagingStopBathName" = "停顯液";
+"stagingStopBathDescription" = "停止沖印";
+"stagingBleachName" = "漂白";
+"stagingBleachDescription" = "漂白";
+"stagingFixerName" = "定影液";
+"stagingFixerDescription" = "影像定影";
+"stagingWashName" = "水洗";
+"stagingWashDescription" = "清洗菲林";
+"stagingStabilizeName" = "穩定化";
+"stagingStabilizeDescription" = "長期保存的穩定化";
+
+// MARK: - Stage Editor
+"stageTime" = "階段時間";
+"duration" = "持續時間";
+"agitationMode" = "攪拌模式";
+"advancedSetup" = "進階設定";
+"openDevelopmentSetup" = "開啟沖印設定";
+"openFixerSetup" = "開啟定影液設定";
+"setupTimeByPreset" = "按預設設定時間";
+"resetStages" = "重置階段";
+
+// MARK: - Settings
+"settings" = "設定";
+"settingsTheme" = "主題";
+"settingsThemeMode" = "主題模式";
+"settingsThemeSystem" = "系統";
+"settingsThemeLight" = "淺色";
+"settingsThemeDark" = "深色";
+"settingsData" = "資料";
+"settingsSyncData" = "資料同步";
+"settingsLastSync" = "最後同步：";
+"settingsSyncNow" = "立即同步";
+"settingsSyncResult" = "同步結果";
+"settingsSyncSuccess" = "資料同步成功！";
+"settingsSyncError" = "同步失敗";
+"settingsAutoSyncReady" = "自動同步就緒";
+"settingsAutoSyncChecking" = "正在檢查連線...";
+"settingsAutoSyncInProgress" = "自動同步進行中...";
+"settingsAutoSyncCompleted" = "自動同步完成";
+"settingsAutoSyncFailed" = "自動同步失敗：%@";
+"settingsAutoSyncNoInternet" = "無網絡連線";
+"settingsAutoSyncTooSoon" = "最近已執行同步";
+"settingsLastAutoSync" = "最後自動同步：";
+"settingsAutoSyncEnabled" = "應用程式啟動時自動同步";
+"settingsAutoSyncDescription" = "當網絡可用時，應用程式啟動時自動同步資料";
+"settingsAutoSyncDisabled" = "自動同步已停用";
+"stagingStartSequential" = "開始順序階段";
+"stagingStageComplete" = "階段完成！";
+"stagingGoToNextStage" = "進入下一階段";
+"stagingAllStagesComplete" = "所有階段完成！";
+"stagingFinish" = "完成";
+"stagingSequentialStages" = "順序階段";
+"stagingStageXofY" = "階段 %@ / %@";
+"stagingResetConfirmation" = "您真的要重置所有階段嗎？";
+"tapToSetTime" = "點擊設定時間";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "手動設定時間";
+"tapToChangeTime" = "輕觸更改時間";
+"setTimeToStartTimer" = "設定時間以啟動計時器";
+"manualTimer" = "手動計時器";
+
+// MARK: - Create Mode
+"createMode" = "建立模式";
+
+// MARK: - Development
+"development" = "沖印";
+"processModesDeveloping" = "沖印";
+"processModeFixer" = "定影液";
+"noAlternativeOptions" = "僅有一個可用選項";
+
+// MARK: - Manuals
+"manuals" = "使用手冊";
+
+// MARK: - Version
+"version" = "版本";
+
+// MARK: - Formatting
+"unknownFilm" = "菲林";
+"unknownDeveloper" = "沖印液";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "循環：%@秒攪拌 → %@秒靜置";
+"totalCycleDuration" = "總循環時間：%@秒";
+
+// MARK: - Testing
+"parameterRow" = "參數行";
+"recordRow" = "記錄行";
+"calculatorComponents" = "計算器元件";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud準備就緒可同步";
+"iCloudSyncStatusIdleUnavailable" = "iCloud無法使用";
+"iCloudSyncStatusSyncing" = "同步中...";
+"iCloudSyncStatusCompleted" = "同步完成";
+"iCloudSyncCtatusFailed" = "錯誤：%@";
+"agitationModeNotSelected" = "未選擇";
+"setTimeFirstToSelectAgitation" = "請先設定時間以選擇攜拌模式";
+"selectAgitationModeToStartTimer" = "請選擇攜拌模式以啟動計時器";
+"setAgitationModeFirstToStartTimer" = "請先選擇攜拌模式以啟動計時器";
+"saveToJournal" = "儲存至日誌";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "建立自定義模式";
+"createCustomAgitationDescription" = "設計您自己的攜拌模式";
+"savedCustomAgitationModes" = "已儲存的自定義模式";
+"savedCustomAgitationDescription" = "瀏覽並從您儲存的模式中選擇";
+"customAgitationCreateTitle" = "建立自定義攜拌模式";
+"customAgitationEditTitle" = "編輯自定義攜拌模式";
+"customAgitationName" = "模式名稱";
+"customAgitationNamePlaceholder" = "輸入模式名稱";
+"customAgitationFirstMinute" = "第一分鐘";
+"customAgitationFirstMinuteDescription" = "初始一分鐘的攜拌模式";
+"customAgitationIntermediate" = "中間分鐘";
+"customAgitationIntermediateDescription" = "第2分鐘到第N-1分鐘的攜拌模式";
+"customAgitationEnableLastMinute" = "自定義最後一分鐘";
+"customAgitationLastMinute" = "最後一分鐘";
+"customAgitationLastMinuteDescription" = "最後一分鐘的攜拌模式";
+"customAgitationPreview" = "預覽";
+"customAgitationPreviewUnavailable" = "完成配置以查看預覽";
+"customAgitationCreateButton" = "建立模式";
+"customAgitationUpdateButton" = "更新模式";
+"customAgitationReset" = "重置表單";
+"agitationType" = "攜拌類型";
+"agitationCycle" = "循環";
+"agitationPeriodic" = "周期性";
+"agitationCustom" = "自定義指示";
+"cycleTimingSettings" = "循環時間設定";
+"agitationSeconds" = "攜拌";
+"restSeconds" = "靜置";
+"periodicInterval" = "間隔";
+"customAgitationInstructions" = "指示";
+"customAgitationInstructionsPlaceholder" = "輸入自定義攜拌指示...";
+"agitationPeriodicFormat" = "每%@秒";
+"noCustomAgitationModes" = "無自定義模式";
+"noCustomAgitationModesDescription" = "建立您的第一個自定義攜拌模式以開始使用";
+"createFirstCustomMode" = "建立第一個模式";
+"selectThisMode" = "選擇此模式";
+"deleteConfirmation" = "刪除模式";
+"deleteCustomModeMessage" = "您確定要刪除「%@」嗎？此操作無法撤銷。";
+"createNew" = "新建";
+"validationError" = "驗證錯誤";
+"saveError" = "儲存錯誤";
+"ok" = "確定";
+"customAgitationErrorEmptyName" = "模式名稱不能為空";
+"customAgitationErrorEmptyCustomDescription" = "%@需要自定義指示";
+"customAgitationErrorInvalidTiming" = "%@的時間配置無效";
+"customAgitationErrorInvalidInterval" = "%@的間隔無效";
+"customAgitationErrorNoLastMinuteConfig" = "缺少最後一分鐘配置";

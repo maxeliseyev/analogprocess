@@ -1,0 +1,461 @@
+// MARK: - Navigation & Common
+"mainTitle" = "Analog Process Lab";
+"back" = "← Back";
+"close" = "Close";
+"edit" = "Edit";
+"delete" = "Delete";
+"save" = "Save";
+"cancel" = "Cancel";
+"apply" = "Apply";
+"continue" = "Continue";
+"skip" = "Skip";
+"done" = "Done!";
+"timeUp" = "Time's up!";
+
+// MARK: - Home
+"home" = "Home";
+"homeDescription" = "Complete toolkit for film development: calculator, timer, journal, and guides.";
+"startProcess" = "Start New Process";
+"startProcessSubtitle" = "Follow a step-by-step guide for film development.";
+"tools" = "Tools";
+"toolsSubtitle" = "Access individual calculators and timers.";
+
+// MARK: - Timer Controls
+"start" = "Start";
+"pause" = "Pause";
+"reset" = "Reset";
+"timer" = "Timer";
+"time" = "Time";
+"minutes" = "Minutes";
+"seconds" = "Seconds";
+"min" = "min.";
+"sec" = "sec.";
+"minute" = "Minute %@";
+"minuteLabel" = "Minute %@";
+
+// MARK: - Calculator
+"calculate" = "Calculate";
+"calculator" = "Calculator";
+"calculatorTitle" = "Time Calculator";
+"calculateButton" = "Calculate";
+"results" = "Results:";
+"resultsProcess" = "Results %@ process:";
+"coefficient" = "Coefficient:";
+"standardRatio" = "(standard 1.33)";
+"processType" = "Process type:";
+"pushSteps" = "Number of PUSH steps:";
+"numberOfSteps" = "Number of steps:";
+"from1to5" = "(from 1 to 5)";
+
+// MARK: - Development Parameters
+"developmentSetup" = "Development Setup";
+"developmentSetupDescription" = "Select parameters for development time calculation";
+"developmentTime" = "Development time";
+"developmentComplete" = "Development complete!";
+"developmentCompleted" = "Development completed!";
+"developmentCompleteForProcess" = "Development complete for process: %@";
+"selectDevelopmentParameters" = "Select development parameters to start timer";
+"startTimer" = "Start Timer";
+"saveToJournal" = "Save to Journal";
+
+// MARK: - Film & Developer
+"film" = "Film:";
+"developer" = "Developer:";
+"dilution" = "Dilution:";
+"iso" = "ISO/EI:";
+"temperature" = "Temperature (°C):";
+"customTime" = "Custom time:";
+"baseTime" = "Base time:";
+"basicTime" = "Basic time:";
+"basicTimeLabel" = "Basic time:";
+"manualInput" = "Manual input";
+"fromDatabase" = "From database:";
+"defaultTime" = "Default time (no data available)";
+"ratio" = "Ratio:";
+"process" = "Process:";
+"push" = "Push";
+"pull" = "Pull";
+"steps" = "Steps:";
+"current" = "Current:";
+"data" = "Data:";
+"available" = "✓ Available";
+"noData" = "✗ No data";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C (Standard)";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+"StandardC" = "°C (Standard)";
+
+// MARK: - Dilution Options
+"stock" = "Stock";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
+"groupOther" = "Other";
+"groupCustom" = "Custom";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
+"groupDevelopersOther" = "Other";
+"groupDevelopersCustom" = "Custom";
+"custom" = "Custom";
+
+// MARK: - Steps
+"step1" = "+1 step";
+"step2" = "+2 steps";
+"step3" = "+3 steps";
+"step4" = "+4 steps";
+"step5" = "+5 steps";
+"pullStep1" = "-1 step";
+"pullStep2" = "-2 steps";
+"pullStep3" = "-3 steps";
+"pullStep4" = "-4 steps";
+"pullStep5" = "-5 steps";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "Presets Management";
+"films" = "Films";
+"developers" = "Developers";
+"developmentTimes" = "Development Times";
+"addFilm" = "Add Film";
+"addDeveloper" = "Add Developer";
+"addTime" = "Add Time";
+"filmPresets" = "Film Presets";
+"developerPresets" = "Developer Presets";
+"timePresets" = "Development Time Presets";
+"presets" = "Presets";
+
+// MARK: - Fixing Timer
+"goToFixing" = "Go to fixing";
+"fixingTimer" = "Fixing Timer";
+"fixingTimerSetup" = "Fixing Timer Setup";
+"fixingTimerDescription" = "Set the time for fixing your film after development";
+"fixingTime" = "Fixing time";
+"startFixing" = "Start fixing";
+
+// MARK: - Fixer Selection
+"fixer" = "Fixer";
+"selectFixer" = "Select fixer";
+"fixerSelection" = "Fixer Selection";
+"rapidFixer" = "Rapid Fixer";
+"acidFixer" = "Acid Fixer";
+"neutralFixer" = "Neutral Fixer";
+
+// MARK: - Agitation
+"agitationSelection" = "Select Agitation Mode";
+"agitationDescription" = "Agitation is the process of stirring the developer for uniform film development";
+"noAgitation" = "No agitation";
+"noAgitationDescription" = "Timer will work without reminders";
+"customAgitation" = "Custom mode";
+"customAgitationDescription" = "Create your own agitation mode";
+"customAgitationSetup" = "Custom mode setup";
+"customAgitationSetupDescription" = "Create your own agitation mode";
+"customAgitationTitle" = "Custom Agitation";
+"agitationTime" = "Agitation time";
+"agitationTimeRemaining" = "(%@с)";
+"restTime" = "Rest time";
+"preview" = "Preview:";
+"cycle" = "Cycle: %@ agitation → %@ rest";
+"totalCycleDuration" = "Total cycle duration: %@";
+"agitation" = "AGITATION";
+"rest" = "REST";
+"phaseDescription" = "%@";
+"continuousAgitation" = "Continuous agitation";
+"cycleAgitationFormat" = "%@s agitation / %@s rest";
+"periodicAgitationFormat" = "Every %@s";
+"agitationContinuous" = "Continuous agitation";
+"agitationStill" = "No agitation";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "For long developments";
+"agitationFixerDescription" = "Fixer mode";
+"agitationCustomFormat" = "Custom (%@s/%@s)";
+"agitationContinuousName" = "Continuous";
+"agitationStillName" = "Still";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "Fixer";
+"agitationRaePhase2Rotations" = "2 rotations";
+"agitationRaePhase1RotationPerMinute" = "1 rotation per minute";
+"agitationRaePhase1Rotation7thMinute" = "1 rotation on 7th minute";
+"agitationRaePhase1Rotation10thMinute" = "1 rotation on 10th minute";
+"agitationRaePhase1RotationEvery5Minutes" = "1 rotation every 5 minutes";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "Create Custom Mode";
+"createCustomAgitationDescription" = "Design your own agitation pattern";
+"savedCustomAgitationModes" = "Saved Custom Modes";
+"savedCustomAgitationDescription" = "Browse and select from your saved modes";
+"customAgitationCreateTitle" = "Create Custom Agitation Mode";
+"customAgitationEditTitle" = "Edit Custom Agitation Mode";
+"customAgitationName" = "Mode Name";
+"customAgitationNamePlaceholder" = "Enter mode name";
+"customAgitationFirstMinute" = "First Minute";
+"customAgitationFirstMinuteDescription" = "Agitation pattern for the initial minute";
+"customAgitationIntermediate" = "Intermediate Minutes";
+"customAgitationIntermediateDescription" = "Agitation pattern for minutes 2 to N-1";
+"customAgitationEnableLastMinute" = "Custom Last Minute";
+"customAgitationLastMinute" = "Last Minute";
+"customAgitationLastMinuteDescription" = "Agitation pattern for the final minute";
+"customAgitationPreview" = "Preview";
+"customAgitationPreviewUnavailable" = "Complete configuration to see preview";
+"customAgitationCreateButton" = "Create Mode";
+"customAgitationUpdateButton" = "Update Mode";
+"customAgitationReset" = "Reset Form";
+"agitationType" = "Agitation Type";
+"agitationCycle" = "Cycle";
+"agitationPeriodic" = "Periodic";
+"agitationCustom" = "Custom Instructions";
+"cycleTimingSettings" = "Cycle Timing";
+"agitationSeconds" = "Agitation";
+"restSeconds" = "Rest";
+"periodicInterval" = "Interval";
+"customAgitationInstructions" = "Instructions";
+"customAgitationInstructionsPlaceholder" = "Enter custom agitation instructions...";
+"agitationPeriodicFormat" = "Every %@s";
+"noCustomAgitationModes" = "No Custom Modes";
+"noCustomAgitationModesDescription" = "Create your first custom agitation mode to get started";
+"createFirstCustomMode" = "Create First Mode";
+"selectThisMode" = "Select This Mode";
+"deleteConfirmation" = "Delete Mode";
+"deleteCustomModeMessage" = "Are you sure you want to delete \"%@\"? This action cannot be undone.";
+"createNew" = "Create New";
+"validationError" = "Validation Error";
+"saveError" = "Save Error";
+"ok" = "OK";
+"customAgitationErrorEmptyName" = "Mode name cannot be empty";
+"customAgitationErrorEmptyCustomDescription" = "Custom instructions required for %@";
+"customAgitationErrorInvalidTiming" = "Invalid timing configuration for %@";
+"customAgitationErrorInvalidInterval" = "Invalid interval for %@";
+"customAgitationErrorNoLastMinuteConfig" = "Last minute configuration is missing";
+"customAgitationErrorCycleSum" = "Cycle Timing Error in %1$@: The sum of agitation and rest should not exceed 60 seconds.";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "Tap to go to calculator";
+"calculatedTime" = "Calculated Time";
+"noDilutionsAvailable" = "No dilutions available";
+"noDilutionsDescription" = "No development data available for selected film and developer combination";
+"noISOOptionsAvailable" = "No ISO options available";
+"noISOOptionsDescription" = "Please select a film, developer, and dilution first to see available ISO options.";
+"noOptionsAvailable" = "No options available";
+"noOptionsDescription" = "No options are currently available for selection.";
+
+// MARK: - Journal
+"journalEmpty" = "Journal is empty";
+"journalEmptyDescription" = "Save your first calculation to see it here";
+"saveCalculation" = "Save calculation";
+"journal" = "Journal";
+"journalCreateRecord" = "Create Record";
+"journalRecordBasicInfo" = "Basic Information";
+"journalRecordName" = "Name (optional)";
+"journalRecordFilm" = "Film";
+"journalRecordDeveloper" = "Developer";
+"journalRecordParameters" = "Development Parameters";
+"journalRecordDilution" = "Dilution";
+"journalRecordTemperature" = "Temperature";
+"journalRecordTime" = "Time";
+"journalRecordComment" = "Comment";
+"journalRecordCommentPlaceholder" = "Add notes about this development...";
+"journalRecordDate" = "Date & Time";
+"journalRecordProcess" = "Process";
+"editRecord" = "Edit";
+"deleteRecord" = "Delete Record";
+"deleteRecordConfirmation" = "Are you sure you want to delete this record?";
+"noRecords" = "No Records";
+"noRecordsDescription" = "Save your first record to see it here";
+"saveRecord" = "Save Record";
+"saveRecordDescription" = "Enter a name to save this record";
+"recordDetails" = "Record Details";
+
+// MARK: - Selection
+"selectFilm" = "Select film";
+"selectDeveloper" = "Select developer";
+"selectDilution" = "Select dilution";
+"selectDeveloperFirst" = "Select developer first";
+"selectISO" = "Select ISO";
+"selectTemperature" = "Select Temperature";
+"selectScreenForTesting" = "Select screen for testing:";
+"recordName" = "Enter name";
+"searchFilms" = "Search films...";
+"searchJournal" = "Search journal...";
+"noResultsFound" = "No results found";
+"trySearchingDifferentKeywords" = "Try searching with different keywords";
+"searchDevelopers" = "Search developers...";
+
+// MARK: - Staging
+"staging" = "Stages";
+"stagingIntro" = "Add film processing stages in the desired order";
+"totalTime" = "Total time:";
+"stagesInProcess" = "Stages in process:";
+"chooseStage" = "Choose stage";
+"duplicate" = "Duplicate";
+"stagingPrebathName" = "Prebath";
+"stagingPrebathDescription" = "Pre-soak to stabilize temperature";
+"stagingDevelopName" = "Develop";
+"stagingDevelopDescription" = "Film development";
+"stagingStopBathName" = "Stop Bath";
+"stagingStopBathDescription" = "Stop the development";
+"stagingBleachName" = "Bleach";
+"stagingBleachDescription" = "Bleaching";
+"stagingFixerName" = "Fixer";
+"stagingFixerDescription" = "Fixing the image";
+"stagingWashName" = "Wash";
+"stagingWashDescription" = "Rinsing the film";
+"stagingStabilizeName" = "Stabilize";
+"stagingStabilizeDescription" = "Stabilization for long-term storage";
+
+// MARK: - Stage Editor
+"stageTime" = "STAGE TIME";
+"duration" = "Duration";
+"agitationMode" = "Agitation Mode";
+"agitationModeNotSelected" = "Not selected";
+"setTimeFirstToSelectAgitation" = "Set time first to select agitation";
+"selectAgitationModeToStartTimer" = "Select agitation mode to start timer";
+"setAgitationModeFirstToStartTimer" = "Select agitation mode first to start timer";
+"advancedSetup" = "ADVANCED SETUP";
+"openDevelopmentSetup" = "Open Development Setup";
+"openFixerSetup" = "Open Fixer Setup";
+"setupTimeByPreset" = "Setup time by preset";
+"resetStages" = "Reset stages";
+
+// MARK: - Settings
+"settings" = "Settings";
+"settingsTheme" = "Theme";
+"settingsThemeMode" = "Theme mode";
+"settingsThemeSystem" = "System";
+"settingsThemeLight" = "Light";
+"settingsThemeDark" = "Dark";
+"settingsData" = "Data";
+"settingsSyncData" = "Sync Data";
+"settingsLastSync" = "Last sync:";
+"settingsSyncNow" = "Sync Now";
+"settingsSyncResult" = "Sync Result";
+"settingsSyncSuccess" = "Data synchronized successfully!";
+"settingsSyncError" = "Sync failed";
+"settingsAutoSyncReady" = "Auto-sync ready";
+"settingsAutoSyncChecking" = "Checking connection...";
+"settingsAutoSyncInProgress" = "Auto-sync in progress...";
+"settingsAutoSyncCompleted" = "Auto-sync completed";
+"settingsAutoSyncFailed" = "Auto-sync failed: %@";
+"settingsAutoSyncNoInternet" = "No internet connection";
+"settingsAutoSyncTooSoon" = "Sync performed recently";
+"settingsLastAutoSync" = "Last auto-sync:";
+"settingsAutoSyncEnabled" = "Auto-sync on app launch";
+"settingsAutoSyncDescription" = "Automatically sync data when the app starts if internet is available";
+"settingsAutoSyncDisabled" = "Auto-sync disabled";
+"stagingStartSequential" = "Start Sequential Stages";
+"stagingStageComplete" = "Stage Complete!";
+"stagingGoToNextStage" = "Go to Next Stage";
+"stagingAllStagesComplete" = "All Stages Complete!";
+"stagingFinish" = "Finish";
+"stagingSequentialStages" = "Sequential Stages";
+"stagingStageXofY" = "Stage %@ of %@";
+"stagingResetConfirmation" = "Do you really want to reset all stages?";
+"tapToSetTime" = "Tap to set time";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "Set Time Manually";
+"tapToChangeTime" = "Tap to change time";
+"setTimeToStartTimer" = "Set time to start timer";
+"manualTimer" = "Manual timer";
+
+// MARK: - Create Mode
+"createMode" = "Create Mode";
+
+// MARK: - Development
+"development" = "Development";
+"processModesDeveloping" = "Development";
+"processModeFixer" = "Fixer";
+"noAlternativeOptions" = "Only one option available";
+
+// MARK: - Manuals
+"manuals" = "Manuals";
+
+// MARK: - Version
+"version" = "Version";
+
+// MARK: - Formatting
+"unknownFilm" = "Film";
+"unknownDeveloper" = "Developer";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "Cycle: %@s agitation → %@s rest";
+"totalCycleDuration" = "Total cycle duration: %@s";
+
+// MARK: - Testing
+"parameterRow" = "Parameter Row";
+"recordRow" = "Record Row";
+"calculatorComponents" = "Calculator Components";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud is ready to sync";
+"iCloudSyncStatusIdleUnavailable" = "iCloud is unavailable";
+"iCloudSyncStatusSyncing" = "Syncing...";
+"iCloudSyncStatusCompleted" = "Sync complete";
+"iCloudSyncCtatusFailed" = "Error: %@";
+
+// MARK: - Support
+"support" = "Support";
+"contactDeveloper" = "Contact Developer";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "This will replace your current stages. This action cannot be undone.";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "%@ cannot be empty.";
+"validationErrorInvalidInteger" = "%@ must be a valid integer.";
+"validationErrorInvalidDouble" = "%@ must be a valid number.";
+"validationErrorValueOutOfRange" = "%@ must be between %d and %d.";
+"validationErrorDoubleOutOfRange" = "%@ must be between %.1f and %.1f.";
+"validationErrorMustBePositive" = "%@ must be greater than 0.";

@@ -1,0 +1,393 @@
+// MARK: - Navigation & Common
+"mainTitle" = "แล็บขั้นตอนอะนาล็อก";
+"back" = "← กลับ";
+"close" = "ปิด";
+"edit" = "แก้ไข";
+"delete" = "ลบ";
+"save" = "บันทึก";
+"cancel" = "ยกเลิก";
+"apply" = "ใช้งาน";
+"continue" = "ดำเนินต่อ";
+"skip" = "ข้าม";
+"done" = "เสร็จแล้ว!";
+"timeUp" = "หมดเวลา!";
+
+// MARK: - Timer Controls
+"start" = "เริ่ม";
+"pause" = "หยุดชั่วคราว";
+"reset" = "รีเซ็ต";
+"timer" = "ตัวจับเวลา";
+"time" = "เวลา";
+"minutes" = "นาที";
+"seconds" = "วินาที";
+"min" = "นาที";
+"sec" = "วิ";
+"minute" = "นาทีที่ %@";
+"minuteLabel" = "นาทีที่ %@";
+
+// MARK: - Calculator
+"calculate" = "คำนวณ";
+"calculator" = "เครื่องคำนวณ";
+"calculatorTitle" = "เครื่องคำนวณเวลา";
+"calculateButton" = "คำนวณ";
+"results" = "ผลลัพธ์:";
+"resultsProcess" = "ผลลัพธ์กระบวนการ %@:";
+"coefficient" = "ค่าสัมประสิทธิ์:";
+"standardRatio" = "(มาตรฐาน 1.33)";
+"processType" = "ประเภทกระบวนการ:";
+"pushSteps" = "จำนวนขั้น PUSH:";
+"numberOfSteps" = "จำนวนขั้น:";
+"from1to5" = "(จาก 1 ถึง 5)";
+
+// MARK: - Development Parameters
+"developmentSetup" = "การตั้งค่าการล้าง";
+"developmentSetupDescription" = "เลือกพารามิเตอร์สำหรับการคำนวณเวลาล้าง";
+"developmentTime" = "เวลาล้าง";
+"developmentComplete" = "ล้างเสร็จแล้ว!";
+"developmentCompleted" = "ล้างเสร็จแล้ว!";
+"developmentCompleteForProcess" = "กระบวนการเสร็จสิ้น: %@";
+"selectDevelopmentParameters" = "เลือกพารามิเตอร์การล้างเพื่อเริ่มตัวจับเวลา";
+"startTimer" = "เริ่มตัวจับเวลา";
+"agitationModeNotSelected" = "ไม่ได้เลือก";
+"setTimeFirstToSelectAgitation" = "กรุณาตั้งเวลาก่อนเพื่อเลือกโหมดการเขย่า";
+"selectAgitationModeToStartTimer" = "กรุณาเลือกโหมดการเขย่าเพื่อเริ่มตัวจับเวลา";
+"setAgitationModeFirstToStartTimer" = "กรุณาเลือกโหมดการเขย่าก่อนเพื่อเริ่มตัวจับเวลา";
+"saveToJournal" = "บันทึกลงบันทึก";
+
+// MARK: - Film & Developer
+"film" = "ฟิล์ม:";
+"developer" = "น้ำยาล้าง:";
+"dilution" = "การเจือจาง:";
+"iso" = "ISO/EI:";
+"temperature" = "อุณหภูมิ (°C):";
+"customTime" = "เวลากำหนดเอง:";
+"baseTime" = "เวลาพื้นฐาน:";
+"basicTime" = "เวลาเบื้องต้น:";
+"basicTimeLabel" = "เวลาเบื้องต้น:";
+"manualInput" = "ป้อนด้วยตนเอง";
+"fromDatabase" = "จากฐานข้อมูล:";
+"defaultTime" = "เวลาเริ่มต้น (ไม่มีข้อมูล)";
+"ratio" = "อัตราส่วน:";
+"process" = "กระบวนการ:";
+"push" = "Push";
+"pull" = "Pull";
+"steps" = "ขั้น:";
+"current" = "ปัจจุบัน:";
+"data" = "ข้อมูล:";
+"available" = "✓ มีให้ใช้";
+"noData" = "✗ ไม่มีข้อมูล";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C (มาตรฐาน)";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+"StandardC" = "°C (มาตรฐาน)";
+
+// MARK: - Dilution Options
+"stock" = "น้ำยาแท้";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
+"groupOther" = "อื่นๆ";
+"groupCustom" = "กำหนดเอง";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
+"groupDevelopersOther" = "อื่นๆ";
+"groupDevelopersCustom" = "กำหนดเอง";
+"custom" = "กำหนดเอง";
+
+// MARK: - Steps
+"step1" = "+1 ขั้น";
+"step2" = "+2 ขั้น";
+"step3" = "+3 ขั้น";
+"step4" = "+4 ขั้น";
+"step5" = "+5 ขั้น";
+"pullStep1" = "-1 ขั้น";
+"pullStep2" = "-2 ขั้น";
+"pullStep3" = "-3 ขั้น";
+"pullStep4" = "-4 ขั้น";
+"pullStep5" = "-5 ขั้น";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "การจัดการพรีเซ็ต";
+"films" = "ฟิล์ม";
+"developers" = "น้ำยาล้าง";
+"developmentTimes" = "เวลาล้าง";
+"addFilm" = "เพิ่มฟิล์ม";
+"addDeveloper" = "เพิ่มน้ำยาล้าง";
+"addTime" = "เพิ่มเวลา";
+"filmPresets" = "พรีเซ็ตฟิล์ม";
+"developerPresets" = "พรีเซ็ตน้ำยาล้าง";
+"timePresets" = "พรีเซ็ตเวลาล้าง";
+"presets" = "พรีเซ็ต";
+
+// MARK: - Fixing Timer
+"goToFixing" = "ไปยังการตรึง";
+"fixingTimer" = "ตัวจับเวลาตรึง";
+"fixingTimerSetup" = "การตั้งค่าตัวจับเวลาตรึง";
+"fixingTimerDescription" = "ตั้งเวลาสำหรับการตรึงฟิล์มหลังจากล้าง";
+"fixingTime" = "เวลาตรึง";
+"startFixing" = "เริ่มตรึง";
+
+// MARK: - Fixer Selection
+"fixer" = "น้ำยาตรึง";
+"selectFixer" = "เลือกน้ำยาตรึง";
+"fixerSelection" = "การเลือกน้ำยาตรึง";
+"rapidFixer" = "น้ำยาตรึงเร็ว";
+"acidFixer" = "น้ำยาตรึงกรด";
+"neutralFixer" = "น้ำยาตรึงกลาง";
+
+// MARK: - Agitation
+"agitationSelection" = "เลือกโหมดการเขย่า";
+"agitationDescription" = "การเขย่าคือกระบวนการกวนน้ำยาล้างเพื่อการล้างฟิล์มที่สม่ำเสมอ";
+"noAgitation" = "ไม่เขย่า";
+"noAgitationDescription" = "ตัวจับเวลาจะทำงานโดยไม่มีการแจ้งเตือน";
+"customAgitation" = "โหมดกำหนดเอง";
+"customAgitationDescription" = "สร้างโหมดการเขย่าของคุณเอง";
+"customAgitationSetup" = "การตั้งค่าโหมดกำหนดเอง";
+"customAgitationSetupDescription" = "สร้างโหมดการเขย่าของคุณเอง";
+"customAgitationTitle" = "การเขย่ากำหนดเอง";
+"agitationTime" = "เวลาเขย่า";
+"agitationTimeRemaining" = "(%@วิ)";
+"restTime" = "เวลาพัก";
+"preview" = "ตัวอย่าง:";
+"cycle" = "รอบ: เขย่า %@วิ → พัก %@วิ";
+"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@วิ";
+"agitation" = "เขย่า";
+"rest" = "พัก";
+"phaseDescription" = "%@";
+"continuousAgitation" = "เขย่าต่อเนื่อง";
+"cycleAgitationFormat" = "เขย่า %@วิ / พัก %@วิ";
+"periodicAgitationFormat" = "ทุก %@วิ";
+"agitationContinuous" = "เขย่าต่อเนื่อง";
+"agitationStill" = "ไม่เขย่า";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "สำหรับการล้างระยะยาว";
+"agitationFixerDescription" = "โหมดน้ำยาตรึง";
+"agitationCustomFormat" = "กำหนดเอง (%@วิ/%@วิ)";
+"agitationContinuousName" = "ต่อเนื่อง";
+"agitationStillName" = "นิ่ง";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "น้ำยาตรึง";
+"agitationRaePhase2Rotations" = "หมุน 2 ครั้ง";
+"agitationRaePhase1RotationPerMinute" = "หมุน 1 ครั้งต่อนาที";
+"agitationRaePhase1Rotation7thMinute" = "หมุน 1 ครั้งในนาทีที่ 7";
+"agitationRaePhase1Rotation10thMinute" = "หมุน 1 ครั้งในนาทีที่ 10";
+"agitationRaePhase1RotationEvery5Minutes" = "หมุน 1 ครั้งทุก 5 นาที";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "แตะเพื่อไปยังเครื่องคำนวณ";
+"calculatedTime" = "เวลาที่คำนวณ";
+"noDilutionsAvailable" = "ไม่มีการเจือจางให้ใช้";
+"noDilutionsDescription" = "ไม่มีข้อมูลการล้างสำหรับฟิล์มและน้ำยาล้างที่เลือก";
+"noISOOptionsAvailable" = "ไม่มีตัวเลือก ISO ให้ใช้";
+"noISOOptionsDescription" = "กรุณาเลือกฟิล์ม น้ำยาล้าง และการเจือจางก่อนเพื่อดูตัวเลือก ISO ที่มี";
+"noOptionsAvailable" = "ไม่มีตัวเลือกให้ใช้";
+"noOptionsDescription" = "ขณะนี้ไม่มีตัวเลือกให้เลือก";
+
+// MARK: - Journal
+"journalEmpty" = "บันทึกว่างเปล่า";
+"journalEmptyDescription" = "บันทึกการคำนวณแรกของคุณเพื่อดูที่นี่";
+"saveCalculation" = "บันทึกการคำนวณ";
+"journal" = "บันทึก";
+"journalCreateRecord" = "สร้างบันทึก";
+"journalRecordBasicInfo" = "ข้อมูลพื้นฐาน";
+"journalRecordName" = "ชื่อ (ไม่บังคับ)";
+"journalRecordFilm" = "ฟิล์ม";
+"journalRecordDeveloper" = "น้ำยาล้าง";
+"journalRecordParameters" = "พารามิเตอร์การล้าง";
+"journalRecordDilution" = "การเจือจาง";
+"journalRecordTemperature" = "อุณหภูมิ";
+"journalRecordTime" = "เวลา";
+"journalRecordComment" = "หมายเหตุ";
+"journalRecordCommentPlaceholder" = "เพิ่มบันทึกเกี่ยวกับการล้างนี้...";
+"journalRecordDate" = "วันที่และเวลา";
+"journalRecordProcess" = "กระบวนการ";
+"editRecord" = "แก้ไข";
+"deleteRecord" = "ลบบันทึก";
+"deleteRecordConfirmation" = "คุณแน่ใจหรือไม่ว่าต้องการลบบันทึกนี้?";
+"noRecords" = "ไม่มีบันทึก";
+"noRecordsDescription" = "บันทึกรายการแรกของคุณเพื่อดูที่นี่";
+"saveRecord" = "บันทึกรายการ";
+"saveRecordDescription" = "ป้อนชื่อเพื่อบันทึกรายการนี้";
+"recordDetails" = "รายละเอียดบันทึก";
+
+// MARK: - Selection
+"selectFilm" = "เลือกฟิล์ม";
+"selectDeveloper" = "เลือกน้ำยาล้าง";
+"selectDilution" = "เลือกการเจือจาง";
+"selectDeveloperFirst" = "เลือกน้ำยาล้างก่อน";
+"selectISO" = "เลือก ISO";
+"selectTemperature" = "เลือกอุณหภูมิ";
+"selectScreenForTesting" = "เลือกหน้าจอสำหรับทดสอบ:";
+"recordName" = "ป้อนชื่อ";
+"searchFilms" = "ค้นหาฟิล์ม...";
+"searchDevelopers" = "ค้นหาน้ำยาล้าง...";
+
+// MARK: - Home
+"home" = "หน้าแรก";
+"homeDescription" = "ชุดเครื่องมือครบครันสำหรับการล้างฟิล์ม: เครื่องคำนวณ ตัวจับเวลา บันทึก และคู่มือ";
+"homePresetsSubtitle" = "พารามิเตอร์การล้าง";
+"homeCalculatorSubtitle" = "การคำนวณเวลา";
+"homeTimerSubtitle" = "ตัวจับเวลาการล้าง";
+"homeJournalSubtitle" = "บันทึกที่บันทึกไว้";
+"homeManualsSubtitle" = "บทความและคู่มือ";
+
+// MARK: - Staging
+"staging" = "ขั้นตอน";
+"stagingIntro" = "เพิ่มขั้นตอนการประมวลผลฟิล์มตามลำดับที่ต้องการ";
+"totalTime" = "เวลารวม:";
+"stagesInProcess" = "ขั้นตอนที่กำลังประมวลผล:";
+"chooseStage" = "เลือกขั้นตอน";
+"duplicate" = "ทำสำเนา";
+"homeStagingSubtitle" = "ขั้นตอนการประมวลผล";
+"stagingPrebathName" = "แช่เตรียม";
+"stagingPrebathDescription" = "แช่เตรียมเพื่อรักษาอุณหภูมิ";
+"stagingDevelopName" = "ล้าง";
+"stagingDevelopDescription" = "การล้างฟิล์ม";
+"stagingStopBathName" = "น้ำยาหยุด";
+"stagingStopBathDescription" = "หยุดการล้าง";
+"stagingBleachName" = "ฟอกขาว";
+"stagingBleachDescription" = "การฟอกขาว";
+"stagingFixerName" = "น้ำยาตรึง";
+"stagingFixerDescription" = "ตรึงภาพ";
+"stagingWashName" = "ล้าง";
+"stagingWashDescription" = "ล้างฟิล์ม";
+"stagingStabilizeName" = "เสถียรภาพ";
+"stagingStabilizeDescription" = "เสถียรภาพสำหรับการเก็บระยะยาว";
+
+// MARK: - Stage Editor
+"stageTime" = "เวลาขั้นตอน";
+"duration" = "ระยะเวลา";
+"agitationMode" = "โหมดการเขย่า";
+"advancedSetup" = "การตั้งค่าขั้นสูง";
+"openDevelopmentSetup" = "เปิดการตั้งค่าการล้าง";
+"openFixerSetup" = "เปิดการตั้งค่าน้ำยาตรึง";
+
+// MARK: - Settings
+"settings" = "การตั้งค่า";
+"settingsTheme" = "ธีม";
+"settingsThemeMode" = "โหมดธีม";
+"settingsThemeSystem" = "ระบบ";
+"settingsThemeLight" = "สว่าง";
+"settingsThemeDark" = "มืด";
+"settingsData" = "ข้อมูล";
+"settingsSyncData" = "ซิงค์ข้อมูล";
+"settingsLastSync" = "ซิงค์ครั้งสุดท้าย:";
+"settingsSyncNow" = "ซิงค์ตอนนี้";
+"settingsSyncResult" = "ผลการซิงค์";
+"settingsSyncSuccess" = "ซิงค์ข้อมูลสำเร็จ!";
+"settingsSyncError" = "การซิงค์ล้มเหลว";
+"settingsAutoSyncReady" = "ซิงค์อัตโนมัติพร้อม";
+"settingsAutoSyncChecking" = "กำลังตรวจสอบการเชื่อมต่อ...";
+"settingsAutoSyncInProgress" = "กำลังซิงค์อัตโนมัติ...";
+"settingsAutoSyncCompleted" = "ซิงค์อัตโนมัติเสร็จสิ้น";
+"settingsAutoSyncFailed" = "ซิงค์อัตโนมัติล้มเหลว: %@";
+"settingsAutoSyncNoInternet" = "ไม่มีการเชื่อมต่ออินเทอร์เน็ต";
+"settingsAutoSyncTooSoon" = "ทำการซิงค์เมื่อเร็วๆ นี้แล้ว";
+"settingsLastAutoSync" = "ซิงค์อัตโนมัติครั้งสุดท้าย:";
+"settingsAutoSyncEnabled" = "ซิงค์อัตโนมัติเมื่อเปิดแอป";
+"settingsAutoSyncDescription" = "ซิงค์ข้อมูลโดยอัตโนมัติเมื่อแอปเริ่มต้นหากมีอินเทอร์เน็ต";
+"settingsAutoSyncDisabled" = "ปิดการซิงค์อัตโนมัติ";
+"stagingStartSequential" = "เริ่มขั้นตอนตามลำดับ";
+"stagingStageComplete" = "ขั้นตอนเสร็จสิ้น!";
+"stagingGoToNextStage" = "ไปขั้นตอนถัดไป";
+"stagingAllStagesComplete" = "ขั้นตอนทั้งหมดเสร็จสิ้น!";
+"stagingFinish" = "เสร็จสิ้น";
+"stagingSequentialStages" = "ขั้นตอนตามลำดับ";
+"stagingStageXofY" = "ขั้นตอน %@ จาก %@";
+"stagingResetConfirmation" = "คุณต้องการรีเซ็ตทุกขั้นตอนจริงหรือไม่？";
+"tapToSetTime" = "แตะเพื่อตั้งเวลา";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "ตั้งเวลาด้วยตนเอง";
+"tapToChangeTime" = "แตะเพื่อเปลี่ยนเวลา";
+"setTimeToStartTimer" = "ตั้งเวลาเพื่อเริ่มตัวจับเวลา";
+
+// MARK: - Create Mode
+"createMode" = "โหมดสร้าง";
+
+// MARK: - Development
+"development" = "การล้าง";
+"processModesDeveloping" = "การพัฒนา";
+"processModeFixer" = "ผู้แก้ไข";
+"noAlternativeOptions" = "มีตัวเลือกเดียวเท่านั้น";
+
+// MARK: - Manuals
+"manuals" = "คู่มือ";
+
+// MARK: - Version
+"version" = "เวอร์ชัน";
+
+// MARK: - Formatting
+"unknownFilm" = "ฟิล์ม";
+"unknownDeveloper" = "น้ำยาล้าง";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "รอบ: เขย่า %@วิ → พัก %@วิ";
+"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@วิ";
+
+// MARK: - Testing
+"parameterRow" = "แถวพารามิเตอร์";
+"recordRow" = "แถวบันทึก";
+"calculatorComponents" = "ส่วนประกอบเครื่องคำนวณ";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud พร้อมซิงค์";
+"iCloudSyncStatusIdleUnavailable" = "iCloud ไม่พร้อมใช้งาน";
+"iCloudSyncStatusSyncing" = "กำลังซิงค์...";
+"iCloudSyncStatusCompleted" = "ซิงค์เสร็จสิ้น";
+"iCloudSyncCtatusFailed" = "ข้อผิดพลาด: %@";

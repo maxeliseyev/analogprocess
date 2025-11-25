@@ -1,0 +1,447 @@
+// MARK: - Navigation & Common
+"mainTitle" = "模拟工艺实验室";
+"back" = "← 返回";
+"close" = "关闭";
+"edit" = "编辑";
+"delete" = "删除";
+"save" = "保存";
+"cancel" = "取消";
+"apply" = "应用";
+"continue" = "继续";
+"skip" = "跳过";
+"done" = "完成！";
+"timeUp" = "时间到！";
+
+// MARK: - Timer Controls
+"start" = "开始";
+"pause" = "暂停";
+"reset" = "重置";
+"timer" = "计时器";
+"time" = "时间";
+"minutes" = "分钟";
+"seconds" = "秒";
+"min" = "分";
+"sec" = "秒";
+"minute" = "第%@分钟";
+"minuteLabel" = "第%@分钟";
+
+// MARK: - Calculator
+"calculate" = "计算";
+"calculator" = "计算器";
+"calculatorTitle" = "时间计算器";
+"calculateButton" = "计算";
+"results" = "结果：";
+"resultsProcess" = "结果 %@ 流程：";
+"coefficient" = "系数：";
+"standardRatio" = "（标准 1.33）";
+"processType" = "流程类型：";
+"pushSteps" = "推进档数：";
+"numberOfSteps" = "档数：";
+"from1to5" = "（1到5档）";
+
+// MARK: - Development Parameters
+"developmentSetup" = "显影设置";
+"developmentSetupDescription" = "选择显影时间计算参数";
+"developmentTime" = "显影时间";
+"developmentComplete" = "显影完成！";
+"developmentCompleted" = "显影完成！";
+"developmentCompleteForProcess" = "流程完成：%@";
+"selectDevelopmentParameters" = "选择显影参数以启动计时器";
+"startTimer" = "启动计时器";
+"saveToJournal" = "保存到日志";
+
+// MARK: - Film & Developer
+"film" = "胶片：";
+"developer" = "显影液：";
+"dilution" = "稀释比：";
+"iso" = "ISO/EI：";
+"temperature" = "温度（°C）：";
+"customTime" = "自定义时间：";
+"baseTime" = "基准时间：";
+"basicTime" = "基本时间：";
+"basicTimeLabel" = "基本时间：";
+"manualInput" = "手动输入";
+"fromDatabase" = "来自数据库：";
+"defaultTime" = "默认时间（无数据）";
+"ratio" = "比例：";
+"process" = "流程：";
+"push" = "推进";
+"pull" = "拉回";
+"steps" = "档数：";
+"current" = "当前：";
+"data" = "数据：";
+"available" = "✓ 可用";
+"noData" = "✗ 无数据";
+
+// MARK: - Temperature Options
+"temp14" = "14°C (+80%)";
+"temp15" = "15°C (+60%)";
+"temp16" = "16°C (+40%)";
+"temp17" = "17°C (+25%)";
+"temp18" = "18°C (+10%)";
+"temp19" = "19°C (+5%)";
+"temp20" = "20°C （标准）";
+"temp21" = "21°C (-5%)";
+"temp22" = "22°C (-15%)";
+"temp23" = "23°C (-25%)";
+"temp24" = "24°C (-35%)";
+"temp25" = "25°C (-45%)";
+"StandardC" = "°C (标准)";
+
+// MARK: - Dilution Options
+"stock" = "原液";
+"dilution1+1" = "1+1";
+"dilution1+2" = "1+2";
+"dilution1+3" = "1+3";
+"dilution1+4" = "1+4";
+"dilution1+9" = "1+9";
+"dilution1+14" = "1+14";
+"dilution1+15" = "1+15";
+"dilution1+19" = "1+19";
+"dilution1+25" = "1+25";
+"dilution1+29" = "1+29";
+"dilution1+31" = "1+31";
+"dilution1+47" = "1+47";
+"dilution1+50" = "1+50";
+"dilution1+100" = "1+100";
+
+// MARK: - Developer Variants
+"hc110A" = "A 1+15 (HC-110)";
+"hc110B" = "B 1+31 (HC-110)";
+"hc110E" = "E 1+47 (HC-110)";
+
+// MARK: - Groups
+"groupIlford" = "伊尔福";
+"groupKodak" = "柯达";
+"groupFoma" = "福马";
+"groupKentmere" = "肯特米尔";
+"groupOther" = "其他";
+"groupCustom" = "自定义";
+"groupDevelopersIlford" = "伊尔福";
+"groupDevelopersKodak" = "柯达";
+"groupDevelopersOther" = "其他";
+"groupDevelopersCustom" = "自定义";
+"custom" = "自定义";
+
+// MARK: - Steps
+"step1" = "+1档";
+"step2" = "+2档";
+"step3" = "+3档";
+"step4" = "+4档";
+"step5" = "+5档";
+"pullStep1" = "-1档";
+"pullStep2" = "-2档";
+"pullStep3" = "-3档";
+"pullStep4" = "-4档";
+"pullStep5" = "-5档";
+
+// MARK: - ISO Options
+"iso25" = "25";
+"iso50" = "50";
+"iso80" = "80";
+"iso100" = "100";
+"iso125" = "125";
+"iso200" = "200";
+"iso250" = "250";
+"iso320" = "320";
+"iso400" = "400";
+"iso500" = "500";
+"iso800" = "800";
+"iso1600" = "1600";
+"iso3200" = "3200";
+"iso6400" = "6400";
+"iso12500" = "12500";
+
+// MARK: - Presets Management
+"presetsManagement" = "预设管理";
+"films" = "胶片";
+"developers" = "显影液";
+"developmentTimes" = "显影时间";
+"addFilm" = "添加胶片";
+"addDeveloper" = "添加显影液";
+"addTime" = "添加时间";
+"filmPresets" = "胶片预设";
+"developerPresets" = "显影液预设";
+"timePresets" = "显影时间预设";
+"presets" = "预设";
+
+// MARK: - Fixing Timer
+"goToFixing" = "进入定影";
+"fixingTimer" = "定影计时器";
+"fixingTimerSetup" = "定影计时器设置";
+"fixingTimerDescription" = "设置显影后胶片定影时间";
+"fixingTime" = "定影时间";
+"startFixing" = "开始定影";
+
+// MARK: - Fixer Selection
+"fixer" = "定影液";
+"selectFixer" = "选择定影液";
+"fixerSelection" = "定影液选择";
+"rapidFixer" = "快速定影液";
+"acidFixer" = "酸性定影液";
+"neutralFixer" = "中性定影液";
+
+// MARK: - Agitation
+"agitationSelection" = "选择搅拌模式";
+"agitationDescription" = "搅拌是搅动显影液以实现胶片均匀显影的过程";
+"noAgitation" = "无搅拌";
+"noAgitationDescription" = "计时器将在没有提醒的情况下工作";
+"customAgitation" = "自定义模式";
+"customAgitationDescription" = "创建您自己的搅拌模式";
+"customAgitationSetup" = "自定义模式设置";
+"customAgitationSetupDescription" = "创建您自己的搅拌模式";
+"customAgitationTitle" = "自定义搅拌";
+"agitationTime" = "搅拌时间";
+"agitationTimeRemaining" = "（%@秒）";
+"restTime" = "静置时间";
+"preview" = "预览：";
+"cycle" = "循环：%@秒搅拌 → %@秒静置";
+"totalCycleDuration" = "总循环时间：%@秒";
+"agitation" = "搅拌";
+"rest" = "静置";
+"phaseDescription" = "%@";
+"continuousAgitation" = "连续搅拌";
+"cycleAgitationFormat" = "%@秒搅拌 / %@秒静置";
+"periodicAgitationFormat" = "每%@秒";
+"agitationContinuous" = "连续搅拌";
+"agitationStill" = "无搅拌";
+"agitationCycleFormat" = "%@ / %@";
+"agitationOrwoDescription" = "45 / 15 + 15 / 45";
+"agitationRaeDescription" = "用于长时间显影";
+"agitationFixerDescription" = "定影液模式";
+"agitationCustomFormat" = "自定义（%@秒/%@秒）";
+"agitationContinuousName" = "连续";
+"agitationStillName" = "静止";
+"agitationOrwoName" = "ORWO";
+"agitationXtolName" = "XTOL";
+"agitationRaeName" = "RAE";
+"agitationFixerName" = "定影液";
+"agitationRaePhase2Rotations" = "2次旋转";
+"agitationRaePhase1RotationPerMinute" = "每分钟1次旋转";
+"agitationRaePhase1Rotation7thMinute" = "第7分钟1次旋转";
+"agitationRaePhase1Rotation10thMinute" = "第10分钟1次旋转";
+"agitationRaePhase1RotationEvery5Minutes" = "每5分钟1次旋转";
+"agitationModeNotSelected" = "未选择";
+"setTimeFirstToSelectAgitation" = "请先设置时间以选择搭拌模式";
+"selectAgitationModeToStartTimer" = "请选择搭拌模式以启动计时器";
+"setAgitationModeFirstToStartTimer" = "请先选择搭拌模式以启动计时器";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "创建自定义模式";
+"createCustomAgitationDescription" = "设计您自己的搭拌模式";
+"savedCustomAgitationModes" = "已保存的自定义模式";
+"savedCustomAgitationDescription" = "浏览并从您保存的模式中选择";
+"customAgitationCreateTitle" = "创建自定义搭拌模式";
+"customAgitationEditTitle" = "编辑自定义搭拌模式";
+"customAgitationName" = "模式名称";
+"customAgitationNamePlaceholder" = "输入模式名称";
+"customAgitationFirstMinute" = "第一分钟";
+"customAgitationFirstMinuteDescription" = "初始一分钟的搭拌模式";
+"customAgitationIntermediate" = "中间分钟";
+"customAgitationIntermediateDescription" = "第2分钟到第N-1分钟的搭拌模式";
+"customAgitationEnableLastMinute" = "自定义最后一分钟";
+"customAgitationLastMinute" = "最后一分钟";
+"customAgitationLastMinuteDescription" = "最后一分钟的搭拌模式";
+"customAgitationPreview" = "预览";
+"customAgitationPreviewUnavailable" = "完成配置以查看预览";
+"customAgitationCreateButton" = "创建模式";
+"customAgitationUpdateButton" = "更新模式";
+"customAgitationReset" = "重置表单";
+"agitationType" = "搭拌类型";
+"agitationCycle" = "循环";
+"agitationPeriodic" = "周期性";
+"agitationCustom" = "自定义指示";
+"cycleTimingSettings" = "循环时间设置";
+"agitationSeconds" = "搭拌";
+"restSeconds" = "静置";
+"periodicInterval" = "间隔";
+"customAgitationInstructions" = "指示";
+"customAgitationInstructionsPlaceholder" = "输入自定义搭拌指示...";
+"agitationPeriodicFormat" = "每%@秒";
+"noCustomAgitationModes" = "无自定义模式";
+"noCustomAgitationModesDescription" = "创建您的第一个自定义搭拌模式以开始使用";
+"createFirstCustomMode" = "创建第一个模式";
+"selectThisMode" = "选择此模式";
+"deleteConfirmation" = "删除模式";
+"deleteCustomModeMessage" = "您确定要删除“%@”吗？此操作无法撤销。";
+"createNew" = "新建";
+"validationError" = "验证错误";
+"saveError" = "保存错误";
+"ok" = "确定";
+"customAgitationErrorEmptyName" = "模式名称不能为空";
+"customAgitationErrorEmptyCustomDescription" = "%@需要自定义指示";
+"customAgitationErrorInvalidTiming" = "%@的时间配置无效";
+"customAgitationErrorInvalidInterval" = "%@的间隔无效";
+"customAgitationErrorNoLastMinuteConfig" = "缺少最后一分钟配置";
+
+// MARK: - Calculator Results
+"tapToCalculator" = "点击进入计算器";
+"calculatedTime" = "计算时间";
+"noDilutionsAvailable" = "无可用稀释比";
+"noDilutionsDescription" = "所选胶片和显影液组合无显影数据";
+"noISOOptionsAvailable" = "无可用ISO选项";
+"noISOOptionsDescription" = "请先选择胶片、显影液和稀释比以查看可用的ISO选项。";
+"noOptionsAvailable" = "无可用选项";
+"noOptionsDescription" = "当前没有可选择的选项。";
+
+// MARK: - Journal
+"journalEmpty" = "日志为空";
+"journalEmptyDescription" = "保存您的第一次计算以在此查看";
+"saveCalculation" = "保存计算";
+"journal" = "日志";
+"journalCreateRecord" = "创建记录";
+"journalRecordBasicInfo" = "基本信息";
+"journalRecordName" = "名称（可选）";
+"journalRecordFilm" = "胶片";
+"journalRecordDeveloper" = "显影液";
+"journalRecordParameters" = "显影参数";
+"journalRecordDilution" = "稀释比";
+"journalRecordTemperature" = "温度";
+"journalRecordTime" = "时间";
+"journalRecordComment" = "备注";
+"journalRecordCommentPlaceholder" = "添加关于此次显影的笔记...";
+"journalRecordDate" = "日期和时间";
+"journalRecordProcess" = "流程";
+"editRecord" = "编辑";
+"deleteRecord" = "删除记录";
+"deleteRecordConfirmation" = "您确定要删除此记录吗？";
+"noRecords" = "无记录";
+"noRecordsDescription" = "保存您的第一条记录以在此查看";
+"saveRecord" = "保存记录";
+"saveRecordDescription" = "输入名称以保存此记录";
+"recordDetails" = "记录详情";
+
+// MARK: - Selection
+"selectFilm" = "选择胶片";
+"selectDeveloper" = "选择显影液";
+"selectDilution" = "选择稀释比";
+"selectDeveloperFirst" = "请先选择显影液";
+"selectISO" = "选择ISO";
+"selectTemperature" = "选择温度";
+"selectScreenForTesting" = "选择测试屏幕：";
+"recordName" = "输入名称";
+"searchFilms" = "搜索胶片...";
+"searchDevelopers" = "搜索显影液...";
+"searchJournal" = "搜索日志...";
+"noResultsFound" = "未找到结果";
+"trySearchingDifferentKeywords" = "请尝试使用不同的关键词";
+
+// MARK: - Home
+"home" = "首页";
+"homeDescription" = "胶片显影完整工具包：计算器、计时器、日志和指南";
+"homePresetsSubtitle" = "显影参数";
+"homeCalculatorSubtitle" = "时间计算";
+"homeTimerSubtitle" = "显影计时器";
+"homeJournalSubtitle" = "保存的记录";
+"homeManualsSubtitle" = "文章和指南";
+
+// MARK: - Staging
+"staging" = "阶段";
+"stagingIntro" = "按所需顺序添加胶片处理阶段";
+"totalTime" = "总时间：";
+"stagesInProcess" = "处理中的阶段：";
+"chooseStage" = "选择阶段";
+"duplicate" = "复制";
+"homeStagingSubtitle" = "为整个流程设置顺序阶段";
+"stagingPrebathName" = "预浴";
+"stagingPrebathDescription" = "稳定温度的预浸";
+"stagingDevelopName" = "显影";
+"stagingDevelopDescription" = "胶片显影";
+"stagingStopBathName" = "停显液";
+"stagingStopBathDescription" = "停止显影";
+"stagingBleachName" = "漂白";
+"stagingBleachDescription" = "漂白";
+"stagingFixerName" = "定影液";
+"stagingFixerDescription" = "图像定影";
+"stagingWashName" = "水洗";
+"stagingWashDescription" = "清洗胶片";
+"stagingStabilizeName" = "稳定化";
+"stagingStabilizeDescription" = "长期保存的稳定化";
+
+// MARK: - Stage Editor
+"stageTime" = "阶段时间";
+"duration" = "持续时间";
+"agitationMode" = "搅拌模式";
+"advancedSetup" = "高级设置";
+"openDevelopmentSetup" = "打开显影设置";
+"openFixerSetup" = "打开定影液设置";
+"setupTimeByPreset" = "按预设设置时间";
+"resetStages" = "重置阶段";
+
+// MARK: - Settings
+"settings" = "设置";
+"settingsTheme" = "主题";
+"settingsThemeMode" = "主题模式";
+"settingsThemeSystem" = "系统";
+"settingsThemeLight" = "浅色";
+"settingsThemeDark" = "深色";
+"settingsData" = "数据";
+"settingsSyncData" = "数据同步";
+"settingsLastSync" = "最后同步：";
+"settingsSyncNow" = "立即同步";
+"settingsSyncResult" = "同步结果";
+"settingsSyncSuccess" = "数据同步成功！";
+"settingsSyncError" = "同步失败";
+"settingsAutoSyncReady" = "自动同步就绪";
+"settingsAutoSyncChecking" = "正在检查连接...";
+"settingsAutoSyncInProgress" = "自动同步进行中...";
+"settingsAutoSyncCompleted" = "自动同步完成";
+"settingsAutoSyncFailed" = "自动同步失败：%@";
+"settingsAutoSyncNoInternet" = "无网络连接";
+"settingsAutoSyncTooSoon" = "最近已执行同步";
+"settingsLastAutoSync" = "最后自动同步：";
+"settingsAutoSyncEnabled" = "应用启动时自动同步";
+"settingsAutoSyncDescription" = "当互联网可用时，应用启动时自动同步数据";
+"settingsAutoSyncDisabled" = "自动同步已禁用";
+"stagingStartSequential" = "开始顺序阶段";
+"stagingStageComplete" = "阶段完成！";
+"stagingGoToNextStage" = "进入下一阶段";
+"stagingAllStagesComplete" = "所有阶段完成！";
+"stagingFinish" = "完成";
+"stagingSequentialStages" = "顺序阶段";
+"stagingStageXofY" = "阶段 %@ / %@";
+"stagingResetConfirmation" = "您真的要重置所有阶段吗？";
+"tapToSetTime" = "点击设置时间";
+
+// MARK: - Manual Time Input
+"setTimeManually" = "手动设置时间";
+"tapToChangeTime" = "点击更改时间";
+"setTimeToStartTimer" = "设置时间以启动计时器";
+"manualTimer" = "手动计时器";
+
+// MARK: - Create Mode
+"createMode" = "创建模式";
+
+// MARK: - Development
+"development" = "显影";
+"processModesDeveloping" = "显影";
+"processModeFixer" = "定影液";
+"noAlternativeOptions" = "仅有一个可用选项";
+
+// MARK: - Manuals
+"manuals" = "手册";
+
+// MARK: - Version
+"version" = "版本";
+
+// MARK: - Formatting
+"unknownFilm" = "胶片";
+"unknownDeveloper" = "显影液";
+"degreesCelsius" = "°C";
+"filmPlusDeveloper" = "%@ + %@";
+"isoLabel" = "ISO %@";
+"timeFormat" = "%@:%@ • %@ • %@%@";
+"cycleFormat" = "循环：%@秒搅拌 → %@秒静置";
+"totalCycleDuration" = "总循环时间：%@秒";
+
+// MARK: - Testing
+"parameterRow" = "参数行";
+"recordRow" = "记录行";
+"calculatorComponents" = "计算器组件";
+
+// MARK: - iCloud Sync Status
+"iCloudSyncStatusIdleAvailable" = "iCloud准备就绪可同步";
+"iCloudSyncStatusIdleUnavailable" = "iCloud不可用";
+"iCloudSyncStatusSyncing" = "同步中...";
+"iCloudSyncStatusCompleted" = "同步完成";
+"iCloudSyncCtatusFailed" = "错误：%@";
