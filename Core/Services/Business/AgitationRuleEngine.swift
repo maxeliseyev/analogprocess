@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftData
+import os.log
 
 // MARK: - Legacy Types for Compatibility
 
@@ -231,7 +232,7 @@ class AgitationModeDataService {
                 try modelContext.save()
             }
         } catch {
-            print("Failed to initialize preset modes: \(error)")
+            Logger.logPersistence("Failed to initialize preset modes: \(error)", type: .error)
         }
     }
 }

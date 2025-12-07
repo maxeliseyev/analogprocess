@@ -9,6 +9,7 @@ import Foundation
 import SwiftData
 import SwiftUI
 import Combine
+import os.log
 
 @MainActor
 public class SwiftDataService: ObservableObject {
@@ -33,10 +34,11 @@ public class SwiftDataService: ObservableObject {
     
     // MARK: - Initial Data Loading
     func loadInitialData() {
+        Logger.logPersistence("Loading initial data", type: .info)
         refreshData()
-        
+
         if films.isEmpty || developers.isEmpty {
-            Logger.log(.debug, "loadInitialData - loading data from JSON")
+            Logger.logPersistence("Database is empty - loading data from JSON files", type: .info)
             loadFilmsFromJSON()
             loadDevelopersFromJSON()
             loadFixersFromJSON()
@@ -44,6 +46,9 @@ public class SwiftDataService: ObservableObject {
             loadTemperatureMultipliersFromJSON()
             saveContext()
             refreshData()
+            Logger.logPersistence("Initial data loaded - films: \(films.count), developers: \(developers.count)", type: .info)
+        } else {
+            Logger.logPersistence("Data already exists - films: \(films.count), developers: \(developers.count)", type: .debug)
         }
     }
 
@@ -206,6 +211,8 @@ public class SwiftDataService: ObservableObject {
     
     // MARK: - Development Time Queries
     public func getDevelopmentTime(filmId: String, developerId: String, dilution: String, iso: Int) -> Int? {
+        Logger.logCalculation("Looking up development time - filmId: \(filmId), developerId: \(developerId), dilution: \(dilution), ISO: \(iso)", type: .debug)
+
         // Logic from SwiftDataRepository
         func fetchTime(filmId: String, developerId: String, iso: Int, dilution: String?) -> SwiftDataDevelopmentTime? {
             let iso32: Int32 = Int32(iso)
@@ -234,20 +241,23 @@ public class SwiftDataService: ObservableObject {
 
         let normalizedDilution = dilution.trimmingCharacters(in: .whitespacesAndNewlines)
         if let found = fetchTime(filmId: filmId, developerId: developerId, iso: iso, dilution: normalizedDilution) {
+            Logger.logCalculation("Development time found: \(found.time)s", type: .debug)
             return Int(found.time)
         }
 
         let lowercasedDilution = normalizedDilution.lowercased()
         if lowercasedDilution != normalizedDilution,
            let found = fetchTime(filmId: filmId, developerId: developerId, iso: iso, dilution: lowercasedDilution) {
+            Logger.logCalculation("Development time found (lowercase dilution): \(found.time)s", type: .debug)
             return Int(found.time)
         }
 
         if let found = fetchTime(filmId: filmId, developerId: developerId, iso: iso, dilution: nil) {
+            Logger.logCalculation("Development time found (no dilution): \(found.time)s", type: .debug)
             return Int(found.time)
         }
 
-        Logger.log(.debug, "getDevelopmentTime - no development time found")
+        Logger.logCalculation("No development time found for combination", type: .error)
         return nil
     }
     
@@ -304,6 +314,8 @@ public class SwiftDataService: ObservableObject {
     
     // MARK: - Calculation Records Management
     public func saveRecord(filmName: String, developerName: String, dilution: String, temperature: Int, iso: Int, calculatedTime: Int, notes: String = "") {
+        Logger.logPersistence("Saving record - film: \(filmName), developer: \(developerName), time: \(calculatedTime)s", type: .info)
+
         let record = SwiftDataJournalRecord(
             comment: notes,
             date: Date(),
@@ -317,6 +329,8 @@ public class SwiftDataService: ObservableObject {
         )
         modelContext.insert(record)
         saveContext()
+
+        Logger.logPersistence("Record saved successfully - id: \(record.id?.uuidString ?? "unknown")", type: .debug)
     }
     
     public func getCalculationRecords() -> [SwiftDataJournalRecord] {
@@ -330,12 +344,18 @@ public class SwiftDataService: ObservableObject {
     }
     
     public func deleteCalculationRecord(_ record: SwiftDataJournalRecord) {
+        Logger.logPersistence("Deleting record - id: \(record.id?.uuidString ?? "unknown"), film: \(record.filmName)", type: .info)
+
         modelContext.delete(record)
         saveContext()
+
+        Logger.logPersistence("Record deleted successfully", type: .debug)
     }
     
     // MARK: - Data Management
     public func clearAllData() {
+        Logger.logPersistence("Clearing all data from database", type: .info)
+
         do {
             try modelContext.delete(model: SwiftDataFilm.self)
             try modelContext.delete(model: SwiftDataDeveloper.self)
@@ -343,9 +363,11 @@ public class SwiftDataService: ObservableObject {
             try modelContext.delete(model: SwiftDataFixer.self)
             try modelContext.delete(model: SwiftDataTemperatureMultiplier.self)
             try modelContext.delete(model: SwiftDataJournalRecord.self)
-            
+
             saveContext()
             refreshData()
+
+            Logger.logPersistence("All data cleared successfully", type: .info)
         } catch {
             Logger.log(.error, "Error clearing data: \(error)")
         }
@@ -353,9 +375,12 @@ public class SwiftDataService: ObservableObject {
     
     // MARK: - GitHub Sync
     public func syncDataFromGitHub() async throws {
+        Logger.logSync("Starting GitHub data sync", type: .info)
+
         do {
             let githubData = try await githubDataService.downloadAllData()
-            
+            Logger.logSync("GitHub data downloaded - films: \(githubData.films.count), developers: \(githubData.developers.count), presets: \(githubData.processPresets.count)", type: .info)
+
             await MainActor.run {
                 syncDataGeneric(githubData.films, createEntity: createSwiftDataFilm, updateEntity: updateSwiftDataFilm)
                 syncDataGeneric(githubData.developers, createEntity: createSwiftDataDeveloper, updateEntity: updateSwiftDataDeveloper)
@@ -364,9 +389,11 @@ public class SwiftDataService: ObservableObject {
                 syncTemperatureMultipliersFromGitHub(githubData.temperatureMultipliers)
                 syncAgitationModesFromGitHub(githubData.agitationModes)
                 syncProcessPresetsFromGitHub(githubData.processPresets)
-                
+
                 saveContext()
                 refreshData()
+
+                Logger.logSync("GitHub sync completed successfully - films: \(films.count), developers: \(developers.count)", type: .info)
             }
         } catch {
             Logger.log(.error, "Error syncing data from GitHub: \(error)")
@@ -552,21 +579,24 @@ public class SwiftDataService: ObservableObject {
     
     // MARK: - Insert Methods for Data Loading
     public func insertFilm(_ film: SwiftDataFilm) {
+        Logger.logPersistence("Inserting film: \(film.name)", type: .debug)
         modelContext.insert(film)
     }
-    
+
     public func insertDeveloper(_ developer: SwiftDataDeveloper) {
+        Logger.logPersistence("Inserting developer: \(developer.name)", type: .debug)
         modelContext.insert(developer)
     }
-    
+
     public func insertFixer(_ fixer: SwiftDataFixer) {
+        Logger.logPersistence("Inserting fixer: \(fixer.name)", type: .debug)
         modelContext.insert(fixer)
     }
-    
+
     public func insertDevelopmentTime(_ developmentTime: SwiftDataDevelopmentTime) {
         modelContext.insert(developmentTime)
     }
-    
+
     public func insertTemperatureMultiplier(_ multiplier: SwiftDataTemperatureMultiplier) {
         modelContext.insert(multiplier)
     }

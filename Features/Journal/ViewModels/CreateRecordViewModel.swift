@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import os.log
 
 @MainActor
 class CreateRecordViewModel: ObservableObject {
@@ -42,10 +43,18 @@ class CreateRecordViewModel: ObservableObject {
     }
 
     func validate() {
+        Logger.logUI("Validating record - film: \(filmName), developer: \(developerName)", type: .debug)
+
         var errors: [ValidationError] = []
         errors.append(contentsOf: ValidationManager.validateNotEmpty(field: filmName, fieldName: "Film Name"))
         errors.append(contentsOf: ValidationManager.validateNotEmpty(field: developerName, fieldName: "Developer Name"))
         self.validationErrors = errors
+
+        if !errors.isEmpty {
+            Logger.log(.error, "Validation failed: \(errors.map { $0.message }.joined(separator: ", "))")
+        } else {
+            Logger.logUI("Validation passed", type: .debug)
+        }
     }
     
     // Конвертация времени в секунды
@@ -80,6 +89,8 @@ class CreateRecordViewModel: ObservableObject {
     }
     
     func prefill(with record: JournalRecord) {
+        Logger.logUserAction("Form prefilled from journal record", type: .debug)
+
         name = record.name ?? ""
         filmName = record.filmName ?? ""
         developerName = record.developerName ?? ""
@@ -87,20 +98,27 @@ class CreateRecordViewModel: ObservableObject {
         process = record.process ?? "push +1"
         dilution = record.dilution ?? ""
                     temperature = record.temperature ?? 20
-        
+
         // Конвертируем секунды обратно в минуты и секунды
         let totalSeconds = record.time ?? 0
         minutes = totalSeconds / 60
         seconds = totalSeconds % 60
-        
+
         comment = record.comment ?? ""
         date = record.date
     }
-    
+
     func saveRecord() {
+        Logger.logUserAction("Creating new journal record", type: .info)
+
         validate()
-        guard isValid else { return }
-        
+        guard isValid else {
+            Logger.log(.error, "Cannot save record - validation failed")
+            return
+        }
+
+        Logger.logPersistence("Record saved - film: \(filmName), developer: \(developerName), time: \(minutes)m \(seconds)s", type: .info)
+
         swiftDataService.saveRecord(
             filmName: filmName.trimmingCharacters(in: .whitespacesAndNewlines),
             developerName: developerName.trimmingCharacters(in: .whitespacesAndNewlines),

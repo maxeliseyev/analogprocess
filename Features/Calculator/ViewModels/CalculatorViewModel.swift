@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import os.log
 
 @MainActor
 class CalculatorViewModel: ObservableObject {
@@ -113,26 +114,33 @@ class CalculatorViewModel: ObservableObject {
     }
     
     // MARK: - Calculation Methods
-    
+
     func calculateTime() {
-        guard isValidInput else { return }
-        
+        Logger.logCalculation("Calculate time - minutes: \(minutes), seconds: \(seconds), coefficient: \(coefficient), temp: \(temperature)°C", type: .info)
+
+        guard isValidInput else {
+            Logger.log(.error, "Invalid input for calculation")
+            return
+        }
+
         guard let min = Int(minutes), min >= 0,
               let sec = Int(seconds), sec >= 0, sec < 60,
               let coeff = Double(coefficient), coeff > 0 else {
             return
         }
-        
+
         // Применяем температурный коэффициент
         let temperatureMultiplier = swiftDataService.getTemperatureMultiplier(for: temperature)
+        Logger.logCalculation("Temperature multiplier applied: \(temperatureMultiplier)", type: .debug)
+
         let adjustedMinutes = Int(Double(min) * temperatureMultiplier)
         let adjustedSeconds = Int(Double(sec) * temperatureMultiplier)
-        
+
         // Нормализуем время (секунды не должны превышать 59)
         let totalAdjustedSeconds = adjustedMinutes * 60 + adjustedSeconds
         let normalizedMinutes = totalAdjustedSeconds / 60
         let normalizedSeconds = totalAdjustedSeconds % 60
-        
+
         pushResults = calculator.calculateResults(
             minutes: normalizedMinutes,
             seconds: normalizedSeconds,
@@ -141,27 +149,35 @@ class CalculatorViewModel: ObservableObject {
             isPushMode: isPushMode,
             steps: pushSteps
         )
-        
+
+        Logger.logCalculation("Results calculated - mode: \(isPushMode ? "push" : "pull"), steps: \(pushSteps), results count: \(pushResults.count)", type: .info)
+
         showResult = true
     }
     
     // MARK: - Timer Methods
-    
+
     func startTimer(_ label: String, _ minutes: Int, _ seconds: Int) {
+        Logger.logUserAction("Start timer - label: \(label), time: \(minutes):\(seconds)", type: .info)
+
         selectedTimerLabel = label
         selectedTimerMinutes = minutes
         selectedTimerSeconds = seconds
         showResult = false // Закрываем sheet с результатами
         showTimer = true // Активируем навигацию к таймеру
     }
-    
+
     // MARK: - Record Management Methods
-    
+
     func saveRecord() {
-        guard let selectedResult = selectedResult else { return }
-        
+        guard let selectedResult = selectedResult else {
+            Logger.log(.error, "Cannot save record - no result selected")
+            return
+        }
+
         let totalSeconds = selectedResult.totalSeconds
-        
+        Logger.logUserAction("Save calculation result to journal - time: \(selectedResult.formattedTime)", type: .info)
+
         swiftDataService.saveRecord(
             filmName: "Расчетное время",
             developerName: "Пользовательский расчет",
@@ -171,24 +187,28 @@ class CalculatorViewModel: ObservableObject {
             calculatedTime: totalSeconds,
             notes: "Расчет: \(selectedResult.label) - \(selectedResult.formattedTime)"
         )
-        
+
         showSaveDialog = false
     }
-    
+
     func loadRecord(_ record: SwiftDataJournalRecord) {
+        Logger.logUserAction("Load record from journal - time: \(record.time)s", type: .info)
+
         let totalSeconds = Int(record.time)
-        
+
         self.minutes = "\(totalSeconds / 60)"
         self.seconds = "\(totalSeconds % 60)"
         self.temperature = record.temperature
         coefficient = "1.33" // Используем стандартный коэффициент
         isPushMode = true
         pushSteps = 3
-        
+
         calculateTime()
     }
-    
+
     func deleteRecord(_ record: SwiftDataJournalRecord) {
+        Logger.logUserAction("Delete calculation record - id: \(record.id?.uuidString ?? "unknown")", type: .info)
+
         swiftDataService.deleteCalculationRecord(record)
     }
     

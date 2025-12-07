@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 import Combine
+import os.log
 
 
 class StagingViewModel: ObservableObject {
@@ -34,6 +35,7 @@ class StagingViewModel: ObservableObject {
         presetService.$presets
             .receive(on: DispatchQueue.main)
             .sink { [weak self] presets in
+                Logger.logSync("Available presets updated, count: \(presets.count)", type: .debug)
                 self?.availablePresets = presets
                 if !presets.isEmpty {
                     self?.allStages = self?.createAllStagesFromPresets() ?? []
@@ -44,6 +46,7 @@ class StagingViewModel: ObservableObject {
         // Initialize with current presets
         self.availablePresets = presetService.presets
         self.allStages = createAllStagesFromPresets()
+        Logger.logUI("Staging ViewModel initialized with \(availablePresets.count) presets", type: .debug)
     }
 
     private func createAllStagesFromPresets() -> [StagingStage] {
@@ -93,42 +96,61 @@ class StagingViewModel: ObservableObject {
     }
     
     func loadPreset(preset: ProcessPreset) {
+        Logger.logUserAction("Preset loaded: \(preset.name), stages count: \(preset.stages.count)", type: .info)
+
         // Replace current stages with preset stages
         selectedStages = preset.stages
     }
-    
+
     private func loadSelectedStages() {
         guard let data = UserDefaults.standard.data(forKey: AppConstants.UserDefaultsKeys.selectedStages),
               let stages = try? JSONDecoder().decode([StagingStage].self, from: data) else {
+            Logger.logUI("No saved stages found in UserDefaults", type: .debug)
             return
         }
+
+        Logger.logUI("Loaded \(stages.count) saved stages from UserDefaults", type: .debug)
         selectedStages = stages
     }
-    
+
     private func saveSelectedStages() {
-        guard let data = try? JSONEncoder().encode(selectedStages) else { return }
+        guard let data = try? JSONEncoder().encode(selectedStages) else {
+            Logger.log(.error, "Failed to encode selected stages")
+            return
+        }
+
         UserDefaults.standard.set(data, forKey: AppConstants.UserDefaultsKeys.selectedStages)
+        Logger.logUI("Selected stages saved, count: \(selectedStages.count)", type: .debug)
     }
-    
+
     func addStage(_ stage: StagingStage) {
+        Logger.logUserAction("Stage added: \(stage.name)", type: .info)
+
         var newStage = stage
         newStage.id = UUID()
         selectedStages.append(newStage)
     }
-    
+
     func duplicateStage(_ stage: StagingStage) {
+        Logger.logUserAction("Stage duplicated: \(stage.name)", type: .info)
+
         var duplicatedStage = stage
         duplicatedStage.id = UUID()
         selectedStages.append(duplicatedStage)
     }
-    
+
     func removeStage(at index: Int) {
         guard index >= 0 && index < selectedStages.count else { return }
+
+        let stageName = selectedStages[index].name
+        Logger.logUserAction("Stage removed: \(stageName)", type: .info)
+
         selectedStages.remove(at: index)
     }
-    
+
     func updateStage(_ stage: StagingStage) {
         if let index = selectedStages.firstIndex(where: { $0.id == stage.id }) {
+            Logger.logUserAction("Stage updated: \(stage.name), duration: \(stage.duration)s, temp: \(stage.temperature)°C", type: .debug)
             selectedStages[index] = stage
         }
     }
@@ -163,6 +185,9 @@ class StagingViewModel: ObservableObject {
     }
     
     func startStagingTimer() {
+        let enabledStages = getEnabledStages()
+        Logger.logUserAction("Starting staging sequence with \(enabledStages.count) stages", type: .info)
+
         // Этот метод будет вызываться из StagingView
         // Логика показа TimerView в staging режиме находится в StagingView
     }

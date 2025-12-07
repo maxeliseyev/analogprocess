@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import Combine
+import os.log
 
 @MainActor
 class JournalViewModel: ObservableObject {
@@ -27,11 +28,13 @@ class JournalViewModel: ObservableObject {
     }
     
     // MARK: - Methods
-    
+
     func deleteRecord(_ record: SwiftDataJournalRecord) {
+        Logger.logPersistence("Record deleted - id: \(record.id?.uuidString ?? "unknown")", type: .info)
+
         swiftDataService.deleteCalculationRecord(record)
     }
-    
+
     func clearError() {
         errorMessage = nil
     }

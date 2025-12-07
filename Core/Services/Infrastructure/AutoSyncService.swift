@@ -8,6 +8,7 @@
 import Foundation
 import Network
 import SwiftUI
+import os.log
 
 @MainActor
 public class AutoSyncService: ObservableObject {
@@ -71,7 +72,7 @@ public class AutoSyncService: ObservableObject {
     /// Запускает автоматическую синхронизацию при запуске приложения
     public func performAutoSyncOnAppLaunch() {
         guard isAutoSyncEnabled else {
-            print("AutoSync: Auto-sync is disabled")
+            Logger.logSync("Auto-sync is disabled", type: .info)
             return
         }
         
@@ -119,11 +120,11 @@ public class AutoSyncService: ObservableObject {
             lastAutoSyncDate = Date()
             saveLastAutoSyncDate()
             autoSyncStatus = .completed
-            
-            print("AutoSync: Data synchronized successfully")
+
+            Logger.logSync("Data synchronized successfully", type: .info)
         } catch {
             autoSyncStatus = .failed(error.localizedDescription)
-            print("AutoSync: Failed to sync data - \(error.localizedDescription)")
+            Logger.logSync("Failed to sync data - \(error.localizedDescription)", type: .error)
         }
         
         isAutoSyncing = false
@@ -138,12 +139,12 @@ public class AutoSyncService: ObservableObject {
                 self?.isNetworkAvailable = isAvailable
 
                 if isAvailable {
-                    print("AutoSync: Internet connection is available.")
+                    Logger.logSync("Internet connection is available", type: .info)
                     if self?.autoSyncStatus == .noInternet {
                         self?.autoSyncStatus = .idle
                     }
                 } else {
-                    print("AutoSync: Internet connection lost.")
+                    Logger.logSync("Internet connection lost", type: .default)
                     self?.autoSyncStatus = .noInternet
                 }
             }

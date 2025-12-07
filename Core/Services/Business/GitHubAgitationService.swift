@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import os.log
 
 // MARK: - GitHub Agitation Service
 public class GitHubAgitationService {
@@ -25,7 +26,7 @@ public class GitHubAgitationService {
         }.sorted { !$0.isCustom && $1.isCustom } // Сначала встроенные
 
         lastUpdateDate = Date()
-        print("DEBUG: Updated \(cachedModes.count) agitation modes from GitHub")
+        Logger.logSync("Updated \(cachedModes.count) agitation modes from GitHub", type: .info)
     }
 
     /// Возвращает все доступные режимы агитации
@@ -111,7 +112,7 @@ public class GitHubAgitationService {
         case "default":
             return .defaultCondition
         default:
-            print("WARNING: Unknown condition type: \(githubType), defaulting to .defaultCondition")
+            Logger.log(.error, "Unknown condition type: \(githubType), defaulting to .defaultCondition")
             return .defaultCondition
         }
     }
@@ -129,7 +130,7 @@ public class GitHubAgitationService {
         case "rotations":
             return .rotations
         default:
-            print("WARNING: Unknown agitation action: \(githubAction), defaulting to .still")
+            Logger.log(.error, "Unknown agitation action: \(githubAction), defaulting to .still")
             return .still
         }
     }

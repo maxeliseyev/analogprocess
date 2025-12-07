@@ -7,6 +7,7 @@
 
 import SwiftData
 import SwiftUI
+import os.log
 
 struct SwiftDataPersistence {
     static let shared = SwiftDataPersistence()
@@ -22,7 +23,7 @@ struct SwiftDataPersistence {
     let modelContainer: ModelContainer
 
     init(inMemory: Bool = false) {
-        print("🚀 Starting SwiftData initialization (inMemory: \(inMemory))")
+        Logger.logPersistence("Starting SwiftData initialization (inMemory: \(inMemory))", type: .info)
 
         // Trying to initialize the main configuration
         do {
@@ -32,28 +33,28 @@ struct SwiftDataPersistence {
             // Validating the schema
             let missingEntities = SwiftDataConfigurationManager.validateSchema(schema)
             if !missingEntities.isEmpty {
-                print("⚠️ Schema validation warning - missing entities: \(missingEntities)")
+                Logger.logPersistence("Schema validation warning - missing entities: \(missingEntities)", type: .error)
             }
 
-            print("📋 Using schema v1.1 with entities: \(SwiftDataSchemas.entityNames(for: schema))")
-            print(inMemory ? "🔧 Using in-memory configuration" : "💿 Using on-disk storage")
+            Logger.logPersistence("Using schema v1.1 with entities: \(SwiftDataSchemas.entityNames(for: schema))", type: .info)
+            Logger.logPersistence(inMemory ? "Using in-memory configuration" : "Using on-disk storage", type: .info)
 
             self.modelContainer = try ModelContainer(for: schema, configurations: [modelConfiguration])
             return  // Successful initialization
         } catch {
-            print("SwiftData initialization failed: \(error)")
+            Logger.logPersistence("SwiftData initialization failed: \(error)", type: .error)
 
             // Detailed error analysis
             if let swiftDataError = error as? SwiftDataError {
-                print("SwiftData error details: \(swiftDataError)")
-                print("SwiftData error localizedDescription: \(swiftDataError.localizedDescription)")
+                Logger.logPersistence("SwiftData error details: \(swiftDataError)", type: .error)
+                Logger.logPersistence("SwiftData error localizedDescription: \(swiftDataError.localizedDescription)", type: .error)
             }
 
             // Checking if the error is related to the models
-            print("🔍 Checking schema before fallback:")
+            Logger.logPersistence("Checking schema before fallback", type: .info)
             let currentSchema = SwiftDataSchemas.current
             for entity in currentSchema.entities {
-                print("   - Entity: \(entity.name)")
+                Logger.logPersistence("Entity: \(entity.name)", type: .debug)
             }
 
             // Using a strategic fallback approach
@@ -65,7 +66,7 @@ struct SwiftDataPersistence {
             ]
 
             for strategy in recoveryStrategies {
-                print("⚠️ Attempting recovery strategy: \(strategy.description)")
+                Logger.logPersistence("Attempting recovery strategy: \(strategy.description)", type: .default)
 
                 do {
                     // Special handling for resetDatabase
@@ -73,37 +74,37 @@ struct SwiftDataPersistence {
                         let url = URL.applicationSupportDirectory.appending(path: "default.store")
                         if FileManager.default.fileExists(atPath: url.path()) {
                             try FileManager.default.removeItem(at: url)
-                            print("🗑️ Removed corrupted database")
+                            Logger.logPersistence("Removed corrupted database", type: .info)
                         }
                     }
 
                     let (schema, configuration) = SwiftDataConfigurationManager.createFallbackConfiguration(strategy: strategy)
                     let container = try ModelContainer(for: schema, configurations: [configuration])
 
-                    print("✅ Recovery successful using \(strategy.description)")
-                    print("📋 Using entities: \(SwiftDataSchemas.entityNames(for: schema))")
+                    Logger.logPersistence("Recovery successful using \(strategy.description)", type: .info)
+                    Logger.logPersistence("Using entities: \(SwiftDataSchemas.entityNames(for: schema))", type: .info)
 
                     self.modelContainer = container
                     return  // Successful recovery
 
                 } catch {
-                    print("❌ Recovery strategy '\(strategy.description)' failed: \(error)")
+                    Logger.logPersistence("Recovery strategy '\(strategy.description)' failed: \(error)", type: .error)
                     continue
                 }
             }
 
         // If all recovery strategies have failed, create an emergency configuration
-        print("💥 All recovery strategies failed - using emergency configuration")
+        Logger.logPersistence("All recovery strategies failed - using emergency configuration", type: .error)
         let (emergencySchema, emergencyConfig) = SwiftDataConfigurationManager.createFallbackConfiguration(strategy: .useMemory)
         do {
             self.modelContainer = try ModelContainer(for: emergencySchema, configurations: [emergencyConfig])
-            print("🆘 Emergency in-memory configuration successful")
+            Logger.logPersistence("Emergency in-memory configuration successful", type: .info)
         } catch {
             // Last attempt with a minimal schema
             let minimalSchema = Schema([SwiftDataJournalRecord.self])
             let minimalConfig = ModelConfiguration(schema: minimalSchema, isStoredInMemoryOnly: true)
             self.modelContainer = try! ModelContainer(for: minimalSchema, configurations: [minimalConfig])
-            print("🆘🆘 Ultra-minimal emergency configuration - journal only")
+            Logger.logPersistence("Ultra-minimal emergency configuration - journal only", type: .error)
         }
         }
     }

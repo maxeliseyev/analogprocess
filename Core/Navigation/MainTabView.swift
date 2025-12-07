@@ -1,6 +1,7 @@
 import SwiftUI
 import Combine
 import SwiftData
+import os.log
 
 public struct MainTabView: View {
     let swiftDataService: SwiftDataService
@@ -135,7 +136,7 @@ public struct MainTabView: View {
     }
     
     private func loadRecord(_ record: SwiftDataJournalRecord) {
-        print("Loading record: \(record)")
+        Logger.logNavigation("Loading record: \(record.id?.uuidString ?? "unknown")", type: .debug)
     }
     
     public init(swiftDataService: SwiftDataService, selectedTab: Binding<Int>, colorScheme: Binding<ColorScheme?>) {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import os.log
 
 // 1. Data model for a single coach mark
 struct CoachMark {
@@ -40,20 +41,20 @@ class CoachMarksService: ObservableObject {
         }
         
         let mark = marks[currentMarkIndex]
-        print("Showing coach mark: \(mark.title) for view \(mark.viewId)")
-        
+        Logger.logUI("Showing coach mark: \(mark.title) for view \(mark.viewId)", type: .debug)
+
         // Here you would add the logic to show the actual SSCoachMark view
-        // For now, we just print to the console.
-        
+        // For now, we just log to the console.
+
         currentMarkIndex += 1
         // In a real implementation, you would call showNextMark() in the completion handler of the previous mark.
     }
-    
+
     func finish() {
         isShowing = false
         marks = []
         currentMarkIndex = 0
-        print("Finished showing coach marks.")
+        Logger.logUI("Finished showing coach marks", type: .debug)
     }
 }
 

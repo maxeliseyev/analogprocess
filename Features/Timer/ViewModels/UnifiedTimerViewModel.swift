@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import Foundation
+import os.log
 
 @MainActor
 class UnifiedTimerViewModel: ObservableObject {
@@ -40,6 +41,7 @@ class UnifiedTimerViewModel: ObservableObject {
     private var timer: Timer?
     private var totalSeconds: Int = 0
     private var remainingSeconds: Int = 0
+    private var timerTickCount: Int = 0
 
     // MARK: - Computed Properties
 
@@ -72,53 +74,81 @@ class UnifiedTimerViewModel: ObservableObject {
 
     // Инициализатор для режима стадий
     init(stagingStages: [StagingStage]) {
+        Logger.logTimer("ViewModel init - Multi-stage mode with \(stagingStages.count) stages", type: .info)
+
         self.stages = stagingStages.map { TimerStage(from: $0) }
         self.isMultiStage = true
         setupCurrentStage()
+
+        Logger.logTimer("ViewModel initialized for multi-stage mode", type: .info)
     }
 
     // Инициализатор для одиночного таймера
     init(duration: TimeInterval, name: String) {
+        Logger.logTimer("ViewModel init - Single timer mode: '\(name)', duration: \(duration)s", type: .info)
+
         self.stages = [TimerStage(duration: duration, name: name)]
         self.isMultiStage = false
         setupCurrentStage()
+
+        Logger.logTimer("ViewModel initialized for single timer mode", type: .info)
     }
 
     // MARK: - Public Methods
 
     func startPauseTimer() {
+        Logger.logTimer("startPauseTimer called - isRunning: \(isRunning)", type: .default)
+
         if isRunning {
+            Logger.logTimer("Pausing timer", type: .default)
             pauseTimer()
         } else {
+            Logger.logTimer("Starting timer", type: .default)
             startTimer()
         }
     }
 
     func resetTimer() {
+        Logger.logTimer("resetTimer called", type: .default)
+
         pauseTimer()
+        timerTickCount = 0
         setupCurrentStage()
+
+        Logger.logTimer("Timer reset completed - remainingSeconds: \(remainingSeconds), totalSeconds: \(totalSeconds)", type: .info)
     }
 
     func startNextStage() {
-        guard hasNextStage else { return }
+        Logger.logTimer("startNextStage called - current stage: \(currentStageIndex)", type: .default)
+
+        guard hasNextStage else {
+            Logger.logTimer("No next stage available", type: .info)
+            return
+        }
 
         currentStageIndex += 1
+        Logger.logTimer("Moving to stage \(currentStageIndex)", type: .info)
+
         isTimerFinished = false
         setupCurrentStage()
         startTimer()
+
+        Logger.logTimer("Next stage started successfully", type: .info)
     }
 
     func selectAgitationMode(_ mode: AgitationMode) {
-        print("🎯 [selectAgitationMode] Selected: \(mode.name)")
+        Logger.logAgitation("selectAgitationMode called - new mode: \(mode.name)", type: .default)
+
         selectedAgitationMode = mode
         showAgitationSelection = false
         setupAgitation()
-        print("📊 [selectAgitationMode] Result - shouldAgitate: \(shouldAgitate), currentAgitationPhase: \(String(describing: currentAgitationPhase))")
+
+        Logger.logAgitation("Agitation mode changed - shouldAgitate: \(shouldAgitate), currentAgitationPhase: \(String(describing: currentAgitationPhase))", type: .info)
     }
 
     /// Вызывается после установки режима ажитации в TimerView
     func setupAgitationAfterModeSet() {
-        print("🔧 [setupAgitationAfterModeSet] Called")
+        Logger.logAgitation("setupAgitationAfterModeSet called - mode: \(selectedAgitationMode?.name ?? "none")", type: .default)
         setupAgitation()
     }
 
@@ -127,12 +157,20 @@ class UnifiedTimerViewModel: ObservableObject {
     }
 
     func updateTimerTime(minutes: Int, seconds: Int) {
+        Logger.logTimer("updateTimerTime called - minutes: \(minutes), seconds: \(seconds)", type: .default)
+
         stopTimer()
         totalSeconds = minutes * 60 + seconds
         remainingSeconds = totalSeconds
         currentMinute = 1
+        timerTickCount = 0
+
+        Logger.logTimer("Timer updated - totalSeconds: \(totalSeconds)", type: .info)
+
         setupAgitation()
         showManualTimeInput = false
+
+        Logger.logTimer("Manual time update completed", type: .info)
     }
 
     func startFixingTimer() {
@@ -142,23 +180,40 @@ class UnifiedTimerViewModel: ObservableObject {
     }
 
     func startFixingTimerWithTime(minutes: Int, seconds: Int) {
+        Logger.logTimer("startFixingTimerWithTime called - minutes: \(minutes), seconds: \(seconds)", type: .default)
+
         remainingSeconds = minutes * 60 + seconds
         totalSeconds = minutes * 60 + seconds
         currentMinute = 1
         isTimerFinished = false
+        timerTickCount = 0
+
+        Logger.logTimer("Fixing timer setup - totalSeconds: \(totalSeconds)", type: .info)
 
         let agitationService = AgitationModeDataService()
         let fixerMode = agitationService.presets.first { $0.name == "Fixer" }
         selectedAgitationMode = fixerMode
+
+        Logger.logTimer("Fixer agitation mode applied: \(fixerMode?.name ?? "none")", type: .info)
+
         setupAgitation()
 
         showFixingTimer = false
+
+        Logger.logTimer("Fixing timer setup completed", type: .info)
     }
 
     // MARK: - Private Methods
 
     private func setupCurrentStage() {
-        guard let stage = currentStage else { return }
+        Logger.logTimer("setupCurrentStage BEGIN", type: .default)
+
+        guard let stage = currentStage else {
+            Logger.logTimer("ERROR: No current stage found", type: .error)
+            return
+        }
+
+        Logger.logTimer("Stage info - name: \(stage.name), duration: \(stage.duration)s", type: .info)
 
         totalSeconds = Int(stage.duration)
         remainingSeconds = totalSeconds
@@ -167,30 +222,65 @@ class UnifiedTimerViewModel: ObservableObject {
         if isMultiStage {
             // В режиме стадий используем ажитацию из стадии
             selectedAgitationMode = stage.agitationMode
+            Logger.logTimer("Multi-stage mode - agitation from stage: \(stage.agitationMode?.name ?? "none")", type: .info)
+        } else {
+            Logger.logTimer("Single mode - agitation: \(selectedAgitationMode?.name ?? "none")", type: .info)
         }
-        // В одиночном режиме ажитация выбирается пользователем
 
         updateDisplay()
         updateProgress()
         setupAgitation()
+
+        Logger.logTimer("setupCurrentStage END - totalSeconds: \(totalSeconds), remainingSeconds: \(remainingSeconds)", type: .default)
     }
 
     private func startTimer() {
+        let startTimestamp = Date()
+        Logger.logTimer("startTimer BEGIN", type: .default)
+        Logger.logTimer("State before start - remainingSeconds: \(remainingSeconds), totalSeconds: \(totalSeconds)", type: .info)
+
+        // Сбрасываем счетчик тиков при запуске
+        timerTickCount = 0
+        Logger.logTimer("Tick counter reset to 0", type: .debug)
+
         isRunning = true
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+        Logger.logTimer("isRunning set to true", type: .debug)
+
+        let beforeTimerCreation = Date()
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
+            Logger.logTimer("Timer fired - isValid: \(timer.isValid)", type: .debug)
+
             Task { @MainActor in
+                let beforeUpdate = Date()
                 self?.updateTimer()
+                let afterUpdate = Date()
+                let updateDuration = afterUpdate.timeIntervalSince(beforeUpdate)
+                if updateDuration > 0.01 {
+                    Logger.logTimer("WARNING: updateTimer took \(String(format: "%.3f", updateDuration))s", type: .error)
+                }
             }
         }
+        let afterTimerCreation = Date()
+        let timerCreationDelay = afterTimerCreation.timeIntervalSince(beforeTimerCreation)
+        Logger.logTimer("Timer object created (creation took \(String(format: "%.3f", timerCreationDelay))s)", type: .info)
+        Logger.logTimer("Timer scheduled on RunLoop - isValid: \(timer?.isValid ?? false)", type: .info)
 
         setupAgitation()
+
+        let endTimestamp = Date()
+        let totalStartDelay = endTimestamp.timeIntervalSince(startTimestamp)
+        Logger.logTimer("startTimer END (total duration: \(String(format: "%.3f", totalStartDelay))s)", type: .default)
     }
 
     private func pauseTimer() {
+        Logger.logTimer("pauseTimer called - total ticks: \(timerTickCount), remainingSeconds: \(remainingSeconds)", type: .default)
+
         isRunning = false
         timer?.invalidate()
         timer = nil
         // Не останавливаем ажитацию при паузе - только приостанавливаем
+
+        Logger.logTimer("Timer paused successfully", type: .info)
     }
 
     private func stopTimer() {
@@ -200,7 +290,16 @@ class UnifiedTimerViewModel: ObservableObject {
     }
 
     private func updateTimer() {
+        timerTickCount += 1
+
+        // Логируем первые 5 тиков и каждый 10-й после этого
+        let shouldLog = timerTickCount <= 5 || timerTickCount % 10 == 0
+        if shouldLog {
+            Logger.logTimer("Tick #\(timerTickCount) - remainingSeconds: \(remainingSeconds)", type: .debug)
+        }
+
         guard remainingSeconds > 0 else {
+            Logger.logTimer("Timer finished at tick #\(timerTickCount)", type: .info)
             finishTimer()
             return
         }
@@ -210,6 +309,10 @@ class UnifiedTimerViewModel: ObservableObject {
         updateProgress()
         updateCurrentMinute()
         updateAgitation()
+
+        if shouldLog {
+            Logger.logTimer("Tick #\(timerTickCount) completed - new remainingSeconds: \(remainingSeconds)", type: .debug)
+        }
     }
 
     private func updateCurrentMinute() {
@@ -240,11 +343,15 @@ class UnifiedTimerViewModel: ObservableObject {
     }
 
     private func finishTimer() {
+        Logger.logTimer("finishTimer called - total ticks: \(timerTickCount)", type: .default)
+
         isRunning = false
         isTimerFinished = true
         timer?.invalidate()
         timer = nil
         stopAgitation()
+
+        Logger.logTimer("Timer finished successfully", type: .info)
 
         let impactFeedback = UIImpactFeedbackGenerator(style: .heavy)
         impactFeedback.impactOccurred()
@@ -254,39 +361,49 @@ class UnifiedTimerViewModel: ObservableObject {
 
     private func setupAgitation() {
         guard let mode = selectedAgitationMode else {
+            Logger.logAgitation("No agitation mode selected - disabling agitation", type: .info)
             shouldAgitate = false
             return
         }
 
+        Logger.logAgitation("setupAgitation BEGIN - mode: \(mode.name)", type: .default)
         shouldAgitate = true
+
         // Убеждаемся что минута >= 1 для корректной работы агитации
         let minute = max(1, currentMinute)
         let totalMinutes = max(1, totalSeconds / 60) // Убеждаемся что общее время >= 1 минуты
 
-        print("🔍 [setupAgitation] minute: \(minute), totalMinutes: \(totalMinutes), mode: \(mode.name)")
+        Logger.logAgitation("Parameters - currentMinute: \(minute), totalMinutes: \(totalMinutes), remainingSeconds: \(remainingSeconds)", type: .info)
 
         let agitationPhase = mode.getAgitationForMinuteWithTotal(minute, totalMinutes: totalMinutes)
         currentAgitationPhase = agitationPhase.agitationType
 
-        print("✅ [setupAgitation] Found phase: \(currentAgitationPhase!)")
+        Logger.logAgitation("Phase determined: \(currentAgitationPhase!)", type: .info)
 
         switch currentAgitationPhase! {
         case .continuous:
             isInAgitationPhase = true
             agitationTimeRemaining = 0
+            Logger.logAgitation("Continuous agitation mode activated", type: .info)
         case .still:
             isInAgitationPhase = false
             agitationTimeRemaining = 0
-        case .cycle(let agitation, _):
+            Logger.logAgitation("Still mode - no agitation", type: .info)
+        case .cycle(let agitation, let rest):
             isInAgitationPhase = true
             agitationTimeRemaining = agitation
+            Logger.logAgitation("Cycle mode - agitation: \(agitation)s, rest: \(rest)s", type: .info)
         case .periodic(let interval):
             isInAgitationPhase = true
             agitationTimeRemaining = interval
+            Logger.logAgitation("Periodic mode - interval: \(interval)s", type: .info)
         case .custom:
             isInAgitationPhase = false
             agitationTimeRemaining = 0
+            Logger.logAgitation("Custom agitation mode", type: .info)
         }
+
+        Logger.logAgitation("setupAgitation END - isInAgitationPhase: \(isInAgitationPhase), agitationTimeRemaining: \(agitationTimeRemaining)", type: .default)
     }
 
     private func updateAgitation() {
@@ -320,7 +437,7 @@ class UnifiedTimerViewModel: ObservableObject {
                         isInAgitationPhase = false
                         agitationTimeRemaining = rest
 
-                        print("🔄 [\(Date())] Переключение режима: \(oldPhase) → Rest (время: \(agitationTimeRemaining)s)")
+                        Logger.logAgitation("Phase switch: \(oldPhase) -> Rest (time: \(agitationTimeRemaining)s)", type: .default)
 
                         let impactFeedback = UIImpactFeedbackGenerator(style: .light)
                         impactFeedback.impactOccurred()
@@ -335,7 +452,7 @@ class UnifiedTimerViewModel: ObservableObject {
                         isInAgitationPhase = true
                         agitationTimeRemaining = agitation
 
-                        print("🔄 [\(Date())] Переключение режима: \(oldPhase) → Agitation (время: \(agitationTimeRemaining)s)")
+                        Logger.logAgitation("Phase switch: \(oldPhase) -> Agitation (time: \(agitationTimeRemaining)s)", type: .default)
 
                         let impactFeedback = UIImpactFeedbackGenerator(style: .light)
                         impactFeedback.impactOccurred()
