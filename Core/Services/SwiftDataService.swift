@@ -330,7 +330,7 @@ public class SwiftDataService: ObservableObject {
         modelContext.insert(record)
         saveContext()
 
-        Logger.logPersistence("Record saved successfully - id: \(record.id?.uuidString ?? "unknown")", type: .debug)
+        Logger.logPersistence("Record saved successfully", type: .debug)
     }
     
     public func getCalculationRecords() -> [SwiftDataJournalRecord] {
@@ -344,7 +344,7 @@ public class SwiftDataService: ObservableObject {
     }
     
     public func deleteCalculationRecord(_ record: SwiftDataJournalRecord) {
-        Logger.logPersistence("Deleting record - id: \(record.id?.uuidString ?? "unknown"), film: \(record.filmName)", type: .info)
+        Logger.logPersistence("Deleting record - film: \(record.filmName ?? <#default value#>), developer: \(record.developerName ?? <#default value#>)", type: .info)
 
         modelContext.delete(record)
         saveContext()

@@ -207,7 +207,7 @@ class CalculatorViewModel: ObservableObject {
     }
 
     func deleteRecord(_ record: SwiftDataJournalRecord) {
-        Logger.logUserAction("Delete calculation record - id: \(record.id?.uuidString ?? "unknown")", type: .info)
+        Logger.logUserAction("Delete calculation record - film: \(record.filmName ?? <#default value#>), developer: \(record.developerName ?? <#default value#>)", type: .info)
 
         swiftDataService.deleteCalculationRecord(record)
     }

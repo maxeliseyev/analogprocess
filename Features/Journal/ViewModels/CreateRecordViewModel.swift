@@ -51,7 +51,7 @@ class CreateRecordViewModel: ObservableObject {
         self.validationErrors = errors
 
         if !errors.isEmpty {
-            Logger.log(.error, "Validation failed: \(errors.map { $0.message }.joined(separator: ", "))")
+            Logger.log(.error, "Validation failed: \(errors.compactMap { $0.errorDescription }.joined(separator: ", "))")
         } else {
             Logger.logUI("Validation passed", type: .debug)
         }
