@@ -1,16 +1,24 @@
 // MARK: - Navigation & Common
-"mainTitle" = "แล็บขั้นตอนอะนาล็อก";
+"mainTitle" = "แล็บกระบวนการอนาล็อก";
 "back" = "← กลับ";
 "close" = "ปิด";
 "edit" = "แก้ไข";
 "delete" = "ลบ";
 "save" = "บันทึก";
 "cancel" = "ยกเลิก";
-"apply" = "ใช้งาน";
-"continue" = "ดำเนินต่อ";
+"apply" = "ปรับใช้";
+"continue" = "ดำเนินการต่อ";
 "skip" = "ข้าม";
-"done" = "เสร็จแล้ว!";
+"done" = "เสร็จสิ้น!";
 "timeUp" = "หมดเวลา!";
+
+// MARK: - Home
+"home" = "หน้าหลัก";
+"homeDescription" = "ชุดเครื่องมือครบวงจรสำหรับการล้างฟิล์ม: เครื่องคิดเลข, ตัวจับเวลา, บันทึก, และคู่มือ";
+"startProcess" = "เริ่มกระบวนการใหม่";
+"startProcessSubtitle" = "ทำตามคำแนะนำทีละขั้นตอนสำหรับการล้างฟิล์ม";
+"tools" = "เครื่องมือ";
+"toolsSubtitle" = "เข้าถึงเครื่องคิดเลขและตัวจับเวลาแต่ละรายการ";
 
 // MARK: - Timer Controls
 "start" = "เริ่ม";
@@ -21,60 +29,56 @@
 "minutes" = "นาที";
 "seconds" = "วินาที";
 "min" = "นาที";
-"sec" = "วิ";
+"sec" = "วิ.";
 "minute" = "นาทีที่ %@";
 "minuteLabel" = "นาทีที่ %@";
 
 // MARK: - Calculator
 "calculate" = "คำนวณ";
-"calculator" = "เครื่องคำนวณ";
-"calculatorTitle" = "เครื่องคำนวณเวลา";
+"calculator" = "เครื่องคิดเลข";
+"calculatorTitle" = "เครื่องคิดเลขเวลา";
 "calculateButton" = "คำนวณ";
 "results" = "ผลลัพธ์:";
-"resultsProcess" = "ผลลัพธ์กระบวนการ %@:";
+"resultsProcess" = "ผลลัพธ์ของกระบวนการ %@:";
 "coefficient" = "ค่าสัมประสิทธิ์:";
 "standardRatio" = "(มาตรฐาน 1.33)";
 "processType" = "ประเภทกระบวนการ:";
-"pushSteps" = "จำนวนขั้น PUSH:";
-"numberOfSteps" = "จำนวนขั้น:";
+"pushSteps" = "จำนวนสต็อป PUSH:";
+"numberOfSteps" = "จำนวนสต็อป:";
 "from1to5" = "(จาก 1 ถึง 5)";
 
 // MARK: - Development Parameters
-"developmentSetup" = "การตั้งค่าการล้าง";
-"developmentSetupDescription" = "เลือกพารามิเตอร์สำหรับการคำนวณเวลาล้าง";
-"developmentTime" = "เวลาล้าง";
-"developmentComplete" = "ล้างเสร็จแล้ว!";
-"developmentCompleted" = "ล้างเสร็จแล้ว!";
-"developmentCompleteForProcess" = "กระบวนการเสร็จสิ้น: %@";
-"selectDevelopmentParameters" = "เลือกพารามิเตอร์การล้างเพื่อเริ่มตัวจับเวลา";
-"startTimer" = "เริ่มตัวจับเวลา";
-"agitationModeNotSelected" = "ไม่ได้เลือก";
-"setTimeFirstToSelectAgitation" = "กรุณาตั้งเวลาก่อนเพื่อเลือกโหมดการเขย่า";
-"selectAgitationModeToStartTimer" = "กรุณาเลือกโหมดการเขย่าเพื่อเริ่มตัวจับเวลา";
-"setAgitationModeFirstToStartTimer" = "กรุณาเลือกโหมดการเขย่าก่อนเพื่อเริ่มตัวจับเวลา";
-"saveToJournal" = "บันทึกลงบันทึก";
+"developmentSetup" = "ตั้งค่าการล้างฟิล์ม";
+"developmentSetupDescription" = "เลือกพารามิเตอร์สำหรับคำนวณเวลาการล้างฟิล์ม";
+"developmentTime" = "เวลาล้างฟิล์ม";
+"developmentComplete" = "การล้างฟิล์มเสร็จสมบูรณ์!";
+"developmentCompleted" = "การล้างฟิล์มเสร็จสมบูรณ์แล้ว!";
+"developmentCompleteForProcess" = "การล้างฟิล์มสำหรับกระบวนการ %@ เสร็จสมบูรณ์แล้ว";
+"selectDevelopmentParameters" = "เลือกพารามิเตอร์การล้างฟิล์มเพื่อเริ่มจับเวลา";
+"startTimer" = "เริ่มจับเวลา";
+"saveToJournal" = "บันทึกลงในสมุดบันทึก";
 
 // MARK: - Film & Developer
 "film" = "ฟิล์ม:";
-"developer" = "น้ำยาล้าง:";
-"dilution" = "การเจือจาง:";
+"developer" = "น้ำยาสร้างภาพ:";
+"dilution" = "อัตราส่วนผสม:";
 "iso" = "ISO/EI:";
 "temperature" = "อุณหภูมิ (°C):";
-"customTime" = "เวลากำหนดเอง:";
+"customTime" = "เวลาที่กำหนดเอง:";
 "baseTime" = "เวลาพื้นฐาน:";
-"basicTime" = "เวลาเบื้องต้น:";
-"basicTimeLabel" = "เวลาเบื้องต้น:";
-"manualInput" = "ป้อนด้วยตนเอง";
+"basicTime" = "เวลาพื้นฐาน:";
+"basicTimeLabel" = "เวลาพื้นฐาน:";
+"manualInput" = "ป้อนเอง";
 "fromDatabase" = "จากฐานข้อมูล:";
-"defaultTime" = "เวลาเริ่มต้น (ไม่มีข้อมูล)";
+"defaultTime" = "เวลาปริยาย (ไม่มีข้อมูล)";
 "ratio" = "อัตราส่วน:";
 "process" = "กระบวนการ:";
-"push" = "Push";
-"pull" = "Pull";
-"steps" = "ขั้น:";
+"push" = "เพิ่มแสง (Push)";
+"pull" = "ลดแสง (Pull)";
+"steps" = "สต็อป:";
 "current" = "ปัจจุบัน:";
 "data" = "ข้อมูล:";
-"available" = "✓ มีให้ใช้";
+"available" = "✓ ใช้ได้";
 "noData" = "✗ ไม่มีข้อมูล";
 
 // MARK: - Temperature Options
@@ -93,7 +97,7 @@
 "StandardC" = "°C (มาตรฐาน)";
 
 // MARK: - Dilution Options
-"stock" = "น้ำยาแท้";
+"stock" = "หัวเชื้อ";
 "dilution1+1" = "1+1";
 "dilution1+2" = "1+2";
 "dilution1+3" = "1+3";
@@ -128,16 +132,16 @@
 "custom" = "กำหนดเอง";
 
 // MARK: - Steps
-"step1" = "+1 ขั้น";
-"step2" = "+2 ขั้น";
-"step3" = "+3 ขั้น";
-"step4" = "+4 ขั้น";
-"step5" = "+5 ขั้น";
-"pullStep1" = "-1 ขั้น";
-"pullStep2" = "-2 ขั้น";
-"pullStep3" = "-3 ขั้น";
-"pullStep4" = "-4 ขั้น";
-"pullStep5" = "-5 ขั้น";
+"step1" = "+1 สต็อป";
+"step2" = "+2 สต็อป";
+"step3" = "+3 สต็อป";
+"step4" = "+4 สต็อป";
+"step5" = "+5 สต็อป";
+"pullStep1" = "-1 สต็อป";
+"pullStep2" = "-2 สต็อป";
+"pullStep3" = "-3 สต็อป";
+"pullStep4" = "-4 สต็อป";
+"pullStep5" = "-5 สต็อป";
 
 // MARK: - ISO Options
 "iso25" = "25";
@@ -159,99 +163,148 @@
 // MARK: - Presets Management
 "presetsManagement" = "การจัดการพรีเซ็ต";
 "films" = "ฟิล์ม";
-"developers" = "น้ำยาล้าง";
-"developmentTimes" = "เวลาล้าง";
+"developers" = "น้ำยาสร้างภาพ";
+"developmentTimes" = "เวลาล้างฟิล์ม";
 "addFilm" = "เพิ่มฟิล์ม";
-"addDeveloper" = "เพิ่มน้ำยาล้าง";
+"addDeveloper" = "เพิ่มน้ำยาสร้างภาพ";
 "addTime" = "เพิ่มเวลา";
 "filmPresets" = "พรีเซ็ตฟิล์ม";
-"developerPresets" = "พรีเซ็ตน้ำยาล้าง";
-"timePresets" = "พรีเซ็ตเวลาล้าง";
+"developerPresets" = "พรีเซ็ตน้ำยาสร้างภาพ";
+"timePresets" = "พรีเซ็ตเวลาล้างฟิล์ม";
 "presets" = "พรีเซ็ต";
 
 // MARK: - Fixing Timer
-"goToFixing" = "ไปยังการตรึง";
-"fixingTimer" = "ตัวจับเวลาตรึง";
-"fixingTimerSetup" = "การตั้งค่าตัวจับเวลาตรึง";
-"fixingTimerDescription" = "ตั้งเวลาสำหรับการตรึงฟิล์มหลังจากล้าง";
-"fixingTime" = "เวลาตรึง";
-"startFixing" = "เริ่มตรึง";
+"goToFixing" = "ไปยังการคงสภาพ";
+"fixingTimer" = "ตัวจับเวลาการคงสภาพ";
+"fixingTimerSetup" = "ตั้งค่าตัวจับเวลาการคงสภาพ";
+"fixingTimerDescription" = "ตั้งเวลาสำหรับการคงสภาพฟิล์มหลังการล้าง";
+"fixingTime" = "เวลาคงสภาพ";
+"startFixing" = "เริ่มการคงสภาพ";
 
 // MARK: - Fixer Selection
-"fixer" = "น้ำยาตรึง";
-"selectFixer" = "เลือกน้ำยาตรึง";
-"fixerSelection" = "การเลือกน้ำยาตรึง";
-"rapidFixer" = "น้ำยาตรึงเร็ว";
-"acidFixer" = "น้ำยาตรึงกรด";
-"neutralFixer" = "น้ำยาตรึงกลาง";
+"fixer" = "น้ำยาคงสภาพ";
+"selectFixer" = "เลือกน้ำยาคงสภาพ";
+"fixerSelection" = "การเลือกน้ำยาคงสภาพ";
+"rapidFixer" = "น้ำยาคงสภาพชนิดเร็ว";
+"acidFixer" = "น้ำยาคงสภาพชนิดกรด";
+"neutralFixer" = "น้ำยาคงสภาพชนิดกลาง";
 
 // MARK: - Agitation
-"agitationSelection" = "เลือกโหมดการเขย่า";
-"agitationDescription" = "การเขย่าคือกระบวนการกวนน้ำยาล้างเพื่อการล้างฟิล์มที่สม่ำเสมอ";
-"noAgitation" = "ไม่เขย่า";
+"agitationSelection" = "เลือกโหมดการกวนน้ำยา";
+"agitationDescription" = "การกวนน้ำยาคือกระบวนการคนน้ำยาเพื่อให้ฟิล์มได้รับการล้างอย่างสม่ำเสมอ";
+"noAgitation" = "ไม่มีการกวนน้ำยา";
 "noAgitationDescription" = "ตัวจับเวลาจะทำงานโดยไม่มีการแจ้งเตือน";
 "customAgitation" = "โหมดกำหนดเอง";
-"customAgitationDescription" = "สร้างโหมดการเขย่าของคุณเอง";
-"customAgitationSetup" = "การตั้งค่าโหมดกำหนดเอง";
-"customAgitationSetupDescription" = "สร้างโหมดการเขย่าของคุณเอง";
-"customAgitationTitle" = "การเขย่ากำหนดเอง";
-"agitationTime" = "เวลาเขย่า";
-"agitationTimeRemaining" = "(%@วิ)";
+"customAgitationDescription" = "สร้างโหมดการกวนน้ำยาของคุณเอง";
+"customAgitationSetup" = "ตั้งค่าโหมดกำหนดเอง";
+"customAgitationSetupDescription" = "สร้างโหมดการกวนน้ำยาของคุณเอง";
+"customAgitationTitle" = "การกวนน้ำยาที่กำหนดเอง";
+"agitationTime" = "เวลาการกวนน้ำยา";
+"agitationTimeRemaining" = "(%@ วิ.)";
 "restTime" = "เวลาพัก";
 "preview" = "ตัวอย่าง:";
-"cycle" = "รอบ: เขย่า %@วิ → พัก %@วิ";
-"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@วิ";
-"agitation" = "เขย่า";
+"cycle" = "รอบ: %@ กวนน้ำยา → %@ พัก";
+"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@";
+"agitation" = "กวนน้ำยา";
 "rest" = "พัก";
 "phaseDescription" = "%@";
-"continuousAgitation" = "เขย่าต่อเนื่อง";
-"cycleAgitationFormat" = "เขย่า %@วิ / พัก %@วิ";
-"periodicAgitationFormat" = "ทุก %@วิ";
-"agitationContinuous" = "เขย่าต่อเนื่อง";
-"agitationStill" = "ไม่เขย่า";
+"continuousAgitation" = "การกวนน้ำยาต่อเนื่อง";
+"cycleAgitationFormat" = "%@ วิ. กวนน้ำยา / %@ วิ. พัก";
+"periodicAgitationFormat" = "ทุกๆ %@ วินาที";
+"agitationContinuous" = "ต่อเนื่อง";
+"agitationStill" = "ไม่มีการกวนน้ำยา";
 "agitationCycleFormat" = "%@ / %@";
 "agitationOrwoDescription" = "45 / 15 + 15 / 45";
-"agitationRaeDescription" = "สำหรับการล้างระยะยาว";
-"agitationFixerDescription" = "โหมดน้ำยาตรึง";
-"agitationCustomFormat" = "กำหนดเอง (%@วิ/%@วิ)";
+"agitationRaeDescription" = "สำหรับการล้างฟิล์มระยะยาว";
+"agitationFixerDescription" = "โหมดน้ำยาคงสภาพ";
+"agitationCustomFormat" = "กำหนดเอง (%@วิ./%@วิ.)";
 "agitationContinuousName" = "ต่อเนื่อง";
 "agitationStillName" = "นิ่ง";
 "agitationOrwoName" = "ORWO";
 "agitationXtolName" = "XTOL";
 "agitationRaeName" = "RAE";
-"agitationFixerName" = "น้ำยาตรึง";
-"agitationRaePhase2Rotations" = "หมุน 2 ครั้ง";
-"agitationRaePhase1RotationPerMinute" = "หมุน 1 ครั้งต่อนาที";
-"agitationRaePhase1Rotation7thMinute" = "หมุน 1 ครั้งในนาทีที่ 7";
-"agitationRaePhase1Rotation10thMinute" = "หมุน 1 ครั้งในนาทีที่ 10";
-"agitationRaePhase1RotationEvery5Minutes" = "หมุน 1 ครั้งทุก 5 นาที";
+"agitationFixerName" = "น้ำยาคงสภาพ";
+"agitationRaePhase2Rotations" = "หมุน 2 รอบ";
+"agitationRaePhase1RotationPerMinute" = "หมุน 1 รอบต่อนาที";
+"agitationRaePhase1Rotation7thMinute" = "หมุน 1 รอบในนาทีที่ 7";
+"agitationRaePhase1Rotation10thMinute" = "หมุน 1 รอบในนาทีที่ 10";
+"agitationRaePhase1RotationEvery5Minutes" = "หมุน 1 รอบทุกๆ 5 นาที";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "สร้างโหมดกำหนดเอง";
+"createCustomAgitationDescription" = "ออกแบบรูปแบบการกวนน้ำยาของคุณเอง";
+"savedCustomAgitationModes" = "โหมดกำหนดเองที่บันทึกไว้";
+"savedCustomAgitationDescription" = "เรียกดูและเลือกจากโหมดที่คุณบันทึกไว้";
+"customAgitationCreateTitle" = "สร้างโหมดการกวนน้ำยาที่กำหนดเอง";
+"customAgitationEditTitle" = "แก้ไขโหมดการกวนน้ำยาที่กำหนดเอง";
+"customAgitationName" = "ชื่อโหมด";
+"customAgitationNamePlaceholder" = "ป้อนชื่อโหมด";
+"customAgitationFirstMinute" = "นาทีแรก";
+"customAgitationFirstMinuteDescription" = "รูปแบบการกวนน้ำยาสำหรับนาทีแรก";
+"customAgitationIntermediate" = "นาทีระหว่างกลาง";
+"customAgitationIntermediateDescription" = "รูปแบบการกวนน้ำยาสำหรับนาทีที่ 2 ถึง N-1";
+"customAgitationEnableLastMinute" = "นาทีสุดท้ายที่กำหนดเอง";
+"customAgitationLastMinute" = "นาทีสุดท้าย";
+"customAgitationLastMinuteDescription" = "รูปแบบการกวนน้ำยาสำหรับนาทีสุดท้าย";
+"customAgitationPreview" = "ตัวอย่าง";
+"customAgitationPreviewUnavailable" = "กรุณากรอกการตั้งค่าให้ครบถ้วนเพื่อดูตัวอย่าง";
+"customAgitationCreateButton" = "สร้างโหมด";
+"customAgitationUpdateButton" = "อัปเดตโหมด";
+"customAgitationReset" = "รีเซ็ตฟอร์ม";
+"agitationType" = "ประเภทการกวนน้ำยา";
+"agitationCycle" = "รอบ";
+"agitationPeriodic" = "เป็นระยะ";
+"agitationCustom" = "คำแนะนำที่กำหนดเอง";
+"cycleTimingSettings" = "การตั้งค่าเวลารอบ";
+"agitationSeconds" = "กวนน้ำยา";
+"restSeconds" = "พัก";
+"periodicInterval" = "ช่วงเวลา";
+"customAgitationInstructions" = "คำแนะนำ";
+"customAgitationInstructionsPlaceholder" = "ป้อนคำแนะนำการกวนน้ำยาที่กำหนดเอง...";
+"agitationPeriodicFormat" = "ทุกๆ %@ วินาที";
+"noCustomAgitationModes" = "ไม่มีโหมดกำหนดเอง";
+"noCustomAgitationModesDescription" = "สร้างโหมดการกวนน้ำยาที่กำหนดเองอันแรกเพื่อเริ่มต้น";
+"createFirstCustomMode" = "สร้างโหมดแรก";
+"selectThisMode" = "เลือกโหมดนี้";
+"deleteConfirmation" = "ลบโหมด";
+"deleteCustomModeMessage" = "คุณแน่ใจหรือไม่ว่าต้องการลบ \"%@\"? การกระทำนี้ไม่สามารถยกเลิกได้";
+"createNew" = "สร้างใหม่";
+"validationError" = "ข้อผิดพลาดในการตรวจสอบ";
+"saveError" = "ข้อผิดพลาดในการบันทึก";
+"ok" = "ตกลง";
+"customAgitationErrorEmptyName" = "ชื่อโหมดต้องไม่ว่างเปล่า";
+"customAgitationErrorEmptyCustomDescription" = "จำเป็นต้องมีคำแนะนำที่กำหนดเองสำหรับ %@";
+"customAgitationErrorInvalidTiming" = "การกำหนดค่าเวลาไม่ถูกต้องสำหรับ %@";
+"customAgitationErrorInvalidInterval" = "ช่วงเวลาไม่ถูกต้องสำหรับ %@";
+"customAgitationErrorNoLastMinuteConfig" = "ไม่มีการกำหนดค่านาทีสุดท้าย";
+"customAgitationErrorCycleSum" = "ข้อผิดพลาดเวลารอบใน %1$@: ผลรวมของการกวนและการพักต้องไม่เกิน 60 วินาที";
 
 // MARK: - Calculator Results
-"tapToCalculator" = "แตะเพื่อไปยังเครื่องคำนวณ";
-"calculatedTime" = "เวลาที่คำนวณ";
-"noDilutionsAvailable" = "ไม่มีการเจือจางให้ใช้";
-"noDilutionsDescription" = "ไม่มีข้อมูลการล้างสำหรับฟิล์มและน้ำยาล้างที่เลือก";
-"noISOOptionsAvailable" = "ไม่มีตัวเลือก ISO ให้ใช้";
-"noISOOptionsDescription" = "กรุณาเลือกฟิล์ม น้ำยาล้าง และการเจือจางก่อนเพื่อดูตัวเลือก ISO ที่มี";
-"noOptionsAvailable" = "ไม่มีตัวเลือกให้ใช้";
+"tapToCalculator" = "แตะเพื่อไปที่เครื่องคิดเลข";
+"calculatedTime" = "เวลาที่คำนวณได้";
+"noDilutionsAvailable" = "ไม่มีอัตราส่วนผสมที่ใช้ได้";
+"noDilutionsDescription" = "ไม่มีข้อมูลการล้างฟิล์มสำหรับฟิล์มและน้ำยาสร้างภาพที่เลือก";
+"noISOOptionsAvailable" = "ไม่มีตัวเลือก ISO ที่ใช้ได้";
+"noISOOptionsDescription" = "กรุณาเลือกฟิล์ม, น้ำยาสร้างภาพ, และอัตราส่วนผสมก่อนเพื่อดูตัวเลือก ISO ที่มี";
+"noOptionsAvailable" = "ไม่มีตัวเลือกที่ใช้ได้";
 "noOptionsDescription" = "ขณะนี้ไม่มีตัวเลือกให้เลือก";
 
 // MARK: - Journal
-"journalEmpty" = "บันทึกว่างเปล่า";
-"journalEmptyDescription" = "บันทึกการคำนวณแรกของคุณเพื่อดูที่นี่";
+"journalEmpty" = "สมุดบันทึกว่างเปล่า";
+"journalEmptyDescription" = "บันทึกการคำนวณครั้งแรกของคุณเพื่อดูที่นี่";
 "saveCalculation" = "บันทึกการคำนวณ";
-"journal" = "บันทึก";
+"journal" = "สมุดบันทึก";
 "journalCreateRecord" = "สร้างบันทึก";
 "journalRecordBasicInfo" = "ข้อมูลพื้นฐาน";
 "journalRecordName" = "ชื่อ (ไม่บังคับ)";
 "journalRecordFilm" = "ฟิล์ม";
-"journalRecordDeveloper" = "น้ำยาล้าง";
-"journalRecordParameters" = "พารามิเตอร์การล้าง";
-"journalRecordDilution" = "การเจือจาง";
+"journalRecordDeveloper" = "น้ำยาสร้างภาพ";
+"journalRecordParameters" = "พารามิเตอร์การล้างฟิล์ม";
+"journalRecordDilution" = "อัตราส่วนผสม";
 "journalRecordTemperature" = "อุณหภูมิ";
 "journalRecordTime" = "เวลา";
-"journalRecordComment" = "หมายเหตุ";
-"journalRecordCommentPlaceholder" = "เพิ่มบันทึกเกี่ยวกับการล้างนี้...";
+"journalRecordComment" = "ความคิดเห็น";
+"journalRecordCommentPlaceholder" = "เพิ่มบันทึกเกี่ยวกับการล้างฟิล์มนี้...";
 "journalRecordDate" = "วันที่และเวลา";
 "journalRecordProcess" = "กระบวนการ";
 "editRecord" = "แก้ไข";
@@ -265,55 +318,54 @@
 
 // MARK: - Selection
 "selectFilm" = "เลือกฟิล์ม";
-"selectDeveloper" = "เลือกน้ำยาล้าง";
-"selectDilution" = "เลือกการเจือจาง";
-"selectDeveloperFirst" = "เลือกน้ำยาล้างก่อน";
+"selectDeveloper" = "เลือกน้ำยาสร้างภาพ";
+"selectDilution" = "เลือกอัตราส่วนผสม";
+"selectDeveloperFirst" = "กรุณาเลือกน้ำยาสร้างภาพก่อน";
 "selectISO" = "เลือก ISO";
 "selectTemperature" = "เลือกอุณหภูมิ";
 "selectScreenForTesting" = "เลือกหน้าจอสำหรับทดสอบ:";
 "recordName" = "ป้อนชื่อ";
 "searchFilms" = "ค้นหาฟิล์ม...";
-"searchDevelopers" = "ค้นหาน้ำยาล้าง...";
-
-// MARK: - Home
-"home" = "หน้าแรก";
-"homeDescription" = "ชุดเครื่องมือครบครันสำหรับการล้างฟิล์ม: เครื่องคำนวณ ตัวจับเวลา บันทึก และคู่มือ";
-"homePresetsSubtitle" = "พารามิเตอร์การล้าง";
-"homeCalculatorSubtitle" = "การคำนวณเวลา";
-"homeTimerSubtitle" = "ตัวจับเวลาการล้าง";
-"homeJournalSubtitle" = "บันทึกที่บันทึกไว้";
-"homeManualsSubtitle" = "บทความและคู่มือ";
+"searchJournal" = "ค้นหาสมุดบันทึก...";
+"noResultsFound" = "ไม่พบผลลัพธ์";
+"trySearchingDifferentKeywords" = "ลองค้นหาด้วยคำหลักอื่น";
+"searchDevelopers" = "ค้นหาน้ำยาสร้างภาพ...";
 
 // MARK: - Staging
 "staging" = "ขั้นตอน";
 "stagingIntro" = "เพิ่มขั้นตอนการประมวลผลฟิล์มตามลำดับที่ต้องการ";
 "totalTime" = "เวลารวม:";
-"stagesInProcess" = "ขั้นตอนที่กำลังประมวลผล:";
+"stagesInProcess" = "ขั้นตอนในกระบวนการ:";
 "chooseStage" = "เลือกขั้นตอน";
-"duplicate" = "ทำสำเนา";
-"homeStagingSubtitle" = "ขั้นตอนการประมวลผล";
-"stagingPrebathName" = "แช่เตรียม";
-"stagingPrebathDescription" = "แช่เตรียมเพื่อรักษาอุณหภูมิ";
-"stagingDevelopName" = "ล้าง";
+"duplicate" = "ทำซ้ำ";
+"stagingPrebathName" = "การแช่ล่วงหน้า";
+"stagingPrebathDescription" = "แช่ล่วงหน้าเพื่อรักษาเสถียรภาพของอุณหภูมิ";
+"stagingDevelopName" = "การสร้างภาพ";
 "stagingDevelopDescription" = "การล้างฟิล์ม";
-"stagingStopBathName" = "น้ำยาหยุด";
-"stagingStopBathDescription" = "หยุดการล้าง";
-"stagingBleachName" = "ฟอกขาว";
-"stagingBleachDescription" = "การฟอกขาว";
-"stagingFixerName" = "น้ำยาตรึง";
-"stagingFixerDescription" = "ตรึงภาพ";
-"stagingWashName" = "ล้าง";
-"stagingWashDescription" = "ล้างฟิล์ม";
-"stagingStabilizeName" = "เสถียรภาพ";
-"stagingStabilizeDescription" = "เสถียรภาพสำหรับการเก็บระยะยาว";
+"stagingStopBathName" = "การหยุดภาพ";
+"stagingStopBathDescription" = "หยุดกระบวนการสร้างภาพ";
+"stagingBleachName" = "การฟอก";
+"stagingBleachDescription" = "กระบวนการฟอก";
+"stagingFixerName" = "การคงสภาพ";
+"stagingFixerDescription" = "การทำให้ภาพคงตัว";
+"stagingWashName" = "การล้างน้ำ";
+"stagingWashDescription" = "การล้างฟิล์มด้วยน้ำ";
+"stagingStabilizeName" = "การทำให้เสถียร";
+"stagingStabilizeDescription" = "การทำให้เสถียรเพื่อการเก็บรักษาในระยะยาว";
 
 // MARK: - Stage Editor
-"stageTime" = "เวลาขั้นตอน";
+"stageTime" = "เวลาของขั้นตอน";
 "duration" = "ระยะเวลา";
-"agitationMode" = "โหมดการเขย่า";
+"agitationMode" = "โหมดการกวนน้ำยา";
+"agitationModeNotSelected" = "ไม่ได้เลือก";
+"setTimeFirstToSelectAgitation" = "กรุณาตั้งเวลาก่อนเพื่อเลือกโหมดการกวนน้ำยา";
+"selectAgitationModeToStartTimer" = "กรุณาเลือกโหมดการกวนน้ำยาเพื่อเริ่มจับเวลา";
+"setAgitationModeFirstToStartTimer" = "กรุณาเลือกโหมดการกวนน้ำยาก่อนเพื่อเริ่มจับเวลา";
 "advancedSetup" = "การตั้งค่าขั้นสูง";
-"openDevelopmentSetup" = "เปิดการตั้งค่าการล้าง";
-"openFixerSetup" = "เปิดการตั้งค่าน้ำยาตรึง";
+"openDevelopmentSetup" = "เปิดตั้งค่าการล้างฟิล์ม";
+"openFixerSetup" = "เปิดตั้งค่าการคงสภาพ";
+"setupTimeByPreset" = "ตั้งค่าเวลาตามพรีเซ็ต";
+"resetStages" = "รีเซ็ตขั้นตอน";
 
 // MARK: - Settings
 "settings" = "การตั้งค่า";
@@ -324,45 +376,46 @@
 "settingsThemeDark" = "มืด";
 "settingsData" = "ข้อมูล";
 "settingsSyncData" = "ซิงค์ข้อมูล";
-"settingsLastSync" = "ซิงค์ครั้งสุดท้าย:";
-"settingsSyncNow" = "ซิงค์ตอนนี้";
+"settingsLastSync" = "ซิงค์ครั้งล่าสุด:";
+"settingsSyncNow" = "ซิงค์เดี๋ยวนี้";
 "settingsSyncResult" = "ผลการซิงค์";
 "settingsSyncSuccess" = "ซิงค์ข้อมูลสำเร็จ!";
 "settingsSyncError" = "การซิงค์ล้มเหลว";
-"settingsAutoSyncReady" = "ซิงค์อัตโนมัติพร้อม";
+"settingsAutoSyncReady" = "การซิงค์อัตโนมัติพร้อมแล้ว";
 "settingsAutoSyncChecking" = "กำลังตรวจสอบการเชื่อมต่อ...";
-"settingsAutoSyncInProgress" = "กำลังซิงค์อัตโนมัติ...";
-"settingsAutoSyncCompleted" = "ซิงค์อัตโนมัติเสร็จสิ้น";
-"settingsAutoSyncFailed" = "ซิงค์อัตโนมัติล้มเหลว: %@";
+"settingsAutoSyncInProgress" = "กำลังดำเนินการซิงค์อัตโนมัติ...";
+"settingsAutoSyncCompleted" = "การซิงค์อัตโนมัติเสร็จสิ้น";
+"settingsAutoSyncFailed" = "การซิงค์อัตโนมัติล้มเหลว: %@";
 "settingsAutoSyncNoInternet" = "ไม่มีการเชื่อมต่ออินเทอร์เน็ต";
-"settingsAutoSyncTooSoon" = "ทำการซิงค์เมื่อเร็วๆ นี้แล้ว";
-"settingsLastAutoSync" = "ซิงค์อัตโนมัติครั้งสุดท้าย:";
+"settingsAutoSyncTooSoon" = "มีการซิงค์เมื่อเร็วๆ นี้";
+"settingsLastAutoSync" = "การซิงค์อัตโนมัติครั้งล่าสุด:";
 "settingsAutoSyncEnabled" = "ซิงค์อัตโนมัติเมื่อเปิดแอป";
-"settingsAutoSyncDescription" = "ซิงค์ข้อมูลโดยอัตโนมัติเมื่อแอปเริ่มต้นหากมีอินเทอร์เน็ต";
-"settingsAutoSyncDisabled" = "ปิดการซิงค์อัตโนมัติ";
+"settingsAutoSyncDescription" = "ซิงค์ข้อมูลโดยอัตโนมัติเมื่อแอปเริ่มทำงานหากมีการเชื่อมต่ออินเทอร์เน็ต";
+"settingsAutoSyncDisabled" = "ปิดใช้งานการซิงค์อัตโนมัติ";
 "stagingStartSequential" = "เริ่มขั้นตอนตามลำดับ";
 "stagingStageComplete" = "ขั้นตอนเสร็จสิ้น!";
-"stagingGoToNextStage" = "ไปขั้นตอนถัดไป";
-"stagingAllStagesComplete" = "ขั้นตอนทั้งหมดเสร็จสิ้น!";
+"stagingGoToNextStage" = "ไปยังขั้นตอนถัดไป";
+"stagingAllStagesComplete" = "ทุกขั้นตอนเสร็จสิ้น!";
 "stagingFinish" = "เสร็จสิ้น";
 "stagingSequentialStages" = "ขั้นตอนตามลำดับ";
-"stagingStageXofY" = "ขั้นตอน %@ จาก %@";
-"stagingResetConfirmation" = "คุณต้องการรีเซ็ตทุกขั้นตอนจริงหรือไม่？";
+"stagingStageXofY" = "ขั้นตอนที่ %@ จาก %@";
+"stagingResetConfirmation" = "คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตทุกขั้นตอน?";
 "tapToSetTime" = "แตะเพื่อตั้งเวลา";
 
 // MARK: - Manual Time Input
 "setTimeManually" = "ตั้งเวลาด้วยตนเอง";
 "tapToChangeTime" = "แตะเพื่อเปลี่ยนเวลา";
 "setTimeToStartTimer" = "ตั้งเวลาเพื่อเริ่มตัวจับเวลา";
+"manualTimer" = "ตัวจับเวลาด้วยตนเอง";
 
 // MARK: - Create Mode
-"createMode" = "โหมดสร้าง";
+"createMode" = "สร้างโหมด";
 
 // MARK: - Development
-"development" = "การล้าง";
-"processModesDeveloping" = "การพัฒนา";
-"processModeFixer" = "ผู้แก้ไข";
-"noAlternativeOptions" = "มีตัวเลือกเดียวเท่านั้น";
+"development" = "การล้างฟิล์ม";
+"processModesDeveloping" = "การสร้างภาพ";
+"processModeFixer" = "การคงสภาพ";
+"noAlternativeOptions" = "มีเพียงตัวเลือกเดียวที่ใช้ได้";
 
 // MARK: - Manuals
 "manuals" = "คู่มือ";
@@ -372,18 +425,18 @@
 
 // MARK: - Formatting
 "unknownFilm" = "ฟิล์ม";
-"unknownDeveloper" = "น้ำยาล้าง";
+"unknownDeveloper" = "น้ำยาสร้างภาพ";
 "degreesCelsius" = "°C";
 "filmPlusDeveloper" = "%@ + %@";
 "isoLabel" = "ISO %@";
 "timeFormat" = "%@:%@ • %@ • %@%@";
-"cycleFormat" = "รอบ: เขย่า %@วิ → พัก %@วิ";
-"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@วิ";
+"cycleFormat" = "รอบ: %@วิ. กวนน้ำยา → %@วิ. พัก";
+"totalCycleDuration" = "ระยะเวลารอบทั้งหมด: %@วิ.";
 
 // MARK: - Testing
 "parameterRow" = "แถวพารามิเตอร์";
 "recordRow" = "แถวบันทึก";
-"calculatorComponents" = "ส่วนประกอบเครื่องคำนวณ";
+"calculatorComponents" = "ส่วนประกอบเครื่องคิดเลข";
 
 // MARK: - iCloud Sync Status
 "iCloudSyncStatusIdleAvailable" = "iCloud พร้อมซิงค์";
@@ -391,3 +444,18 @@
 "iCloudSyncStatusSyncing" = "กำลังซิงค์...";
 "iCloudSyncStatusCompleted" = "ซิงค์เสร็จสิ้น";
 "iCloudSyncCtatusFailed" = "ข้อผิดพลาด: %@";
+
+// MARK: - Support
+"support" = "การสนับสนุน";
+"contactDeveloper" = "ติดต่อผู้พัฒนา";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "การกระทำนี้จะแทนที่ขั้นตอนปัจจุบันของคุณและไม่สามารถยกเลิกได้";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "%@ ต้องไม่ว่างเปล่า";
+"validationErrorInvalidInteger" = "%@ ต้องเป็นจำนวนเต็มที่ถูกต้อง";
+"validationErrorInvalidDouble" = "%@ ต้องเป็นตัวเลขที่ถูกต้อง";
+"validationErrorValueOutOfRange" = "%@ ต้องอยู่ระหว่าง %d ถึง %d";
+"validationErrorDoubleOutOfRange" = "%@ ต้องอยู่ระหว่าง %.1f ถึง %.1f";
+"validationErrorMustBePositive" = "%@ ต้องมากกว่า 0";

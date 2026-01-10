@@ -10,7 +10,15 @@
 "continue" = "続ける";
 "skip" = "スキップ";
 "done" = "完了！";
-"timeUp" = "時間終了！";
+"timeUp" = "時間です！";
+
+// MARK: - Home
+"home" = "ホーム";
+"homeDescription" = "フィルム現像の完全なツールキット：計算機、タイマー、ジャーナル、ガイド。";
+"startProcess" = "新規プロセスを開始";
+"startProcessSubtitle" = "フィルム現像のステップバイステップガイドに従ってください。";
+"tools" = "ツール";
+"toolsSubtitle" = "個別の計算機とタイマーにアクセスします。";
 
 // MARK: - Timer Controls
 "start" = "開始";
@@ -22,36 +30,32 @@
 "seconds" = "秒";
 "min" = "分";
 "sec" = "秒";
-"minute" = "%@分目";
-"minuteLabel" = "%@分目";
+"minute" = "%@分";
+"minuteLabel" = "%@分";
 
 // MARK: - Calculator
 "calculate" = "計算";
 "calculator" = "計算機";
 "calculatorTitle" = "時間計算機";
-"calculateButton" = "計算";
+"calculateButton" = "計算する";
 "results" = "結果:";
-"resultsProcess" = "結果 %@ プロセス:";
+"resultsProcess" = "プロセス「%@」の結果:";
 "coefficient" = "係数:";
 "standardRatio" = "(標準 1.33)";
-"processType" = "プロセス種類:";
-"pushSteps" = "プッシュステップ数:";
+"processType" = "プロセスの種類:";
+"pushSteps" = "PUSHステップ数:";
 "numberOfSteps" = "ステップ数:";
-"from1to5" = "(1から5まで)";
+"from1to5" = "(1から5)";
 
 // MARK: - Development Parameters
 "developmentSetup" = "現像設定";
 "developmentSetupDescription" = "現像時間計算のパラメータを選択";
 "developmentTime" = "現像時間";
 "developmentComplete" = "現像完了！";
-"developmentCompleted" = "現像完了！";
-"developmentCompleteForProcess" = "プロセス完了: %@";
-"selectDevelopmentParameters" = "現像パラメータを選択してタイマーを開始";
+"developmentCompleted" = "現像が完了しました！";
+"developmentCompleteForProcess" = "プロセス「%@」の現像が完了しました";
+"selectDevelopmentParameters" = "タイマーを開始するために現像パラメータを選択してください";
 "startTimer" = "タイマー開始";
-"agitationModeNotSelected" = "未選択";
-"setTimeFirstToSelectAgitation" = "まず時間を設定してアジテーションを選択してください";
-"selectAgitationModeToStartTimer" = "タイマーを開始するにはアジテーションモードを選択してください";
-"setAgitationModeFirstToStartTimer" = "まずアジテーションモードを選択してタイマーを開始してください";
 "saveToJournal" = "ジャーナルに保存";
 
 // MARK: - Film & Developer
@@ -61,16 +65,16 @@
 "iso" = "ISO/EI:";
 "temperature" = "温度 (°C):";
 "customTime" = "カスタム時間:";
-"baseTime" = "ベース時間:";
+"baseTime" = "基本時間:";
 "basicTime" = "基本時間:";
 "basicTimeLabel" = "基本時間:";
 "manualInput" = "手動入力";
 "fromDatabase" = "データベースから:";
-"defaultTime" = "デフォルト時間（データなし）";
+"defaultTime" = "デフォルト時間 (データなし)";
 "ratio" = "比率:";
 "process" = "プロセス:";
-"push" = "プッシュ";
-"pull" = "プル";
+"push" = "Push";
+"pull" = "Pull";
 "steps" = "ステップ:";
 "current" = "現在:";
 "data" = "データ:";
@@ -115,14 +119,14 @@
 "hc110E" = "E 1+47 (HC-110)";
 
 // MARK: - Groups
-"groupIlford" = "イルフォード";
-"groupKodak" = "コダック";
-"groupFoma" = "フォマ";
-"groupKentmere" = "ケントメア";
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
 "groupOther" = "その他";
 "groupCustom" = "カスタム";
-"groupDevelopersIlford" = "イルフォード";
-"groupDevelopersKodak" = "コダック";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
 "groupDevelopersOther" = "その他";
 "groupDevelopersCustom" = "カスタム";
 "custom" = "カスタム";
@@ -161,53 +165,53 @@
 "films" = "フィルム";
 "developers" = "現像液";
 "developmentTimes" = "現像時間";
-"addFilm" = "フィルム追加";
-"addDeveloper" = "現像液追加";
-"addTime" = "時間追加";
+"addFilm" = "フィルムを追加";
+"addDeveloper" = "現像液を追加";
+"addTime" = "時間を追加";
 "filmPresets" = "フィルムプリセット";
 "developerPresets" = "現像液プリセット";
 "timePresets" = "現像時間プリセット";
 "presets" = "プリセット";
 
 // MARK: - Fixing Timer
-"goToFixing" = "定着へ";
+"goToFixing" = "定着へ進む";
 "fixingTimer" = "定着タイマー";
 "fixingTimerSetup" = "定着タイマー設定";
-"fixingTimerDescription" = "現像後のフィルム定着時間を設定";
+"fixingTimerDescription" = "現像後のフィルム定着時間を設定します";
 "fixingTime" = "定着時間";
 "startFixing" = "定着開始";
 
 // MARK: - Fixer Selection
 "fixer" = "定着液";
-"selectFixer" = "定着液選択";
-"fixerSelection" = "定着液選択";
+"selectFixer" = "定着液を選択";
+"fixerSelection" = "定着液の選択";
 "rapidFixer" = "迅速定着液";
 "acidFixer" = "酸性定着液";
 "neutralFixer" = "中性定着液";
 
 // MARK: - Agitation
-"agitationSelection" = "攪拌モード選択";
-"agitationDescription" = "攪拌は現像液を撹拌してフィルムを均一に現像するプロセスです";
+"agitationSelection" = "攪拌モードを選択";
+"agitationDescription" = "攪拌は、現像液を混ぜてフィルムを均一に現像するプロセスです";
 "noAgitation" = "攪拌なし";
 "noAgitationDescription" = "タイマーはリマインダーなしで動作します";
 "customAgitation" = "カスタムモード";
-"customAgitationDescription" = "独自の攪拌モードを作成";
+"customAgitationDescription" = "独自の攪拌モードを作成します";
 "customAgitationSetup" = "カスタムモード設定";
-"customAgitationSetupDescription" = "独自の攪拌モードを作成";
+"customAgitationSetupDescription" = "独自の攪拌モードを作成します";
 "customAgitationTitle" = "カスタム攪拌";
 "agitationTime" = "攪拌時間";
-"agitationTimeRemaining" = "（%@秒）";
+"agitationTimeRemaining" = "(%@秒)";
 "restTime" = "休止時間";
 "preview" = "プレビュー:";
-"cycle" = "サイクル: %@秒攪拌 → %@秒休止";
-"totalCycleDuration" = "総サイクル時間: %@秒";
+"cycle" = "サイクル: %@ 攪拌 → %@ 休止";
+"totalCycleDuration" = "合計サイクル時間: %@";
 "agitation" = "攪拌";
 "rest" = "休止";
 "phaseDescription" = "%@";
 "continuousAgitation" = "連続攪拌";
-"cycleAgitationFormat" = "%@秒攪拌 / %@秒休止";
-"periodicAgitationFormat" = "%@秒毎";
-"agitationContinuous" = "連続攪拌";
+"cycleAgitationFormat" = "%@秒 攪拌 / %@秒 休止";
+"periodicAgitationFormat" = "%@秒ごと";
+"agitationContinuous" = "連続";
 "agitationStill" = "攪拌なし";
 "agitationCycleFormat" = "%@ / %@";
 "agitationOrwoDescription" = "45 / 15 + 15 / 45";
@@ -219,77 +223,78 @@
 "agitationOrwoName" = "ORWO";
 "agitationXtolName" = "XTOL";
 "agitationRaeName" = "RAE";
-"agitationFixerName" = "定着液";
+"agitationFixerName" = "定着";
 "agitationRaePhase2Rotations" = "2回転";
-"agitationRaePhase1RotationPerMinute" = "1分毎に1回転";
+"agitationRaePhase1RotationPerMinute" = "1分ごとに1回転";
 "agitationRaePhase1Rotation7thMinute" = "7分目に1回転";
 "agitationRaePhase1Rotation10thMinute" = "10分目に1回転";
-"agitationRaePhase1RotationEvery5Minutes" = "5分毎に1回転";
+"agitationRaePhase1RotationEvery5Minutes" = "5分ごとに1回転";
 
 // MARK: - Custom Agitation Mode
-"createCustomAgitation" = "カスタムモード作成";
-"createCustomAgitationDescription" = "独自の攪拌パターンを設計";
+"createCustomAgitation" = "カスタムモードを作成";
+"createCustomAgitationDescription" = "独自の攪拌パターンを設計します";
 "savedCustomAgitationModes" = "保存済みカスタムモード";
-"savedCustomAgitationDescription" = "保存済みモードを参照して選択";
-"customAgitationCreateTitle" = "カスタム攪拌モード作成";
-"customAgitationEditTitle" = "カスタム攪拌モード編集";
+"savedCustomAgitationDescription" = "保存したモードから選択します";
+"customAgitationCreateTitle" = "カスタム攪拌モードを作成";
+"customAgitationEditTitle" = "カスタム攪拌モードを編集";
 "customAgitationName" = "モード名";
 "customAgitationNamePlaceholder" = "モード名を入力";
-"customAgitationFirstMinute" = "最初の1分";
+"customAgitationFirstMinute" = "最初の1分間";
 "customAgitationFirstMinuteDescription" = "最初の1分間の攪拌パターン";
-"customAgitationIntermediate" = "中間の分";
-"customAgitationIntermediateDescription" = "2分目からN-1分目の攪拌パターン";
-"customAgitationEnableLastMinute" = "カスタム最終分";
-"customAgitationLastMinute" = "最終分";
-"customAgitationLastMinuteDescription" = "最終分の攪拌パターン";
+"customAgitationIntermediate" = "中間";
+"customAgitationIntermediateDescription" = "2分目からN-1分目までの攪拌パターン";
+"customAgitationEnableLastMinute" = "最後の1分をカスタム";
+"customAgitationLastMinute" = "最後の1分間";
+"customAgitationLastMinuteDescription" = "最後の1分間の攪拌パターン";
 "customAgitationPreview" = "プレビュー";
-"customAgitationPreviewUnavailable" = "設定を完了してプレビューを表示";
-"customAgitationCreateButton" = "モード作成";
-"customAgitationUpdateButton" = "モード更新";
-"customAgitationReset" = "フォームリセット";
+"customAgitationPreviewUnavailable" = "設定を完了してプレビューを表示してください";
+"customAgitationCreateButton" = "モードを作成";
+"customAgitationUpdateButton" = "モードを更新";
+"customAgitationReset" = "フォームをリセット";
 "agitationType" = "攪拌タイプ";
 "agitationCycle" = "サイクル";
 "agitationPeriodic" = "周期的";
 "agitationCustom" = "カスタム指示";
-"cycleTimingSettings" = "サイクルタイミング設定";
+"cycleTimingSettings" = "サイクル時間設定";
 "agitationSeconds" = "攪拌";
 "restSeconds" = "休止";
 "periodicInterval" = "間隔";
 "customAgitationInstructions" = "指示";
 "customAgitationInstructionsPlaceholder" = "カスタム攪拌指示を入力...";
-"agitationPeriodicFormat" = "%@秒毎";
-"noCustomAgitationModes" = "カスタムモードなし";
-"noCustomAgitationModesDescription" = "最初のカスタム攪拌モードを作成して開始";
-"createFirstCustomMode" = "最初のモード作成";
+"agitationPeriodicFormat" = "%@秒ごと";
+"noCustomAgitationModes" = "カスタムモードがありません";
+"noCustomAgitationModesDescription" = "最初のカスタム攪拌モードを作成して開始してください";
+"createFirstCustomMode" = "最初のモードを作成";
 "selectThisMode" = "このモードを選択";
-"deleteConfirmation" = "モード削除";
-"deleteCustomModeMessage" = "\"%@\"を削除してもよろしいですか？この操作は元に戻せません。";
+"deleteConfirmation" = "モードを削除";
+"deleteCustomModeMessage" = "「%@」を削除してもよろしいですか？この操作は元に戻せません。";
 "createNew" = "新規作成";
 "validationError" = "検証エラー";
 "saveError" = "保存エラー";
 "ok" = "OK";
 "customAgitationErrorEmptyName" = "モード名は空にできません";
-"customAgitationErrorEmptyCustomDescription" = "%@にはカスタム指示が必要です";
-"customAgitationErrorInvalidTiming" = "%@の無効なタイミング設定";
-"customAgitationErrorInvalidInterval" = "%@の無効な間隔";
-"customAgitationErrorNoLastMinuteConfig" = "最終分設定が不足しています";
+"customAgitationErrorEmptyCustomDescription" = "「%@」にはカスタム指示が必要です";
+"customAgitationErrorInvalidTiming" = "「%@」の無効な時間設定";
+"customAgitationErrorInvalidInterval" = "「%@」の無効な間隔";
+"customAgitationErrorNoLastMinuteConfig" = "最後の1分間の設定がありません";
+"customAgitationErrorCycleSum" = "サイクル時間エラー（%1$@）: 攪拌と休止の合計は60秒を超えてはいけません。";
 
 // MARK: - Calculator Results
-"tapToCalculator" = "タップして計算機へ";
-"calculatedTime" = "計算時間";
-"noDilutionsAvailable" = "利用可能な希釈なし";
-"noDilutionsDescription" = "選択したフィルムと現像液の組み合わせで現像データがありません";
-"noISOOptionsAvailable" = "利用可能なISOオプションなし";
-"noISOOptionsDescription" = "フィルム、現像液、希釈を先に選択してISO オプションを表示してください。";
-"noOptionsAvailable" = "利用可能なオプションなし";
-"noOptionsDescription" = "現在選択可能なオプションがありません。";
+"tapToCalculator" = "タップして計算機に移動";
+"calculatedTime" = "計算結果の時間";
+"noDilutionsAvailable" = "利用可能な希釈がありません";
+"noDilutionsDescription" = "選択したフィルムと現像液の組み合わせに対する現像データがありません";
+"noISOOptionsAvailable" = "利用可能なISOオプションがありません";
+"noISOOptionsDescription" = "利用可能なISOオプションを表示するには、まずフィルム、現像液、希釈を選択してください。";
+"noOptionsAvailable" = "利用可能なオプションがありません";
+"noOptionsDescription" = "現在、選択可能なオプションはありません。";
 
 // MARK: - Journal
 "journalEmpty" = "ジャーナルは空です";
-"journalEmptyDescription" = "最初の計算を保存してここに表示";
+"journalEmptyDescription" = "最初の計算を保存すると、ここに表示されます";
 "saveCalculation" = "計算を保存";
 "journal" = "ジャーナル";
-"journalCreateRecord" = "記録作成";
+"journalCreateRecord" = "記録を作成";
 "journalRecordBasicInfo" = "基本情報";
 "journalRecordName" = "名前 (任意)";
 "journalRecordFilm" = "フィルム";
@@ -299,74 +304,68 @@
 "journalRecordTemperature" = "温度";
 "journalRecordTime" = "時間";
 "journalRecordComment" = "コメント";
-"journalRecordCommentPlaceholder" = "この現像についてのメモを追加...";
-"journalRecordDate" = "日時";
+"journalRecordCommentPlaceholder" = "この現像に関するメモを追加...";
+"journalRecordDate" = "日付と時間";
 "journalRecordProcess" = "プロセス";
 "editRecord" = "編集";
-"deleteRecord" = "記録削除";
+"deleteRecord" = "記録を削除";
 "deleteRecordConfirmation" = "この記録を削除してもよろしいですか？";
-"noRecords" = "記録なし";
-"noRecordsDescription" = "最初の記録を保存してここに表示";
-"saveRecord" = "記録保存";
-"saveRecordDescription" = "記録を保存する名前を入力";
-"recordDetails" = "記録詳細";
+"noRecords" = "記録がありません";
+"noRecordsDescription" = "最初の記録を保存すると、ここに表示されます";
+"saveRecord" = "記録を保存";
+"saveRecordDescription" = "この記録を保存するための名前を入力してください";
+"recordDetails" = "記録の詳細";
 
 // MARK: - Selection
-"selectFilm" = "フィルム選択";
-"selectDeveloper" = "現像液選択";
-"selectDilution" = "希釈選択";
-"selectDeveloperFirst" = "まず現像液を選択";
-"selectISO" = "ISO選択";
-"selectTemperature" = "温度選択";
-"selectScreenForTesting" = "テスト用画面を選択:";
-"recordName" = "名前入力";
-"searchFilms" = "フィルム検索...";
-"searchDevelopers" = "現像液検索...";
-"searchJournal" = "ジャーナル検索...";
+"selectFilm" = "フィルムを選択";
+"selectDeveloper" = "現像液を選択";
+"selectDilution" = "希釈を選択";
+"selectDeveloperFirst" = "最初に現像液を選択してください";
+"selectISO" = "ISOを選択";
+"selectTemperature" = "温度を選択";
+"selectScreenForTesting" = "テスト用の画面を選択してください:";
+"recordName" = "名前を入力";
+"searchFilms" = "フィルムを検索...";
+"searchJournal" = "ジャーナルを検索...";
 "noResultsFound" = "結果が見つかりません";
 "trySearchingDifferentKeywords" = "別のキーワードで検索してみてください";
-
-// MARK: - Home
-"home" = "ホーム";
-"homeDescription" = "フィルム現像の完全ツールキット：計算機、タイマー、ジャーナル、ガイド";
-"homePresetsSubtitle" = "現像パラメータ";
-"homeCalculatorSubtitle" = "時間計算";
-"homeTimerSubtitle" = "現像タイマー";
-"homeJournalSubtitle" = "保存記録";
-"homeManualsSubtitle" = "記事とガイド";
+"searchDevelopers" = "現像液を検索...";
 
 // MARK: - Staging
 "staging" = "ステージ";
-"stagingIntro" = "必要な順序でフィルム処理ステージを追加";
-"totalTime" = "総時間:";
-"stagesInProcess" = "処理中ステージ:";
-"chooseStage" = "ステージ選択";
+"stagingIntro" = "フィルム処理のステージを希望の順序で追加してください";
+"totalTime" = "合計時間:";
+"stagesInProcess" = "処理中のステージ:";
+"chooseStage" = "ステージを選択";
 "duplicate" = "複製";
-"homeStagingSubtitle" = "全プロセスの順次ステージを設定";
-"stagingPrebathName" = "予備浴";
-"stagingPrebathDescription" = "温度安定化のための予備浸漬";
+"stagingPrebathName" = "予備水洗";
+"stagingPrebathDescription" = "温度を安定させるための予備水洗";
 "stagingDevelopName" = "現像";
-"stagingDevelopDescription" = "フィルム現像";
-"stagingStopBathName" = "停止液";
-"stagingStopBathDescription" = "現像停止";
+"stagingDevelopDescription" = "フィルムの現像";
+"stagingStopBathName" = "停止";
+"stagingStopBathDescription" = "現像を停止します";
 "stagingBleachName" = "漂白";
-"stagingBleachDescription" = "漂白";
-"stagingFixerName" = "定着液";
-"stagingFixerDescription" = "画像定着";
+"stagingBleachDescription" = "漂白処理";
+"stagingFixerName" = "定着";
+"stagingFixerDescription" = "画像を定着させます";
 "stagingWashName" = "水洗";
-"stagingWashDescription" = "フィルム水洗";
+"stagingWashDescription" = "フィルムをすすぎます";
 "stagingStabilizeName" = "安定化";
-"stagingStabilizeDescription" = "長期保存用安定化";
+"stagingStabilizeDescription" = "長期保存のための安定化処理";
 
 // MARK: - Stage Editor
 "stageTime" = "ステージ時間";
-"duration" = "継続時間";
+"duration" = "時間";
 "agitationMode" = "攪拌モード";
-"advancedSetup" = "高度な設定";
+"agitationModeNotSelected" = "未選択";
+"setTimeFirstToSelectAgitation" = "攪拌モードを選択する前に時間を設定してください";
+"selectAgitationModeToStartTimer" = "タイマーを開始するには攪拌モードを選択してください";
+"setAgitationModeFirstToStartTimer" = "タイマーを開始する前に攪拌モードを選択してください";
+"advancedSetup" = "詳細設定";
 "openDevelopmentSetup" = "現像設定を開く";
-"openFixerSetup" = "定着液設定を開く";
-"setupTimeByPreset" = "プリセットで時間設定";
-"resetStages" = "ステージリセット";
+"openFixerSetup" = "定着設定を開く";
+"setupTimeByPreset" = "プリセットで時間を設定";
+"resetStages" = "ステージをリセット";
 
 // MARK: - Settings
 "settings" = "設定";
@@ -377,26 +376,26 @@
 "settingsThemeDark" = "ダーク";
 "settingsData" = "データ";
 "settingsSyncData" = "データ同期";
-"settingsLastSync" = "最後の同期:";
+"settingsLastSync" = "最終同期:";
 "settingsSyncNow" = "今すぐ同期";
 "settingsSyncResult" = "同期結果";
-"settingsSyncSuccess" = "データが正常に同期されました！";
-"settingsSyncError" = "同期失敗";
-"settingsAutoSyncReady" = "自動同期準備完了";
-"settingsAutoSyncChecking" = "接続確認中...";
+"settingsSyncSuccess" = "データは正常に同期されました！";
+"settingsSyncError" = "同期に失敗しました";
+"settingsAutoSyncReady" = "自動同期の準備完了";
+"settingsAutoSyncChecking" = "接続を確認中...";
 "settingsAutoSyncInProgress" = "自動同期中...";
-"settingsAutoSyncCompleted" = "自動同期完了";
-"settingsAutoSyncFailed" = "自動同期失敗: %@";
-"settingsAutoSyncNoInternet" = "インターネット接続なし";
-"settingsAutoSyncTooSoon" = "最近同期実行済み";
-"settingsLastAutoSync" = "最後の自動同期:";
-"settingsAutoSyncEnabled" = "アプリ起動時自動同期";
-"settingsAutoSyncDescription" = "インターネットが利用可能な場合、アプリ開始時に自動的にデータを同期";
-"settingsAutoSyncDisabled" = "自動同期無効";
-"stagingStartSequential" = "連続ステージ開始";
+"settingsAutoSyncCompleted" = "自動同期が完了しました";
+"settingsAutoSyncFailed" = "自動同期に失敗しました: %@";
+"settingsAutoSyncNoInternet" = "インターネット接続がありません";
+"settingsAutoSyncTooSoon" = "最近同期が実行されました";
+"settingsLastAutoSync" = "最終自動同期:";
+"settingsAutoSyncEnabled" = "アプリ起動時に自動同期";
+"settingsAutoSyncDescription" = "インターネットが利用可能な場合、アプリの起動時にデータを自動的に同期します";
+"settingsAutoSyncDisabled" = "自動同期は無効です";
+"stagingStartSequential" = "連続ステージを開始";
 "stagingStageComplete" = "ステージ完了！";
 "stagingGoToNextStage" = "次のステージへ";
-"stagingAllStagesComplete" = "全ステージ完了！";
+"stagingAllStagesComplete" = "すべてのステージが完了しました！";
 "stagingFinish" = "終了";
 "stagingSequentialStages" = "連続ステージ";
 "stagingStageXofY" = "ステージ %@ / %@";
@@ -404,19 +403,19 @@
 "tapToSetTime" = "タップして時間を設定";
 
 // MARK: - Manual Time Input
-"setTimeManually" = "時間を手動設定";
-"tapToChangeTime" = "タップして時間変更";
-"setTimeToStartTimer" = "タイマー開始時間設定";
+"setTimeManually" = "時間を手動で設定";
+"tapToChangeTime" = "タップして時間を変更";
+"setTimeToStartTimer" = "タイマーを開始するために時間を設定してください";
 "manualTimer" = "手動タイマー";
 
 // MARK: - Create Mode
-"createMode" = "作成モード";
+"createMode" = "モードを作成";
 
 // MARK: - Development
 "development" = "現像";
 "processModesDeveloping" = "現像";
-"processModeFixer" = "定着液";
-"noAlternativeOptions" = "オプションは1つのみ利用可能";
+"processModeFixer" = "定着";
+"noAlternativeOptions" = "利用可能なオプションは1つだけです";
 
 // MARK: - Manuals
 "manuals" = "マニュアル";
@@ -431,8 +430,8 @@
 "filmPlusDeveloper" = "%@ + %@";
 "isoLabel" = "ISO %@";
 "timeFormat" = "%@:%@ • %@ • %@%@";
-"cycleFormat" = "サイクル: %@秒攪拌 → %@秒休止";
-"totalCycleDuration" = "総サイクル時間: %@秒";
+"cycleFormat" = "サイクル: %@秒 攪拌 → %@秒 休止";
+"totalCycleDuration" = "合計サイクル時間: %@秒";
 
 // MARK: - Testing
 "parameterRow" = "パラメータ行";
@@ -440,8 +439,23 @@
 "calculatorComponents" = "計算機コンポーネント";
 
 // MARK: - iCloud Sync Status
-"iCloudSyncStatusIdleAvailable" = "iCloudの同期準備完了";
-"iCloudSyncStatusIdleUnavailable" = "iCloudが利用できません";
+"iCloudSyncStatusIdleAvailable" = "iCloudは同期の準備ができています";
+"iCloudSyncStatusIdleUnavailable" = "iCloudは利用できません";
 "iCloudSyncStatusSyncing" = "同期中...";
-"iCloudSyncStatusCompleted" = "同期完了";
+"iCloudSyncStatusCompleted" = "同期が完了しました";
 "iCloudSyncCtatusFailed" = "エラー: %@";
+
+// MARK: - Support
+"support" = "サポート";
+"contactDeveloper" = "開発者に連絡";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "これにより、現在のステージが置き換えられます。この操作は元に戻せません。";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "「%@」は空にできません。";
+"validationErrorInvalidInteger" = "「%@」は有効な整数である必要があります。";
+"validationErrorInvalidDouble" = "「%@」は有効な数値である必要があります。";
+"validationErrorValueOutOfRange" = "「%@」の値は%dから%dの間である必要があります。";
+"validationErrorDoubleOutOfRange" = "「%@」の値は%.1fから%.1fの間である必要があります。";
+"validationErrorMustBePositive" = "「%@」の値は0より大きい必要があります。";

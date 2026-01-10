@@ -344,7 +344,7 @@ public class SwiftDataService: ObservableObject {
     }
     
     public func deleteCalculationRecord(_ record: SwiftDataJournalRecord) {
-        Logger.logPersistence("Deleting record - film: \(record.filmName ?? <#default value#>), developer: \(record.developerName ?? <#default value#>)", type: .info)
+        Logger.logPersistence("Deleting record - film: \(record.filmName ?? "unknown"), developer: \(record.developerName ?? "unknown")", type: .info)
 
         modelContext.delete(record)
         saveContext()

@@ -136,7 +136,7 @@ public struct MainTabView: View {
     }
     
     private func loadRecord(_ record: SwiftDataJournalRecord) {
-        Logger.logNavigation("Loading record: \(record.filmName ?? <#default value#>)", type: .debug)
+        Logger.logNavigation("Loading record: \(record.filmName ?? "unknown")", type: .debug)
     }
     
     public init(swiftDataService: SwiftDataService, selectedTab: Binding<Int>, colorScheme: Binding<ColorScheme?>) {

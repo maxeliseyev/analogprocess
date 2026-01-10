@@ -2,21 +2,29 @@
 "mainTitle" = "Phòng Lab Quy Trình Analog";
 "back" = "← Quay lại";
 "close" = "Đóng";
-"edit" = "Chỉnh sửa";
-"delete" = "Xóa";
+"edit" = "Sửa";
+"delete" = "Xoá";
 "save" = "Lưu";
-"cancel" = "Hủy";
+"cancel" = "Huỷ";
 "apply" = "Áp dụng";
 "continue" = "Tiếp tục";
 "skip" = "Bỏ qua";
-"done" = "Hoàn thành!";
+"done" = "Hoàn tất!";
 "timeUp" = "Hết giờ!";
+
+// MARK: - Home
+"home" = "Trang chủ";
+"homeDescription" = "Bộ công cụ hoàn chỉnh để tráng phim: máy tính, hẹn giờ, nhật ký và hướng dẫn.";
+"startProcess" = "Bắt đầu Quy trình Mới";
+"startProcessSubtitle" = "Làm theo hướng dẫn từng bước để tráng phim.";
+"tools" = "Công cụ";
+"toolsSubtitle" = "Truy cập các máy tính và hẹn giờ riêng lẻ.";
 
 // MARK: - Timer Controls
 "start" = "Bắt đầu";
 "pause" = "Tạm dừng";
 "reset" = "Đặt lại";
-"timer" = "Bộ đếm thời gian";
+"timer" = "Hẹn giờ";
 "time" = "Thời gian";
 "minutes" = "Phút";
 "seconds" = "Giây";
@@ -28,40 +36,36 @@
 // MARK: - Calculator
 "calculate" = "Tính toán";
 "calculator" = "Máy tính";
-"calculatorTitle" = "Máy tính thời gian";
+"calculatorTitle" = "Máy tính Thời gian";
 "calculateButton" = "Tính toán";
 "results" = "Kết quả:";
-"resultsProcess" = "Kết quả quy trình %@:";
+"resultsProcess" = "Kết quả của quy trình %@:";
 "coefficient" = "Hệ số:";
 "standardRatio" = "(tiêu chuẩn 1.33)";
 "processType" = "Loại quy trình:";
-"pushSteps" = "Số bậc PUSH:";
-"numberOfSteps" = "Số bậc:";
+"pushSteps" = "Số bước PUSH:";
+"numberOfSteps" = "Số bước:";
 "from1to5" = "(từ 1 đến 5)";
 
 // MARK: - Development Parameters
-"developmentSetup" = "Thiết lập tráng phim";
-"developmentSetupDescription" = "Chọn thông số để tính thời gian tráng phim";
+"developmentSetup" = "Thiết lập Tráng phim";
+"developmentSetupDescription" = "Chọn các tham số để tính toán thời gian tráng phim";
 "developmentTime" = "Thời gian tráng phim";
-"developmentComplete" = "Tráng phim hoàn thành!";
-"developmentCompleted" = "Tráng phim hoàn thành!";
-"developmentCompleteForProcess" = "Quy trình hoàn thành: %@";
-"selectDevelopmentParameters" = "Chọn thông số tráng phim để bắt đầu đồng hồ";
-"startTimer" = "Bắt đầu đồng hồ";
-"agitationModeNotSelected" = "Chưa chọn";
-"setTimeFirstToSelectAgitation" = "Vui lòng đặt thời gian trước để chọn chế độ khuấy";
-"selectAgitationModeToStartTimer" = "Vui lòng chọn chế độ khuấy để bắt đầu đồng hồ";
-"setAgitationModeFirstToStartTimer" = "Vui lòng chọn chế độ khuấy trước để bắt đầu đồng hồ";
-"saveToJournal" = "Lưu vào nhật ký";
+"developmentComplete" = "Tráng phim hoàn tất!";
+"developmentCompleted" = "Đã hoàn tất tráng phim!";
+"developmentCompleteForProcess" = "Đã hoàn tất tráng phim cho quy trình: %@";
+"selectDevelopmentParameters" = "Chọn tham số tráng phim để bắt đầu hẹn giờ";
+"startTimer" = "Bắt đầu Hẹn giờ";
+"saveToJournal" = "Lưu vào Nhật ký";
 
 // MARK: - Film & Developer
 "film" = "Phim:";
-"developer" = "Dung dịch hiện tráng:";
+"developer" = "Thuốc hiện hình:";
 "dilution" = "Tỷ lệ pha loãng:";
 "iso" = "ISO/EI:";
 "temperature" = "Nhiệt độ (°C):";
 "customTime" = "Thời gian tùy chỉnh:";
-"baseTime" = "Thời gian cơ sở:";
+"baseTime" = "Thời gian cơ bản:";
 "basicTime" = "Thời gian cơ bản:";
 "basicTimeLabel" = "Thời gian cơ bản:";
 "manualInput" = "Nhập thủ công";
@@ -69,9 +73,9 @@
 "defaultTime" = "Thời gian mặc định (không có dữ liệu)";
 "ratio" = "Tỷ lệ:";
 "process" = "Quy trình:";
-"push" = "Push";
-"pull" = "Pull";
-"steps" = "Bậc:";
+"push" = "Đẩy sáng (Push)";
+"pull" = "Giảm sáng (Pull)";
+"steps" = "Bước:";
 "current" = "Hiện tại:";
 "data" = "Dữ liệu:";
 "available" = "✓ Có sẵn";
@@ -93,7 +97,7 @@
 "StandardC" = "°C (Tiêu chuẩn)";
 
 // MARK: - Dilution Options
-"stock" = "Nguyên chất";
+"stock" = "Dung dịch gốc";
 "dilution1+1" = "1+1";
 "dilution1+2" = "1+2";
 "dilution1+3" = "1+3";
@@ -128,16 +132,16 @@
 "custom" = "Tùy chỉnh";
 
 // MARK: - Steps
-"step1" = "+1 bậc";
-"step2" = "+2 bậc";
-"step3" = "+3 bậc";
-"step4" = "+4 bậc";
-"step5" = "+5 bậc";
-"pullStep1" = "-1 bậc";
-"pullStep2" = "-2 bậc";
-"pullStep3" = "-3 bậc";
-"pullStep4" = "-4 bậc";
-"pullStep5" = "-5 bậc";
+"step1" = "+1 bước";
+"step2" = "+2 bước";
+"step3" = "+3 bước";
+"step4" = "+4 bước";
+"step5" = "+5 bước";
+"pullStep1" = "-1 bước";
+"pullStep2" = "-2 bước";
+"pullStep3" = "-3 bước";
+"pullStep4" = "-4 bước";
+"pullStep5" = "-5 bước";
 
 // MARK: - ISO Options
 "iso25" = "25";
@@ -157,163 +161,211 @@
 "iso12500" = "12500";
 
 // MARK: - Presets Management
-"presetsManagement" = "Quản lý cài sẵn";
+"presetsManagement" = "Quản lý Cài đặt sẵn";
 "films" = "Phim";
-"developers" = "Dung dịch hiện tráng";
+"developers" = "Thuốc hiện hình";
 "developmentTimes" = "Thời gian tráng phim";
-"addFilm" = "Thêm phim";
-"addDeveloper" = "Thêm dung dịch hiện tráng";
-"addTime" = "Thêm thời gian";
-"filmPresets" = "Cài sẵn phim";
-"developerPresets" = "Cài sẵn dung dịch hiện tráng";
-"timePresets" = "Cài sẵn thời gian tráng";
-"presets" = "Cài sẵn";
+"addFilm" = "Thêm Phim";
+"addDeveloper" = "Thêm Thuốc hiện hình";
+"addTime" = "Thêm Thời gian";
+"filmPresets" = "Cài đặt sẵn cho Phim";
+"developerPresets" = "Cài đặt sẵn cho Thuốc hiện hình";
+"timePresets" = "Cài đặt sẵn Thời gian Tráng phim";
+"presets" = "Cài đặt sẵn";
 
 // MARK: - Fixing Timer
-"goToFixing" = "Đến cố định";
-"fixingTimer" = "Đồng hồ cố định";
-"fixingTimerSetup" = "Thiết lập đồng hồ cố định";
-"fixingTimerDescription" = "Đặt thời gian cố định phim sau khi tráng";
-"fixingTime" = "Thời gian cố định";
-"startFixing" = "Bắt đầu cố định";
+"goToFixing" = "Đến bước Hãm phim";
+"fixingTimer" = "Hẹn giờ Hãm phim";
+"fixingTimerSetup" = "Thiết lập Hẹn giờ Hãm phim";
+"fixingTimerDescription" = "Đặt thời gian hãm phim sau khi tráng";
+"fixingTime" = "Thời gian hãm phim";
+"startFixing" = "Bắt đầu Hãm phim";
 
 // MARK: - Fixer Selection
-"fixer" = "Dung dịch cố định";
-"selectFixer" = "Chọn dung dịch cố định";
-"fixerSelection" = "Lựa chọn dung dịch cố định";
-"rapidFixer" = "Dung dịch cố định nhanh";
-"acidFixer" = "Dung dịch cố định axit";
-"neutralFixer" = "Dung dịch cố định trung tính";
+"fixer" = "Thuốc hãm";
+"selectFixer" = "Chọn Thuốc hãm";
+"fixerSelection" = "Lựa chọn Thuốc hãm";
+"rapidFixer" = "Thuốc hãm nhanh";
+"acidFixer" = "Thuốc hãm axit";
+"neutralFixer" = "Thuốc hãm trung tính";
 
 // MARK: - Agitation
-"agitationSelection" = "Chọn chế độ khuấy";
-"agitationDescription" = "Khuấy là quá trình làm động dung dịch hiện tráng để tráng phim đồng đều";
-"noAgitation" = "Không khuấy";
-"noAgitationDescription" = "Đồng hồ sẽ hoạt động mà không nhắc nhở";
+"agitationSelection" = "Chọn Chế độ Lắc/Khuấy";
+"agitationDescription" = "Lắc/khuấy là quá trình tác động vào thuốc hiện hình để phim được tráng đều";
+"noAgitation" = "Không lắc/khuấy";
+"noAgitationDescription" = "Hẹn giờ sẽ chạy mà không có nhắc nhở";
 "customAgitation" = "Chế độ tùy chỉnh";
-"customAgitationDescription" = "Tạo chế độ khuấy riêng của bạn";
+"customAgitationDescription" = "Tạo chế độ lắc/khuấy của riêng bạn";
 "customAgitationSetup" = "Thiết lập chế độ tùy chỉnh";
-"customAgitationSetupDescription" = "Tạo chế độ khuấy riêng của bạn";
-"customAgitationTitle" = "Khuấy tùy chỉnh";
-"agitationTime" = "Thời gian khuấy";
+"customAgitationSetupDescription" = "Tạo chế độ lắc/khuấy của riêng bạn";
+"customAgitationTitle" = "Lắc/Khuấy Tùy chỉnh";
+"agitationTime" = "Thời gian lắc/khuấy";
 "agitationTimeRemaining" = "(%@ giây)";
 "restTime" = "Thời gian nghỉ";
 "preview" = "Xem trước:";
-"cycle" = "Chu kỳ: khuấy %@ giây → nghỉ %@ giây";
-"totalCycleDuration" = "Thời gian chu kỳ tổng: %@ giây";
-"agitation" = "KHUẤY";
+"cycle" = "Chu kỳ: %@ lắc/khuấy → %@ nghỉ";
+"totalCycleDuration" = "Tổng thời gian chu kỳ: %@";
+"agitation" = "LẮC/KHUẤY";
 "rest" = "NGHỈ";
 "phaseDescription" = "%@";
-"continuousAgitation" = "Khuấy liên tục";
-"cycleAgitationFormat" = "khuấy %@ giây / nghỉ %@ giây";
+"continuousAgitation" = "Lắc/khuấy liên tục";
+"cycleAgitationFormat" = "%@ giây lắc/khuấy / %@ giây nghỉ";
 "periodicAgitationFormat" = "Mỗi %@ giây";
-"agitationContinuous" = "Khuấy liên tục";
-"agitationStill" = "Không khuấy";
+"agitationContinuous" = "Liên tục";
+"agitationStill" = "Không lắc/khuấy";
 "agitationCycleFormat" = "%@ / %@";
 "agitationOrwoDescription" = "45 / 15 + 15 / 45";
-"agitationRaeDescription" = "Cho tráng phim dài";
-"agitationFixerDescription" = "Chế độ dung dịch cố định";
+"agitationRaeDescription" = "Dành cho thời gian tráng dài";
+"agitationFixerDescription" = "Chế độ hãm phim";
 "agitationCustomFormat" = "Tùy chỉnh (%@ giây/%@ giây)";
 "agitationContinuousName" = "Liên tục";
-"agitationStillName" = "Yên tĩnh";
+"agitationStillName" = "Tĩnh";
 "agitationOrwoName" = "ORWO";
 "agitationXtolName" = "XTOL";
 "agitationRaeName" = "RAE";
-"agitationFixerName" = "Dung dịch cố định";
-"agitationRaePhase2Rotations" = "2 vòng xoay";
-"agitationRaePhase1RotationPerMinute" = "1 vòng xoay mỗi phút";
-"agitationRaePhase1Rotation7thMinute" = "1 vòng xoay ở phút thứ 7";
-"agitationRaePhase1Rotation10thMinute" = "1 vòng xoay ở phút thứ 10";
-"agitationRaePhase1RotationEvery5Minutes" = "1 vòng xoay mỗi 5 phút";
+"agitationFixerName" = "Thuốc hãm";
+"agitationRaePhase2Rotations" = "2 vòng quay";
+"agitationRaePhase1RotationPerMinute" = "1 vòng quay mỗi phút";
+"agitationRaePhase1Rotation7thMinute" = "1 vòng quay ở phút thứ 7";
+"agitationRaePhase1Rotation10thMinute" = "1 vòng quay ở phút thứ 10";
+"agitationRaePhase1RotationEvery5Minutes" = "1 vòng quay mỗi 5 phút";
+
+// MARK: - Custom Agitation Mode
+"createCustomAgitation" = "Tạo Chế độ Tùy chỉnh";
+"createCustomAgitationDescription" = "Thiết kế mẫu lắc/khuấy của riêng bạn";
+"savedCustomAgitationModes" = "Các Chế độ Tùy chỉnh đã lưu";
+"savedCustomAgitationDescription" = "Duyệt và chọn từ các chế độ đã lưu của bạn";
+"customAgitationCreateTitle" = "Tạo Chế độ Lắc/Khuấy Tùy chỉnh";
+"customAgitationEditTitle" = "Sửa Chế độ Lắc/Khuấy Tùy chỉnh";
+"customAgitationName" = "Tên Chế độ";
+"customAgitationNamePlaceholder" = "Nhập tên chế độ";
+"customAgitationFirstMinute" = "Phút Đầu tiên";
+"customAgitationFirstMinuteDescription" = "Mẫu lắc/khuấy cho phút đầu tiên";
+"customAgitationIntermediate" = "Các Phút ở giữa";
+"customAgitationIntermediateDescription" = "Mẫu lắc/khuấy cho các phút từ 2 đến N-1";
+"customAgitationEnableLastMinute" = "Tùy chỉnh Phút Cuối";
+"customAgitationLastMinute" = "Phút Cuối";
+"customAgitationLastMinuteDescription" = "Mẫu lắc/khuấy cho phút cuối cùng";
+"customAgitationPreview" = "Xem trước";
+"customAgitationPreviewUnavailable" = "Hoàn thành cấu hình để xem trước";
+"customAgitationCreateButton" = "Tạo Chế độ";
+"customAgitationUpdateButton" = "Cập nhật Chế độ";
+"customAgitationReset" = "Đặt lại Biểu mẫu";
+"agitationType" = "Loại Lắc/Khuấy";
+"agitationCycle" = "Chu kỳ";
+"agitationPeriodic" = "Định kỳ";
+"agitationCustom" = "Hướng dẫn Tùy chỉnh";
+"cycleTimingSettings" = "Cài đặt Thời gian Chu kỳ";
+"agitationSeconds" = "Lắc/Khuấy";
+"restSeconds" = "Nghỉ";
+"periodicInterval" = "Khoảng thời gian";
+"customAgitationInstructions" = "Hướng dẫn";
+"customAgitationInstructionsPlaceholder" = "Nhập hướng dẫn lắc/khuấy tùy chỉnh...";
+"agitationPeriodicFormat" = "Mỗi %@ giây";
+"noCustomAgitationModes" = "Không có Chế độ Tùy chỉnh";
+"noCustomAgitationModesDescription" = "Tạo chế độ lắc/khuấy tùy chỉnh đầu tiên của bạn để bắt đầu";
+"createFirstCustomMode" = "Tạo Chế độ Đầu tiên";
+"selectThisMode" = "Chọn Chế độ này";
+"deleteConfirmation" = "Xóa Chế độ";
+"deleteCustomModeMessage" = "Bạn có chắc chắn muốn xóa \"%@\" không? Hành động này không thể hoàn tác.";
+"createNew" = "Tạo Mới";
+"validationError" = "Lỗi xác thực";
+"saveError" = "Lỗi lưu";
+"ok" = "OK";
+"customAgitationErrorEmptyName" = "Tên chế độ không được để trống";
+"customAgitationErrorEmptyCustomDescription" = "Cần có hướng dẫn tùy chỉnh cho %@";
+"customAgitationErrorInvalidTiming" = "Cấu hình thời gian không hợp lệ cho %@";
+"customAgitationErrorInvalidInterval" = "Khoảng thời gian không hợp lệ cho %@";
+"customAgitationErrorNoLastMinuteConfig" = "Thiếu cấu hình phút cuối";
+"customAgitationErrorCycleSum" = "Lỗi Thời gian Chu kỳ trong %1$@: Tổng thời gian lắc/khuấy và nghỉ không được vượt quá 60 giây.";
 
 // MARK: - Calculator Results
-"tapToCalculator" = "Chạm để đến máy tính";
-"calculatedTime" = "Thời gian tính toán";
-"noDilutionsAvailable" = "Không có tỷ lệ pha loãng";
-"noDilutionsDescription" = "Không có dữ liệu tráng cho kết hợp phim và dung dịch đã chọn";
-"noISOOptionsAvailable" = "Không có tùy chọn ISO";
-"noISOOptionsDescription" = "Vui lòng chọn phim, dung dịch hiện tráng và tỷ lệ pha loãng trước để xem các tùy chọn ISO có sẵn.";
-"noOptionsAvailable" = "Không có tùy chọn";
-"noOptionsDescription" = "Hiện tại không có tùy chọn nào để lựa chọn.";
+"tapToCalculator" = "Chạm để chuyển đến máy tính";
+"calculatedTime" = "Thời gian đã tính";
+"noDilutionsAvailable" = "Không có tỷ lệ pha loãng nào";
+"noDilutionsDescription" = "Không có dữ liệu tráng phim cho sự kết hợp giữa phim và thuốc hiện hình đã chọn";
+"noISOOptionsAvailable" = "Không có tùy chọn ISO nào";
+"noISOOptionsDescription" = "Vui lòng chọn phim, thuốc hiện hình và tỷ lệ pha loãng trước để xem các tùy chọn ISO có sẵn.";
+"noOptionsAvailable" = "Không có tùy chọn nào";
+"noOptionsDescription" = "Hiện không có tùy chọn nào để lựa chọn.";
 
 // MARK: - Journal
 "journalEmpty" = "Nhật ký trống";
-"journalEmptyDescription" = "Lưu tính toán đầu tiên của bạn để xem ở đây";
+"journalEmptyDescription" = "Lưu tính toán đầu tiên của bạn để xem tại đây";
 "saveCalculation" = "Lưu tính toán";
 "journal" = "Nhật ký";
-"journalCreateRecord" = "Tạo bản ghi";
-"journalRecordBasicInfo" = "Thông tin cơ bản";
+"journalCreateRecord" = "Tạo Bản ghi";
+"journalRecordBasicInfo" = "Thông tin Cơ bản";
 "journalRecordName" = "Tên (tùy chọn)";
 "journalRecordFilm" = "Phim";
-"journalRecordDeveloper" = "Dung dịch hiện tráng";
-"journalRecordParameters" = "Thông số tráng phim";
+"journalRecordDeveloper" = "Thuốc hiện hình";
+"journalRecordParameters" = "Thông số Tráng phim";
 "journalRecordDilution" = "Tỷ lệ pha loãng";
 "journalRecordTemperature" = "Nhiệt độ";
 "journalRecordTime" = "Thời gian";
 "journalRecordComment" = "Ghi chú";
-"journalRecordCommentPlaceholder" = "Thêm ghi chú về việc tráng này...";
+"journalRecordCommentPlaceholder" = "Thêm ghi chú về lần tráng phim này...";
 "journalRecordDate" = "Ngày & Giờ";
 "journalRecordProcess" = "Quy trình";
-"editRecord" = "Chỉnh sửa";
-"deleteRecord" = "Xóa bản ghi";
-"deleteRecordConfirmation" = "Bạn có chắc chắn muốn xóa bản ghi này?";
-"noRecords" = "Không có bản ghi";
-"noRecordsDescription" = "Lưu bản ghi đầu tiên của bạn để xem ở đây";
-"saveRecord" = "Lưu bản ghi";
+"editRecord" = "Sửa";
+"deleteRecord" = "Xóa Bản ghi";
+"deleteRecordConfirmation" = "Bạn có chắc chắn muốn xóa bản ghi này không?";
+"noRecords" = "Không có Bản ghi";
+"noRecordsDescription" = "Lưu bản ghi đầu tiên của bạn để xem tại đây";
+"saveRecord" = "Lưu Bản ghi";
 "saveRecordDescription" = "Nhập tên để lưu bản ghi này";
-"recordDetails" = "Chi tiết bản ghi";
+"recordDetails" = "Chi tiết Bản ghi";
 
 // MARK: - Selection
 "selectFilm" = "Chọn phim";
-"selectDeveloper" = "Chọn dung dịch hiện tráng";
+"selectDeveloper" = "Chọn thuốc hiện hình";
 "selectDilution" = "Chọn tỷ lệ pha loãng";
-"selectDeveloperFirst" = "Chọn dung dịch hiện tráng trước";
+"selectDeveloperFirst" = "Vui lòng chọn thuốc hiện hình trước";
 "selectISO" = "Chọn ISO";
-"selectTemperature" = "Chọn nhiệt độ";
-"selectScreenForTesting" = "Chọn màn hình để thử nghiệm:";
+"selectTemperature" = "Chọn Nhiệt độ";
+"selectScreenForTesting" = "Chọn màn hình để kiểm tra:";
 "recordName" = "Nhập tên";
 "searchFilms" = "Tìm kiếm phim...";
-"searchDevelopers" = "Tìm kiếm dung dịch...";
-
-// MARK: - Home
-"home" = "Trang chủ";
-"homeDescription" = "Bộ công cụ hoàn chỉnh cho tráng phim: máy tính, đồng hồ, nhật ký và hướng dẫn";
-"homePresetsSubtitle" = "Thông số tráng phim";
-"homeCalculatorSubtitle" = "Tính toán thời gian";
-"homeTimerSubtitle" = "Đồng hồ tráng phim";
-"homeJournalSubtitle" = "Bản ghi đã lưu";
-"homeManualsSubtitle" = "Bài viết và hướng dẫn";
+"searchJournal" = "Tìm kiếm nhật ký...";
+"noResultsFound" = "Không tìm thấy kết quả nào";
+"trySearchingDifferentKeywords" = "Thử tìm kiếm với các từ khóa khác";
+"searchDevelopers" = "Tìm kiếm thuốc hiện hình...";
 
 // MARK: - Staging
 "staging" = "Giai đoạn";
 "stagingIntro" = "Thêm các giai đoạn xử lý phim theo thứ tự mong muốn";
 "totalTime" = "Tổng thời gian:";
-"stagesInProcess" = "Giai đoạn đang xử lý:";
+"stagesInProcess" = "Các giai đoạn trong quy trình:";
 "chooseStage" = "Chọn giai đoạn";
-"duplicate" = "Sao chép";
-"homeStagingSubtitle" = "Giai đoạn xử lý";
+"duplicate" = "Nhân bản";
 "stagingPrebathName" = "Ngâm trước";
-"stagingPrebathDescription" = "Ngâm trước để ổn định nhiệt độ";
-"stagingDevelopName" = "Tráng";
-"stagingDevelopDescription" = "Tráng phim";
-"stagingStopBathName" = "Dung dịch dừng";
-"stagingStopBathDescription" = "Dừng quá trình tráng";
-"stagingBleachName" = "Tẩy trắng";
-"stagingBleachDescription" = "Tẩy trắng";
-"stagingFixerName" = "Dung dịch cố định";
-"stagingFixerDescription" = "Cố định hình ảnh";
+"stagingPrebathDescription" = "Ngâm nước trước để ổn định nhiệt độ";
+"stagingDevelopName" = "Tráng phim";
+"stagingDevelopDescription" = "Quy trình tráng phim";
+"stagingStopBathName" = "Dừng";
+"stagingStopBathDescription" = "Dừng quá trình tráng phim";
+"stagingBleachName" = "Tẩy";
+"stagingBleachDescription" = "Quy trình tẩy";
+"stagingFixerName" = "Hãm phim";
+"stagingFixerDescription" = "Hãm hình ảnh";
 "stagingWashName" = "Rửa";
-"stagingWashDescription" = "Rửa phim";
+"stagingWashDescription" = "Rửa sạch phim";
 "stagingStabilizeName" = "Ổn định";
-"stagingStabilizeDescription" = "Ổn định để bảo quản lâu dài";
+"stagingStabilizeDescription" = "Ổn định để lưu trữ lâu dài";
 
 // MARK: - Stage Editor
 "stageTime" = "THỜI GIAN GIAI ĐOẠN";
 "duration" = "Thời lượng";
-"agitationMode" = "Chế độ khuấy";
+"agitationMode" = "Chế độ Lắc/Khuấy";
+"agitationModeNotSelected" = "Chưa chọn";
+"setTimeFirstToSelectAgitation" = "Đặt thời gian trước để chọn chế độ lắc/khuấy";
+"selectAgitationModeToStartTimer" = "Chọn chế độ lắc/khuấy để bắt đầu hẹn giờ";
+"setAgitationModeFirstToStartTimer" = "Chọn chế độ lắc/khuấy trước để bắt đầu hẹn giờ";
 "advancedSetup" = "THIẾT LẬP NÂNG CAO";
-"openDevelopmentSetup" = "Mở thiết lập tráng";
-"openFixerSetup" = "Mở thiết lập cố định";
+"openDevelopmentSetup" = "Mở Thiết lập Tráng phim";
+"openFixerSetup" = "Mở Thiết lập Hãm phim";
+"setupTimeByPreset" = "Thiết lập thời gian theo cài đặt sẵn";
+"resetStages" = "Đặt lại các Giai đoạn";
 
 // MARK: - Settings
 "settings" = "Cài đặt";
@@ -323,45 +375,46 @@
 "settingsThemeLight" = "Sáng";
 "settingsThemeDark" = "Tối";
 "settingsData" = "Dữ liệu";
-"settingsSyncData" = "Đồng bộ dữ liệu";
+"settingsSyncData" = "Đồng bộ Dữ liệu";
 "settingsLastSync" = "Lần đồng bộ cuối:";
-"settingsSyncNow" = "Đồng bộ ngay";
-"settingsSyncResult" = "Kết quả đồng bộ";
-"settingsSyncSuccess" = "Đồng bộ dữ liệu thành công!";
+"settingsSyncNow" = "Đồng bộ Ngay";
+"settingsSyncResult" = "Kết quả Đồng bộ";
+"settingsSyncSuccess" = "Dữ liệu đã được đồng bộ thành công!";
 "settingsSyncError" = "Đồng bộ thất bại";
-"settingsAutoSyncReady" = "Đồng bộ tự động sẵn sàng";
+"settingsAutoSyncReady" = "Sẵn sàng đồng bộ tự động";
 "settingsAutoSyncChecking" = "Đang kiểm tra kết nối...";
-"settingsAutoSyncInProgress" = "Đang đồng bộ tự động...";
-"settingsAutoSyncCompleted" = "Đồng bộ tự động hoàn thành";
+"settingsAutoSyncInProgress" = "Đang tiến hành đồng bộ tự động...";
+"settingsAutoSyncCompleted" = "Đồng bộ tự động hoàn tất";
 "settingsAutoSyncFailed" = "Đồng bộ tự động thất bại: %@";
 "settingsAutoSyncNoInternet" = "Không có kết nối internet";
-"settingsAutoSyncTooSoon" = "Đã đồng bộ gần đây";
+"settingsAutoSyncTooSoon" = "Đã thực hiện đồng bộ gần đây";
 "settingsLastAutoSync" = "Lần đồng bộ tự động cuối:";
-"settingsAutoSyncEnabled" = "Đồng bộ tự động khi khởi động";
-"settingsAutoSyncDescription" = "Tự động đồng bộ dữ liệu khi ứng dụng khởi động nếu có internet";
+"settingsAutoSyncEnabled" = "Đồng bộ tự động khi khởi chạy ứng dụng";
+"settingsAutoSyncDescription" = "Tự động đồng bộ dữ liệu khi ứng dụng khởi động nếu có kết nối internet";
 "settingsAutoSyncDisabled" = "Đã tắt đồng bộ tự động";
-"stagingStartSequential" = "Bắt đầu giai đoạn tuần tự";
-"stagingStageComplete" = "Giai đoạn hoàn thành!";
-"stagingGoToNextStage" = "Đến giai đoạn tiếp theo";
-"stagingAllStagesComplete" = "Tất cả giai đoạn hoàn thành!";
-"stagingFinish" = "Hoàn thành";
-"stagingSequentialStages" = "Giai đoạn tuần tự";
-"stagingStageXofY" = "Giai đoạn %@ trong %@";
-"stagingResetConfirmation" = "Bạn có thực sự muốn đặt lại tất cả các giai đoạn?";
-"tapToSetTime" = "Nhấn để đặt thời gian";
+"stagingStartSequential" = "Bắt đầu các Giai đoạn Tuần tự";
+"stagingStageComplete" = "Giai đoạn Hoàn tất!";
+"stagingGoToNextStage" = "Đến Giai đoạn Tiếp theo";
+"stagingAllStagesComplete" = "Tất cả các Giai đoạn đã Hoàn tất!";
+"stagingFinish" = "Kết thúc";
+"stagingSequentialStages" = "Các Giai đoạn Tuần tự";
+"stagingStageXofY" = "Giai đoạn %@ trên %@";
+"stagingResetConfirmation" = "Bạn có thực sự muốn đặt lại tất cả các giai đoạn không?";
+"tapToSetTime" = "Chạm để đặt thời gian";
 
 // MARK: - Manual Time Input
-"setTimeManually" = "Đặt thời gian thủ công";
+"setTimeManually" = "Đặt Thời gian Thủ công";
 "tapToChangeTime" = "Chạm để thay đổi thời gian";
-"setTimeToStartTimer" = "Đặt thời gian để bắt đầu đồng hồ";
+"setTimeToStartTimer" = "Đặt thời gian để bắt đầu hẹn giờ";
+"manualTimer" = "Hẹn giờ Thủ công";
 
 // MARK: - Create Mode
-"createMode" = "Chế độ tạo";
+"createMode" = "Tạo Chế độ";
 
 // MARK: - Development
 "development" = "Tráng phim";
-"processModesDeveloping" = "Phát triển";
-"processModeFixer" = "Người sửa chữa";
+"processModesDeveloping" = "Tráng phim";
+"processModeFixer" = "Hãm phim";
 "noAlternativeOptions" = "Chỉ có một tùy chọn";
 
 // MARK: - Manuals
@@ -372,22 +425,37 @@
 
 // MARK: - Formatting
 "unknownFilm" = "Phim";
-"unknownDeveloper" = "Dung dịch hiện tráng";
+"unknownDeveloper" = "Thuốc hiện hình";
 "degreesCelsius" = "°C";
 "filmPlusDeveloper" = "%@ + %@";
 "isoLabel" = "ISO %@";
 "timeFormat" = "%@:%@ • %@ • %@%@";
-"cycleFormat" = "Chu kỳ: khuấy %@ giây → nghỉ %@ giây";
-"totalCycleDuration" = "Thời gian chu kỳ tổng: %@ giây";
+"cycleFormat" = "Chu kỳ: %@ giây lắc/khuấy → %@ giây nghỉ";
+"totalCycleDuration" = "Tổng thời gian chu kỳ: %@ giây";
 
 // MARK: - Testing
-"parameterRow" = "Hàng thông số";
+"parameterRow" = "Hàng tham số";
 "recordRow" = "Hàng bản ghi";
-"calculatorComponents" = "Thành phần máy tính";
+"calculatorComponents" = "Thành phần Máy tính";
 
 // MARK: - iCloud Sync Status
-"iCloudSyncStatusIdleAvailable" = "iCloud sẵn sàng đồng bộ";
+"iCloudSyncStatusIdleAvailable" = "iCloud đã sẵn sàng để đồng bộ";
 "iCloudSyncStatusIdleUnavailable" = "iCloud không khả dụng";
 "iCloudSyncStatusSyncing" = "Đang đồng bộ...";
-"iCloudSyncStatusCompleted" = "Đồng bộ hoàn thành";
+"iCloudSyncStatusCompleted" = "Đồng bộ hoàn tất";
 "iCloudSyncCtatusFailed" = "Lỗi: %@";
+
+// MARK: - Support
+"support" = "Hỗ trợ";
+"contactDeveloper" = "Liên hệ Nhà phát triển";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "Hành động này sẽ thay thế các giai đoạn hiện tại của bạn. Không thể hoàn tác.";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "%@ không được để trống.";
+"validationErrorInvalidInteger" = "%@ phải là một số nguyên hợp lệ.";
+"validationErrorInvalidDouble" = "%@ phải là một số hợp lệ.";
+"validationErrorValueOutOfRange" = "%@ phải nằm trong khoảng từ %d đến %d.";
+"validationErrorDoubleOutOfRange" = "%@ phải nằm trong khoảng từ %.1f đến %.1f.";
+"validationErrorMustBePositive" = "%@ phải lớn hơn 0.";

@@ -12,6 +12,14 @@
 "done" = "완료!";
 "timeUp" = "시간 종료!";
 
+// MARK: - Home
+"home" = "홈";
+"homeDescription" = "필름 현상을 위한 완벽한 도구 키트: 계산기, 타이머, 저널 및 가이드.";
+"startProcess" = "새 프로세스 시작";
+"startProcessSubtitle" = "필름 현상을 위한 단계별 가이드를 따르세요.";
+"tools" = "도구";
+"toolsSubtitle" = "개별 계산기 및 타이머에 접근합니다.";
+
 // MARK: - Timer Controls
 "start" = "시작";
 "pause" = "일시정지";
@@ -29,13 +37,13 @@
 "calculate" = "계산";
 "calculator" = "계산기";
 "calculatorTitle" = "시간 계산기";
-"calculateButton" = "계산";
+"calculateButton" = "계산하기";
 "results" = "결과:";
-"resultsProcess" = "결과 %@ 프로세스:";
+"resultsProcess" = "프로세스 '%@' 결과:";
 "coefficient" = "계수:";
 "standardRatio" = "(표준 1.33)";
 "processType" = "프로세스 유형:";
-"pushSteps" = "푸시 단계 수:";
+"pushSteps" = "PUSH 단계 수:";
 "numberOfSteps" = "단계 수:";
 "from1to5" = "(1에서 5까지)";
 
@@ -44,14 +52,10 @@
 "developmentSetupDescription" = "현상 시간 계산을 위한 매개변수 선택";
 "developmentTime" = "현상 시간";
 "developmentComplete" = "현상 완료!";
-"developmentCompleted" = "현상 완료!";
-"developmentCompleteForProcess" = "프로세스 완료: %@";
-"selectDevelopmentParameters" = "현상 매개변수를 선택하여 타이머 시작";
+"developmentCompleted" = "현상이 완료되었습니다!";
+"developmentCompleteForProcess" = "'%@' 프로세스의 현상이 완료되었습니다";
+"selectDevelopmentParameters" = "타이머를 시작하려면 현상 매개변수를 선택하세요";
 "startTimer" = "타이머 시작";
-"agitationModeNotSelected" = "선택되지 않음";
-"setTimeFirstToSelectAgitation" = "먼저 시간을 설정하여 아지테이션을 선택하세요";
-"selectAgitationModeToStartTimer" = "타이머를 시작하려면 아지테이션 모드를 선택하세요";
-"setAgitationModeFirstToStartTimer" = "먼저 아지테이션 모드를 선택하여 타이머를 시작하세요";
 "saveToJournal" = "저널에 저장";
 
 // MARK: - Film & Developer
@@ -60,7 +64,7 @@
 "dilution" = "희석:";
 "iso" = "ISO/EI:";
 "temperature" = "온도 (°C):";
-"customTime" = "사용자 정의 시간:";
+"customTime" = "사용자 시간:";
 "baseTime" = "기준 시간:";
 "basicTime" = "기본 시간:";
 "basicTimeLabel" = "기본 시간:";
@@ -69,8 +73,8 @@
 "defaultTime" = "기본 시간 (데이터 없음)";
 "ratio" = "비율:";
 "process" = "프로세스:";
-"push" = "푸시";
-"pull" = "풀";
+"push" = "Push";
+"pull" = "Pull";
 "steps" = "단계:";
 "current" = "현재:";
 "data" = "데이터:";
@@ -115,14 +119,14 @@
 "hc110E" = "E 1+47 (HC-110)";
 
 // MARK: - Groups
-"groupIlford" = "일포드";
-"groupKodak" = "코다크";
-"groupFoma" = "포마";
-"groupKentmere" = "켄트미어";
+"groupIlford" = "Ilford";
+"groupKodak" = "Kodak";
+"groupFoma" = "Foma";
+"groupKentmere" = "Kentmere";
 "groupOther" = "기타";
 "groupCustom" = "사용자 정의";
-"groupDevelopersIlford" = "일포드";
-"groupDevelopersKodak" = "코다크";
+"groupDevelopersIlford" = "Ilford";
+"groupDevelopersKodak" = "Kodak";
 "groupDevelopersOther" = "기타";
 "groupDevelopersCustom" = "사용자 정의";
 "custom" = "사용자 정의";
@@ -170,10 +174,10 @@
 "presets" = "프리셋";
 
 // MARK: - Fixing Timer
-"goToFixing" = "정착으로 가기";
+"goToFixing" = "정착으로 이동";
 "fixingTimer" = "정착 타이머";
 "fixingTimerSetup" = "정착 타이머 설정";
-"fixingTimerDescription" = "현상 후 필름 정착 시간 설정";
+"fixingTimerDescription" = "현상 후 필름 정착 시간을 설정합니다";
 "fixingTime" = "정착 시간";
 "startFixing" = "정착 시작";
 
@@ -181,33 +185,33 @@
 "fixer" = "정착액";
 "selectFixer" = "정착액 선택";
 "fixerSelection" = "정착액 선택";
-"rapidFixer" = "신속 정착액";
+"rapidFixer" = "급속 정착액";
 "acidFixer" = "산성 정착액";
 "neutralFixer" = "중성 정착액";
 
 // MARK: - Agitation
 "agitationSelection" = "교반 모드 선택";
-"agitationDescription" = "교반은 균일한 필름 현상을 위해 현상액을 젓는 과정입니다";
+"agitationDescription" = "교반은 현상액을 저어 필름을 균일하게 현상하는 과정입니다";
 "noAgitation" = "교반 없음";
 "noAgitationDescription" = "타이머가 알림 없이 작동합니다";
 "customAgitation" = "사용자 정의 모드";
-"customAgitationDescription" = "자신만의 교반 모드 생성";
+"customAgitationDescription" = "나만의 교반 모드를 만듭니다";
 "customAgitationSetup" = "사용자 정의 모드 설정";
-"customAgitationSetupDescription" = "자신만의 교반 모드 생성";
+"customAgitationSetupDescription" = "나만의 교반 모드를 만듭니다";
 "customAgitationTitle" = "사용자 정의 교반";
 "agitationTime" = "교반 시간";
 "agitationTimeRemaining" = "(%@초)";
 "restTime" = "휴식 시간";
 "preview" = "미리보기:";
-"cycle" = "사이클: %@초 교반 → %@초 휴식";
-"totalCycleDuration" = "전체 사이클 시간: %@초";
+"cycle" = "사이클: %@ 교반 → %@ 휴식";
+"totalCycleDuration" = "총 사이클 시간: %@";
 "agitation" = "교반";
 "rest" = "휴식";
 "phaseDescription" = "%@";
 "continuousAgitation" = "연속 교반";
 "cycleAgitationFormat" = "%@초 교반 / %@초 휴식";
 "periodicAgitationFormat" = "%@초마다";
-"agitationContinuous" = "연속 교반";
+"agitationContinuous" = "연속";
 "agitationStill" = "교반 없음";
 "agitationCycleFormat" = "%@ / %@";
 "agitationOrwoDescription" = "45 / 15 + 15 / 45";
@@ -219,7 +223,7 @@
 "agitationOrwoName" = "ORWO";
 "agitationXtolName" = "XTOL";
 "agitationRaeName" = "RAE";
-"agitationFixerName" = "정착액";
+"agitationFixerName" = "정착";
 "agitationRaePhase2Rotations" = "2회전";
 "agitationRaePhase1RotationPerMinute" = "분당 1회전";
 "agitationRaePhase1Rotation7thMinute" = "7분째에 1회전";
@@ -228,51 +232,52 @@
 
 // MARK: - Custom Agitation Mode
 "createCustomAgitation" = "사용자 정의 모드 생성";
-"createCustomAgitationDescription" = "자신만의 교반 패턴 디자인";
+"createCustomAgitationDescription" = "나만의 교반 패턴을 설계합니다";
 "savedCustomAgitationModes" = "저장된 사용자 정의 모드";
-"savedCustomAgitationDescription" = "저장된 모드를 찾아보고 선택하세요";
+"savedCustomAgitationDescription" = "저장된 모드에서 찾아 선택합니다";
 "customAgitationCreateTitle" = "사용자 정의 교반 모드 생성";
 "customAgitationEditTitle" = "사용자 정의 교반 모드 편집";
 "customAgitationName" = "모드 이름";
 "customAgitationNamePlaceholder" = "모드 이름 입력";
-"customAgitationFirstMinute" = "첫 번째 분";
-"customAgitationFirstMinuteDescription" = "초기 1분간의 교반 패턴";
-"customAgitationIntermediate" = "중간 분";
+"customAgitationFirstMinute" = "첫 1분";
+"customAgitationFirstMinuteDescription" = "초기 1분 동안의 교반 패턴";
+"customAgitationIntermediate" = "중간";
 "customAgitationIntermediateDescription" = "2분부터 N-1분까지의 교반 패턴";
-"customAgitationEnableLastMinute" = "사용자 정의 마지막 분";
-"customAgitationLastMinute" = "마지막 분";
-"customAgitationLastMinuteDescription" = "최종 분의 교반 패턴";
+"customAgitationEnableLastMinute" = "마지막 1분 사용자 정의";
+"customAgitationLastMinute" = "마지막 1분";
+"customAgitationLastMinuteDescription" = "마지막 1분 동안의 교반 패턴";
 "customAgitationPreview" = "미리보기";
 "customAgitationPreviewUnavailable" = "미리보기를 보려면 설정을 완료하세요";
 "customAgitationCreateButton" = "모드 생성";
 "customAgitationUpdateButton" = "모드 업데이트";
-"customAgitationReset" = "양식 재설정";
+"customAgitationReset" = "양식 초기화";
 "agitationType" = "교반 유형";
 "agitationCycle" = "사이클";
 "agitationPeriodic" = "주기적";
-"agitationCustom" = "사용자 정의 지시사항";
-"cycleTimingSettings" = "사이클 타이밍 설정";
+"agitationCustom" = "사용자 정의 지침";
+"cycleTimingSettings" = "사이클 시간 설정";
 "agitationSeconds" = "교반";
 "restSeconds" = "휴식";
 "periodicInterval" = "간격";
-"customAgitationInstructions" = "지시사항";
-"customAgitationInstructionsPlaceholder" = "사용자 정의 교반 지시사항 입력...";
+"customAgitationInstructions" = "지침";
+"customAgitationInstructionsPlaceholder" = "사용자 정의 교반 지침 입력...";
 "agitationPeriodicFormat" = "%@초마다";
 "noCustomAgitationModes" = "사용자 정의 모드 없음";
-"noCustomAgitationModesDescription" = "시작하려면 첫 번째 사용자 정의 교반 모드를 생성하세요";
-"createFirstCustomMode" = "첫 번째 모드 생성";
+"noCustomAgitationModesDescription" = "시작하려면 첫 사용자 정의 교반 모드를 만드세요";
+"createFirstCustomMode" = "첫 모드 생성";
 "selectThisMode" = "이 모드 선택";
 "deleteConfirmation" = "모드 삭제";
-"deleteCustomModeMessage" = "\"%@\"를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.";
+"deleteCustomModeMessage" = "'%@'을(를) 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.";
 "createNew" = "새로 만들기";
 "validationError" = "유효성 검사 오류";
 "saveError" = "저장 오류";
 "ok" = "확인";
 "customAgitationErrorEmptyName" = "모드 이름은 비워둘 수 없습니다";
-"customAgitationErrorEmptyCustomDescription" = "%@에는 사용자 정의 지시사항이 필요합니다";
-"customAgitationErrorInvalidTiming" = "%@에 대한 잘못된 타이밍 설정";
-"customAgitationErrorInvalidInterval" = "%@에 대한 잘못된 간격";
-"customAgitationErrorNoLastMinuteConfig" = "마지막 분 설정이 누락되었습니다";
+"customAgitationErrorEmptyCustomDescription" = "'%@'에 대한 사용자 정의 지침이 필요합니다";
+"customAgitationErrorInvalidTiming" = "'%@'에 대한 잘못된 시간 설정";
+"customAgitationErrorInvalidInterval" = "'%@'에 대한 잘못된 간격";
+"customAgitationErrorNoLastMinuteConfig" = "마지막 1분 설정이 누락되었습니다";
+"customAgitationErrorCycleSum" = "사이클 시간 오류(%1$@): 교반과 휴식의 합은 60초를 초과할 수 없습니다.";
 
 // MARK: - Calculator Results
 "tapToCalculator" = "탭하여 계산기로 이동";
@@ -285,20 +290,20 @@
 "noOptionsDescription" = "현재 선택 가능한 옵션이 없습니다.";
 
 // MARK: - Journal
-"journalEmpty" = "저널이 비어있습니다";
-"journalEmptyDescription" = "첫 번째 계산을 저장하여 여기에서 확인하세요";
+"journalEmpty" = "저널이 비어 있습니다";
+"journalEmptyDescription" = "첫 계산을 저장하면 여기에 표시됩니다";
 "saveCalculation" = "계산 저장";
 "journal" = "저널";
 "journalCreateRecord" = "기록 생성";
 "journalRecordBasicInfo" = "기본 정보";
-"journalRecordName" = "이름 (선택사항)";
+"journalRecordName" = "이름 (선택 사항)";
 "journalRecordFilm" = "필름";
 "journalRecordDeveloper" = "현상액";
 "journalRecordParameters" = "현상 매개변수";
 "journalRecordDilution" = "희석";
 "journalRecordTemperature" = "온도";
 "journalRecordTime" = "시간";
-"journalRecordComment" = "댓글";
+"journalRecordComment" = "메모";
 "journalRecordCommentPlaceholder" = "이 현상에 대한 메모 추가...";
 "journalRecordDate" = "날짜 및 시간";
 "journalRecordProcess" = "프로세스";
@@ -306,10 +311,10 @@
 "deleteRecord" = "기록 삭제";
 "deleteRecordConfirmation" = "이 기록을 삭제하시겠습니까?";
 "noRecords" = "기록 없음";
-"noRecordsDescription" = "첫 번째 기록을 저장하여 여기에서 확인하세요";
+"noRecordsDescription" = "첫 기록을 저장하면 여기에 표시됩니다";
 "saveRecord" = "기록 저장";
 "saveRecordDescription" = "이 기록을 저장할 이름을 입력하세요";
-"recordDetails" = "기록 세부사항";
+"recordDetails" = "기록 세부 정보";
 
 // MARK: - Selection
 "selectFilm" = "필름 선택";
@@ -321,37 +326,27 @@
 "selectScreenForTesting" = "테스트용 화면 선택:";
 "recordName" = "이름 입력";
 "searchFilms" = "필름 검색...";
-"searchDevelopers" = "현상액 검색...";
 "searchJournal" = "저널 검색...";
 "noResultsFound" = "결과를 찾을 수 없습니다";
-"trySearchingDifferentKeywords" = "다른 키워드로 검색해보세요";
-
-// MARK: - Home
-"home" = "홈";
-"homeDescription" = "필름 현상을 위한 완전한 툴킷: 계산기, 타이머, 저널, 가이드";
-"homePresetsSubtitle" = "현상 매개변수";
-"homeCalculatorSubtitle" = "시간 계산";
-"homeTimerSubtitle" = "현상 타이머";
-"homeJournalSubtitle" = "저장된 기록";
-"homeManualsSubtitle" = "기사 및 가이드";
+"trySearchingDifferentKeywords" = "다른 키워드로 검색해 보세요";
+"searchDevelopers" = "현상액 검색...";
 
 // MARK: - Staging
 "staging" = "단계";
-"stagingIntro" = "원하는 순서로 필름 처리 단계 추가";
+"stagingIntro" = "원하는 순서대로 필름 처리 단계를 추가하세요";
 "totalTime" = "총 시간:";
-"stagesInProcess" = "처리 중인 단계:";
+"stagesInProcess" = "진행 중인 단계:";
 "chooseStage" = "단계 선택";
 "duplicate" = "복제";
-"homeStagingSubtitle" = "전체 프로세스의 순차 단계 설정";
-"stagingPrebathName" = "예비욕";
-"stagingPrebathDescription" = "온도 안정화를 위한 사전 담금";
+"stagingPrebathName" = "예비 수세";
+"stagingPrebathDescription" = "온도 안정을 위한 예비 수세";
 "stagingDevelopName" = "현상";
 "stagingDevelopDescription" = "필름 현상";
-"stagingStopBathName" = "정지욕";
+"stagingStopBathName" = "정지";
 "stagingStopBathDescription" = "현상 중지";
 "stagingBleachName" = "표백";
-"stagingBleachDescription" = "표백";
-"stagingFixerName" = "정착액";
+"stagingBleachDescription" = "표백 처리";
+"stagingFixerName" = "정착";
 "stagingFixerDescription" = "이미지 정착";
 "stagingWashName" = "수세";
 "stagingWashDescription" = "필름 헹굼";
@@ -360,21 +355,25 @@
 
 // MARK: - Stage Editor
 "stageTime" = "단계 시간";
-"duration" = "지속시간";
+"duration" = "지속 시간";
 "agitationMode" = "교반 모드";
+"agitationModeNotSelected" = "선택 안 됨";
+"setTimeFirstToSelectAgitation" = "교반 모드를 선택하기 전에 시간을 먼저 설정하세요";
+"selectAgitationModeToStartTimer" = "타이머를 시작하려면 교반 모드를 선택하세요";
+"setAgitationModeFirstToStartTimer" = "타이머를 시작하기 전에 교반 모드를 먼저 선택하세요";
 "advancedSetup" = "고급 설정";
 "openDevelopmentSetup" = "현상 설정 열기";
-"openFixerSetup" = "정착액 설정 열기";
+"openFixerSetup" = "정착 설정 열기";
 "setupTimeByPreset" = "프리셋으로 시간 설정";
-"resetStages" = "단계 재설정";
+"resetStages" = "단계 초기화";
 
 // MARK: - Settings
 "settings" = "설정";
 "settingsTheme" = "테마";
 "settingsThemeMode" = "테마 모드";
 "settingsThemeSystem" = "시스템";
-"settingsThemeLight" = "밝음";
-"settingsThemeDark" = "어두움";
+"settingsThemeLight" = "라이트";
+"settingsThemeDark" = "다크";
 "settingsData" = "데이터";
 "settingsSyncData" = "데이터 동기화";
 "settingsLastSync" = "마지막 동기화:";
@@ -382,40 +381,40 @@
 "settingsSyncResult" = "동기화 결과";
 "settingsSyncSuccess" = "데이터가 성공적으로 동기화되었습니다!";
 "settingsSyncError" = "동기화 실패";
-"settingsAutoSyncReady" = "자동 동기화 준비됨";
+"settingsAutoSyncReady" = "자동 동기화 준비 완료";
 "settingsAutoSyncChecking" = "연결 확인 중...";
 "settingsAutoSyncInProgress" = "자동 동기화 진행 중...";
 "settingsAutoSyncCompleted" = "자동 동기화 완료";
 "settingsAutoSyncFailed" = "자동 동기화 실패: %@";
 "settingsAutoSyncNoInternet" = "인터넷 연결 없음";
-"settingsAutoSyncTooSoon" = "최근에 동기화됨";
+"settingsAutoSyncTooSoon" = "최근에 동기화가 수행되었습니다";
 "settingsLastAutoSync" = "마지막 자동 동기화:";
 "settingsAutoSyncEnabled" = "앱 시작 시 자동 동기화";
-"settingsAutoSyncDescription" = "인터넷이 사용 가능할 때 앱 시작 시 자동으로 데이터 동기화";
-"settingsAutoSyncDisabled" = "자동 동기화 비활성화";
+"settingsAutoSyncDescription" = "인터넷이 가능할 때 앱 시작 시 데이터를 자동으로 동기화합니다";
+"settingsAutoSyncDisabled" = "자동 동기화 비활성화됨";
 "stagingStartSequential" = "순차 단계 시작";
 "stagingStageComplete" = "단계 완료!";
 "stagingGoToNextStage" = "다음 단계로";
 "stagingAllStagesComplete" = "모든 단계 완료!";
-"stagingFinish" = "완료";
+"stagingFinish" = "마침";
 "stagingSequentialStages" = "순차 단계";
 "stagingStageXofY" = "단계 %@ / %@";
-"stagingResetConfirmation" = "정말로 모든 단계를 재설정하시겠습니까?";
+"stagingResetConfirmation" = "정말로 모든 단계를 초기화하시겠습니까?";
 "tapToSetTime" = "탭하여 시간 설정";
 
 // MARK: - Manual Time Input
 "setTimeManually" = "시간 수동 설정";
 "tapToChangeTime" = "탭하여 시간 변경";
-"setTimeToStartTimer" = "타이머 시작 시간 설정";
+"setTimeToStartTimer" = "타이머를 시작하려면 시간을 설정하세요";
 "manualTimer" = "수동 타이머";
 
 // MARK: - Create Mode
-"createMode" = "생성 모드";
+"createMode" = "모드 생성";
 
 // MARK: - Development
 "development" = "현상";
 "processModesDeveloping" = "현상";
-"processModeFixer" = "정착액";
+"processModeFixer" = "정착";
 "noAlternativeOptions" = "하나의 옵션만 사용 가능";
 
 // MARK: - Manuals
@@ -432,7 +431,7 @@
 "isoLabel" = "ISO %@";
 "timeFormat" = "%@:%@ • %@ • %@%@";
 "cycleFormat" = "사이클: %@초 교반 → %@초 휴식";
-"totalCycleDuration" = "전체 사이클 시간: %@초";
+"totalCycleDuration" = "총 사이클 시간: %@초";
 
 // MARK: - Testing
 "parameterRow" = "매개변수 행";
@@ -440,8 +439,23 @@
 "calculatorComponents" = "계산기 구성 요소";
 
 // MARK: - iCloud Sync Status
-"iCloudSyncStatusIdleAvailable" = "iCloud 동기화 준비됨";
+"iCloudSyncStatusIdleAvailable" = "iCloud가 동기화 준비됨";
 "iCloudSyncStatusIdleUnavailable" = "iCloud를 사용할 수 없음";
 "iCloudSyncStatusSyncing" = "동기화 중...";
 "iCloudSyncStatusCompleted" = "동기화 완료";
 "iCloudSyncCtatusFailed" = "오류: %@";
+
+// MARK: - Support
+"support" = "지원";
+"contactDeveloper" = "개발자에게 문의";
+
+// MARK: - Staging Warnings
+"stagingPresetReplaceWarning" = "이 작업은 현재 단계를 대체하며 되돌릴 수 없습니다.";
+
+// MARK: - Validation Errors
+"validationErrorEmptyField" = "'%@'은(는) 비워 둘 수 없습니다.";
+"validationErrorInvalidInteger" = "'%@'은(는) 유효한 정수여야 합니다.";
+"validationErrorInvalidDouble" = "'%@'은(는) 유효한 숫자여야 합니다.";
+"validationErrorValueOutOfRange" = "'%@'의 값은 %d에서 %d 사이여야 합니다.";
+"validationErrorDoubleOutOfRange" = "'%@'의 값은 %.1f에서 %.1f 사이여야 합니다.";
+"validationErrorMustBePositive" = "'%@'의 값은 0보다 커야 합니다.";

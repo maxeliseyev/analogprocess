@@ -30,7 +30,7 @@ class JournalViewModel: ObservableObject {
     // MARK: - Methods
 
     func deleteRecord(_ record: SwiftDataJournalRecord) {
-        Logger.logPersistence("Record deleted - film: \(record.filmName ?? <#default value#>), developer: \(record.developerName ?? <#default value#>)", type: .info)
+        Logger.logPersistence("Record deleted - film: \(record.filmName ?? "unknown"), developer: \(record.developerName ?? "unknown")", type: .info)
 
         swiftDataService.deleteCalculationRecord(record)
     }
