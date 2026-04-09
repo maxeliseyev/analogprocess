@@ -71,9 +71,9 @@ public class DevelopmentCalculator: DevelopmentCalculating {
         
         for i in 1...steps {
             let multiplier = pow(coefficient, Double(i))
-            let adjustedSeconds = Int(Double(baseSeconds) * multiplier)
+            let raw = Double(baseSeconds) * multiplier
+            let adjustedSeconds = raw < Double(Int.max) ? Int(raw) : Int.max
             
-            // Округляем результат до 1/4 минуты
             let rounded = roundToQuarterMinuteComponents(adjustedSeconds)
             
             results.append(ProcessStep(
@@ -91,9 +91,9 @@ public class DevelopmentCalculator: DevelopmentCalculating {
         
         for i in 1...steps {
             let divisor = pow(coefficient, Double(i))
-            let adjustedSeconds = Int(Double(baseSeconds) / divisor)
+            let raw = Double(baseSeconds) / divisor
+            let adjustedSeconds = raw < Double(Int.max) ? Int(raw) : Int.max
             
-            // Округляем результат до 1/4 минуты
             let rounded = roundToQuarterMinuteComponents(adjustedSeconds)
             
             results.append(ProcessStep(

@@ -12,8 +12,20 @@ import os.log
 @MainActor
 class CalculatorViewModel: ObservableObject {
     // MARK: - Input Properties
-    @Published var minutes = ""
-    @Published var seconds = ""
+    @Published var minutes = "" {
+        didSet {
+            if let min = Int(minutes), min > 59 {
+                minutes = "59"
+                return
+            }
+            if isValidInput { calculateTime() }
+        }
+    }
+    @Published var seconds = "" {
+        didSet {
+            if isValidInput { calculateTime() }
+        }
+    }
     @Published var coefficient = "1.33" {
         didSet {
             // Автоматически пересчитываем при изменении коэффициента
@@ -51,7 +63,6 @@ class CalculatorViewModel: ObservableObject {
     
     // MARK: - UI States
     @Published var coefficientAutoCompleteManager: AutoCompleteManager<String>
-    @Published var showResult = false
     @Published var showTimer = false
     @Published var showSaveDialog = false
     
@@ -133,8 +144,10 @@ class CalculatorViewModel: ObservableObject {
         let temperatureMultiplier = swiftDataService.getTemperatureMultiplier(for: temperature)
         Logger.logCalculation("Temperature multiplier applied: \(temperatureMultiplier)", type: .debug)
 
-        let adjustedMinutes = Int(Double(min) * temperatureMultiplier)
-        let adjustedSeconds = Int(Double(sec) * temperatureMultiplier)
+        let rawAdjMin = Double(min) * temperatureMultiplier
+        let rawAdjSec = Double(sec) * temperatureMultiplier
+        let adjustedMinutes = rawAdjMin < Double(Int.max) ? Int(rawAdjMin) : Int.max
+        let adjustedSeconds = rawAdjSec < Double(Int.max) ? Int(rawAdjSec) : Int.max
 
         // Нормализуем время (секунды не должны превышать 59)
         let totalAdjustedSeconds = adjustedMinutes * 60 + adjustedSeconds
@@ -151,8 +164,6 @@ class CalculatorViewModel: ObservableObject {
         )
 
         Logger.logCalculation("Results calculated - mode: \(isPushMode ? "push" : "pull"), steps: \(pushSteps), results count: \(pushResults.count)", type: .info)
-
-        showResult = true
     }
     
     // MARK: - Timer Methods
@@ -163,7 +174,6 @@ class CalculatorViewModel: ObservableObject {
         selectedTimerLabel = label
         selectedTimerMinutes = minutes
         selectedTimerSeconds = seconds
-        showResult = false // Закрываем sheet с результатами
         showTimer = true // Активируем навигацию к таймеру
     }
 
